@@ -1,0 +1,280 @@
+% ============== Dark-Mode Skript mit bereinigten Boxen (XeLaTeX / LuaLaTeX) ==============
+\documentclass[11pt,a4paper,oneside]{article}
+
+% -------------------- Engine & Fonts --------------------
+\usepackage{fontspec}
+\setmainfont{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\usepackage{unicode-math}
+\setmathfont{Libertinus Math}
+
+% -------------------- Pakete --------------------
+\include{Pakete}
+\usepackage{acro}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable,theorems}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{everypage}
+
+% -------------------- Layout --------------------
+\geometry{
+	left=28mm, right=28mm, top=28mm, bottom=28mm,
+	marginparwidth=36mm, marginparsep=6mm
+}
+
+% -------------------- Farben (fein abgestuft, subtiler Fluss) --------------------
+\definecolor{PageBG}{RGB}{17,11,31}             % sehr dunkler Hintergrund
+\definecolor{TextCream}{RGB}{246,241,234}       % creme / sehr hell
+
+\definecolor{AccentBlue}{RGB}{76,104,150}       % akademisches Blau (unverändert)
+\definecolor{AccentViolet}{RGB}{105,77,145}     % seriöses Violett (unverändert)
+
+% Hint: mehr ins violett/pinke ziehen (Hauch von Fuchsia)
+\definecolor{AccentMagenta}{RGB}{140,60,120}       % violett-pink (sanfter Übergang)
+
+% Magenta: rötlicher, dichter, aber nicht grell
+\definecolor{AccentHint}{RGB}{170,40,60}     % rötliches Magenta (mehr Rotanteil)
+
+% Elegantes Rot: orientiert sich am bisherigen "AccentHint" (tiefes Weinrot)
+\definecolor{AccentRed}{RGB}{120,10,25}         % elegantes Weinrot / tiefes Rot
+
+\definecolor{BoxBackground}{RGB}{15,9,27}       % Box-Hintergrund
+\definecolor{MarginalGray}{RGB}{150,150,160}    % Rand-Datum
+
+\pagecolor{PageBG}
+\color{TextCream}
+
+
+% -------------------- Kopf / Fuß --------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+\fancyfoot[C]{%
+	\vspace{6pt}%
+	{\scriptsize\scshape Ferdinand-Braun Schule \quad • \quad Leistungskurs Mathematik Q3 \quad • \quad \thepage}%
+	\begin{tikzpicture}[remember picture,overlay]
+		\draw[line width=0.9pt,color=AccentViolet!80!black] ($(current page.south west)+(28mm,22mm)$) -- ($(current page.south east)+(-28mm,22mm)$);
+	\end{tikzpicture}%
+}
+
+% -------------------- Titel-Styles --------------------
+\titleformat{\section}
+{\normalfont\large\bfseries\color{AccentBlue!33}}
+{\thesection}
+{1em}
+{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries\color{AccentViolet!33}}{\thesubsection}{0.8em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{AccentMagenta!33}}{\thesubsubsection}{0.6em}{}
+
+% ========================= TCBOX BASIS-STIL (bereinigt) =========================
+\tcbset{
+	mybase/.style={
+		enhanced,
+		breakable,
+		%drop shadow, 
+		%shadow={1mm}{-1mm}{0mm}{black!50!white},
+		boxrule=0.9pt,
+		colframe=black!20,
+		colback=BoxBackground,
+		colupper=TextCream,          % Textfarbe innerhalb der Box
+		arc=2mm,
+		boxsep=5pt,
+		left=15pt,right=15pt,top=15pt,bottom=15pt,
+		before skip=8pt, after skip=8pt,
+		attach boxed title to top left={yshift=-0.25mm-\tcboxedtitleheight/2, xshift=10mm},
+		boxed title style={
+			arc=4mm,
+			left=6pt,right=6pt,top=3pt,bottom=3pt,
+			boxrule=0pt           % kein zusätzlicher Rahmen für den Titelsticker
+			% hier KEIN colback setzen — colbacktitle wird pro Box gesetzt
+		},
+		fonttitle=\sffamily\bfseries\small,
+		title after break=\vspace{4pt}
+	}
+}
+
+% -------------------- THEOREM (theo) --------------------
+\newtcolorbox[auto counter,number within=section]{theo}[2][]{%
+	mybase,
+	colframe = AccentBlue!75!black,  %AccentViolet!75!black,
+	colbacktitle = AccentBlue!85!black, %AccentViolet!85!black,
+	coltitle = TextCream,
+	title = {Theorem~\thetcbcounter: #2},
+	#1
+}
+
+% -------------------- BEISPIEL (exem) --------------------
+\newtcolorbox[auto counter,number within=section]{exem}[2][]{%
+	mybase,
+	colframe = AccentViolet!75!black, %AccentBlue!75!black,
+	colbacktitle = AccentViolet!85!black,%AccentBlue!85!black,
+	coltitle = TextCream,
+	title = {Beispiel~\thetcbcounter: #2},
+	#1
+}
+
+% -------------------- AUFGABE (aufgabe) --------------------
+\newtcolorbox[auto counter,number within=section]{aufgabe}[2][]{%
+	mybase,
+	colframe = AccentMagenta!75!black, %AccentMagenta!75!black,
+	colbacktitle = AccentMagenta!85!black, %AccentMagenta!85!black,
+	coltitle = TextCream,
+	title = {Aufgabe~\thetcbcounter: #2},
+	#1
+}
+
+% -------------------- LÖSUNG (loesung) - zu Aufgabe passend --------------------
+\newtcolorbox[use counter from=aufgabe]{loesung}[2][]{%
+	mybase,
+	colframe = AccentHint!75!black, %AccentMagenta!60!black,
+	colbacktitle = AccentHint!85!black,%AccentMagenta!72!black,
+	coltitle = TextCream,
+	title = {Lösung~\thetcbcounter: #2},
+	#1
+}
+
+% -------------------- Hinweis-Box --------------------
+\newtcolorbox{infobox}[1][]{%
+	mybase,
+	colframe = AccentRed!75!black,
+	colbacktitle = AccentRed!85!black,
+	coltitle = TextCream,
+	title = {Hinweis},
+	#1
+}
+
+% ==================== Datum in rechter Margin (jede Seite) ====================
+%\newcommand{\SetSideDateText}[1]{%
+%	\gdef\@sidedatetext{#1}%
+%	\AddEverypageHook{%
+%		\begin{tikzpicture}[remember picture,overlay]
+%			\node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(-18mm,-14mm)$) {%
+%				\parbox{32mm}{\raggedleft\small\sffamily\color{MarginalGray}\@sidedatetext}%
+%			};
+%		\end{tikzpicture}%
+%	}%
+%}
+%\makeatletter \def\@sidedatetext{} \makeatother
+
+% Makro für das Datum am rechten Rand
+\newcommand{\lessondate}[1]{
+	\noindent\hfill\textcolor{gray}{\textsc{#1}} \\
+	\vspace{0.5cm}
+}
+
+
+
+% ==================== Feines Titelblatt ====================
+\newcommand{\MakeArtTitle}[4]{%
+	\begin{titlepage}
+		\vspace*{18mm}
+		\begin{center}
+			%\begin{tikzpicture}
+			%	\fill[AccentViolet!85!black] (0,0) circle (1.2cm);
+			%	\fill[PageBG] (0.15,0.15) circle (0.95cm);
+			%	\draw[line width=1pt,color=AccentBlue] (0,0) circle (1.35cm);
+			%	\node[white] at (0,0) {\sffamily\bfseries\Large M};
+			%\end{tikzpicture}
+			\vspace{12mm}
+			%{\Huge\bfseries\sffamily\color{TextCream} #1 \par}
+			{\huge\color{TextCream} #1 \par}
+			\vspace{6mm}
+			{\Large\itshape\color{AccentBlue!50} #2 \par}
+			\vspace{10mm}
+			{\Large\scshape\color{TextCream} #3 \par}
+			\vspace{6mm}
+			{\small\color{MarginalGray} #4 \par}
+			%\vfill
+			\vspace{5mm}
+			{\small\color{MarginalGray} \today \par}
+			%\vspace{12mm}
+			%\begin{tikzpicture}
+			%	\draw[line width=1.2pt,color=AccentViolet!80!black] (-6,0) -- (6,0);
+			%	\draw[line width=0.45pt,color=AccentBlue!60!black] (-6,-0.3) -- (6,-0.3);
+			%\end{tikzpicture}
+		\end{center}
+		\vspace{7.5cm}
+		\centering
+		\includegraphics[width=0.75\textwidth]{2.png} % Logo einfügen (Pfad anpassen)
+	\end{titlepage}
+}
+
+% ==================== Dokumentbeginn ====================
+\begin{document}
+	
+	% Titelblatt
+	\MakeArtTitle{
+		Leistungskurs Mathematik Q3 Hessen}
+		{Stochastik Skript}
+		{Shamsher Singh Kalsi}
+		{Berufliches Gymnasium — Ferdinand-Braun Schule \\ Kursleiter: Herr Thorsten Farnungen}
+	
+	\tableofcontents
+	\bigskip
+	\clearpage
+	
+	
+	\section{Einleitung}
+	\lessondate{17.08.2025}\\
+	Dieses Skript dient als Vorsetzung von der Q2. Hierbei werden nur thematisch theoretische Unterrichtsinhalte notiert, wobei die Aufgaben und Übungen hauptsächlich in Obsidian bearbeitet werden, um den wahnsinnigen Dokumentationsaufwand zu reduzieren. 
+	
+	\subsection{Ablauf der Q3}
+	
+	\subsubsection{Randbemerkungen}
+	
+	
+	\section{Grundlegende Begriffe der Stochastik}
+	
+	\section{Berechnung von Wahrscheinlichkeiten}
+	
+	\section{Wahrscheinlichkeitsverteilung}
+	
+	\section{Hypothesentest (für binominalverteilte Zufallsgrößen)}
+	
+	\section{Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}
+	
+	\newpage
+	
+	
+	Die Boxen sind jetzt wie gewünscht gestaltet (arc=4mm, dezenter Rahmen, Titelsticker oben links). Der Text innerhalb der Boxen ist cremefarben (kein Schwarz mehr).
+	
+	\begin{theo}{Quadratische Ergänzung}
+		Sei \(a,b\in \mathbb{R}\). Dann gilt
+		\[
+		(a+b)^2 = a^2 + 2ab + b^2.
+		\]
+	\end{theo}
+	
+	\begin{exem}{Numerisches Beispiel}
+		Für \(a=2\), \(b=3\) erhalten wir
+		\[
+		(2+3)^2 = 2^2 + 2\cdot 2\cdot 3 + 3^2 = 25.
+		\]
+	\end{exem}
+	
+	\begin{aufgabe}{Binomische Formel}
+		Beweise die zweite binomische Formel: \((a-b)^2 = a^2 - 2ab + b^2\).
+	\end{aufgabe}
+	
+	\begin{loesung}{Lösungsskizze}
+		Ausmultiplizieren liefert
+		\[
+		(a-b)^2 = a^2 - 2ab + b^2.
+		\]
+	\end{loesung}
+	
+	\begin{infobox}{test}
+		Diese Box ist ein Beispiel für Hinweise, farblich und formal abgesetzt.
+	\end{infobox}
+	
+\end{document}

@@ -1,0 +1,317 @@
+% ===================== Geschichts-Skript (History theme, typewriter accents) =====================
+\documentclass[11pt,a4paper,oneside]{article}
+
+% -------------------- Engine & Fonts --------------------
+% WICHTIG: Dieser Block ist für XeLaTeX / LuaLaTeX gedacht.
+% Wenn Sie pdfLaTeX verwenden, müssen Sie diesen Teil auskommentieren
+% und alternative Pakete wie \usepackage[utf8]{inputenc} und \usepackage[T1]{fontenc} verwenden.
+\usepackage{fontspec} % XeLaTeX / LuaLaTeX
+\setmainfont{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\newfontfamily\typewriter{Courier New}
+%[
+%Path = ./, % Ggf. Pfad zu den Fonts anpassen
+%UprightFont = *-Regular,
+%ItalicFont = *-Italic
+%]
+\usepackage{unicode-math}
+\setmathfont{Libertinus Math}
+
+% -------------------- Pakete --------------------
+%\include{Pakete}
+\usepackage{acro}
+\usepackage[ngerman]{babel}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc,decorations.pathmorphing}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable,theorems}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{everypage}
+\usepackage{graphicx}
+\usepackage{ifxetex} % Nützlich für bedingte Kompilierung
+
+% -------------------- Layout --------------------
+\geometry{
+	left=28mm, right=28mm, top=28mm, bottom=28mm,
+	marginparwidth=36mm, marginparsep=6mm
+}
+
+% -------------------- Farben (historisch / sepia) --------------------
+\definecolor{Parchment}{RGB}{245,238,224}     % helles Pergament
+\definecolor{Ink}{RGB}{40,30,22}              % dunkle Tinte
+\definecolor{Sepia}{RGB}{112,85,60}           % Akzent Sepia
+\definecolor{DarkSepia}{RGB}{90,60,40}        % dunklerer Akzent
+\definecolor{BoxBG}{RGB}{250,245,235}         % Box Hintergrund (leicht heller)
+\definecolor{StampRed}{RGB}{110,20,20}        % Stempelfarbe
+\definecolor{MarginalGray}{RGB}{120,110,100}
+
+% wähle Hintergrund: Pergament-Look
+\pagecolor{Parchment}
+\color{Ink}
+
+% -------------------- Kopf / Fuß --------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+\fancyfoot[C]{%
+	\vspace{6pt}%
+	{\scriptsize\scshape Ferdinand-Braun Schule \quad • \quad Grundkurs Geschichte Q3 \quad • \quad \thepage}%
+	\begin{tikzpicture}[remember picture,overlay]
+		\draw[line width=0.9pt,color=DarkSepia] ($(current page.south west)+(28mm,22mm)$) -- ($(current page.south east)+(-28mm,22mm)$);
+	\end{tikzpicture}%
+}
+
+% -------------------- Titel-Styles --------------------
+\titleformat{\section}
+{\normalfont\large\bfseries\color{DarkSepia}\typewriter}
+{\thesection}
+{1em}
+{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries\color{Sepia}\typewriter}{\thesubsection}{0.8em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{DarkSepia}}{\thesubsubsection}{0.6em}{}
+
+% ========================= TCBOX BASIS-STIL (History) =========================
+\tcbset{
+	histbase/.style={
+		enhanced,
+		breakable,
+		boxrule=0.6pt,
+		colframe=DarkSepia,
+		colback=BoxBG,
+		colupper=Ink,             % Textfarbe innerhalb der Box
+		arc=1mm,
+		boxsep=6pt,
+		left=12pt,right=12pt,top=12pt,bottom=12pt,
+		before skip=8pt, after skip=8pt,
+		attach boxed title to top left={yshift=-0.25mm-\tcboxedtitleheight/2, xshift=10mm},
+		boxed title style={
+			arc=1mm,
+			left=6pt,right=6pt,top=4pt,bottom=4pt,
+			boxrule=0pt
+		},
+		fonttitle=\typewriter\small,
+		title after break=\vspace{4pt}
+	}
+}
+
+% -------------------- Historische Boxen --------------------
+% Hinweis / Kontext
+\newtcolorbox{histnote}[1][]{%
+	histbase,
+	colframe = DarkSepia,
+	colbacktitle = Sepia!20,
+	coltitle = Ink,
+	title = {Hinweis},
+	#1
+}
+
+% Primärquelle (typewriter inside)
+\newtcolorbox{primarysource}[2][]{%
+	histbase,
+	colframe = DarkSepia,
+	colbacktitle = DarkSepia!10,
+	coltitle = Ink,
+	title = {Quelle: #2},
+	fontupper=\typewriter\small,
+	#1
+}
+
+% Timeline-Box (Datum prominent links)
+\newtcolorbox{timeline}[2][]{%
+	histbase,
+	colframe = Sepia!60!black,
+	colbacktitle = Sepia!15,
+	coltitle = Ink,
+	title = {#2},
+	left=18mm,
+	%underlay={
+	%	\begin{tikzpicture}[overlay]
+	%		% This part had a small bug, corrected to shade a vertical bar
+	%		\fill[Sepia!30] (frame.south west) rectangle ($(frame.north west)+(12mm,0)$);
+	%	\end{tikzpicture}
+	%},
+	#1
+}
+
+
+% Aufgabe / Lösung (farbliche Kennzeichnung)
+\newtcolorbox[auto counter,number within=section]{histaufgabe}[2][]{%
+	histbase,
+	colframe = Sepia!70!black,
+	colbacktitle = Sepia!25,
+	coltitle = Ink,
+	title = {Aufgabe~\thetcbcounter: #2},
+	#1
+}
+\newtcolorbox[use counter from=histaufgabe]{histloesung}[2][]{%
+	histbase,
+	colframe = DarkSepia!75,
+	colbacktitle = DarkSepia!20,
+	coltitle = Ink,
+	title = {Lösung~\thetcbcounter: #2},
+	fontupper=\itshape,
+	#1
+}
+
+% Quellen-Zitat (kleiner, in typewriter, mit Rand)
+\newtcolorbox{quoteBox}[1][]{%
+	colframe = DarkSepia!60,
+	colback = BoxBG,
+	colupper = Ink,
+	boxrule=0.5pt,
+	arc=1.5mm,
+	left=10pt,right=10pt,top=8pt,bottom=8pt,
+	fontupper=\typewriter\small,
+	before skip=6pt, after skip=6pt,
+	#1
+}
+
+% ------------------- Datum in rechter Margin (jede Seite) -------------------
+%\newcommand{\lessondate}[1]{%
+%	\AddEverypageHook{%
+%		\begin{tikzpicture}[remember picture,overlay]
+%			\node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(-18mm,-14mm)$) {%
+%				\parbox{36mm}{\raggedleft\small\sffamily\color{MarginalGray}#1}%
+%			};
+%		\end{tikzpicture}%
+%	}%
+%}
+
+% Makro für das Datum am rechten Rand
+\newcommand{\lessondate}[1]{
+	\noindent\hfill\textcolor{gray}{\textsc{#1}} \\
+	\vspace{0.5cm}
+}
+
+
+% ==================== Feines Titelblatt (History edition) ====================
+\newcommand{\MakeArtTitle}[6][]{% KORRIGIERT: von [5] auf [6]
+	% #1 opt: small subtitle, #2 Title, #3 Subtitle, #4 Author, #5 Course/Info, #6 Logo
+	\begin{titlepage}
+		\centering
+		\vspace*{24mm}
+		% large title block (typewriter headline)
+		{\huge\typewriter\color{DarkSepia} #2 \par}
+		\vspace{6mm}
+		{\Large\itshape\color{Sepia} #3 \par}
+		\vspace{12mm}
+		{\Large\scshape\color{Ink} #4 \par}
+		\vspace{4mm}
+		{\small\color{MarginalGray} #5 \par}
+		\vspace{12mm}
+		% optional subtitle sticker
+		\if\relax\detokenize{#1}\relax\else
+		\vspace{6mm}
+		\begin{tikzpicture}
+			\node[draw=DarkSepia,fill=Sepia!10,rounded corners=2pt,inner sep=6pt] {\typewriter\small #1};
+		\end{tikzpicture}
+		\vspace{6mm}
+		\fi
+		% stamp / seal
+		\vspace{18mm}
+		\begin{tikzpicture}
+			\node[inner sep=0pt] (logo) at (0,0) {};
+			\draw[line width=1.2pt,color=StampRed!75,rotate=10] (0,0) circle (1.5cm);
+			\node[rotate=10,font=\typewriter\small\color{StampRed!75}] at (0,0) {Archivexemplar};
+			\draw[line width=0.6pt,color=StampRed!45,rotate=10] (0,0) circle (1.2cm);
+		\end{tikzpicture}
+		\vfill
+		% optional logo graphic (falls vorhanden)
+		\ifx\relax#6\relax\else
+		\centering\includegraphics[width=0.4\textwidth]{#6}
+		\fi
+		\vspace{3cm}
+		\centering
+		\includegraphics[width=0.75\textwidth]{image.png} % Logo einfügen (Pfad anpassen)
+	\end{titlepage}
+}
+
+% ==================== Dokumentbeginn ====================
+\begin{document}
+	
+	% Titelblatt aufrufen: KORRIGIERT - Leeres Argument {} hinzugefügt
+	\MakeArtTitle[Sonderausgabe]{Grundkurs Geschichte Q3 Hessen}{Ost-West-Konflikt, postkoloniale Welt und Globalisierung Skript}{Shamsher Singh Kalsi}{Berufliches Gymnasium — Ferdinand-Braun Schule \\ Kursleiterin: Frau Dr. Braun}{}
+	\tableofcontents
+	\clearpage
+	
+	% Datum rechts
+	\lessondate{18.08.2025}
+	
+	\section{Einleitung}
+	Dieses Skript sammelt Zusammenfassungen, Quellen und Arbeitsaufträge für den Geschichtsgrundkurs.
+	Die Gestaltung lehnt sich an Archivdokumente an: \emph{typewriter} für Primärtexte / Überschriften, sepia-Akzente und Pergament-Hintergrund.
+	
+	
+	\subsection{Organisatorisches}
+	\lessondate{19.09.2025}\\
+	Es wurde ein neuer Moodle Kurs für die Q3 von der Kursleiterin angelegt. Für die Bearbeitung der Aufgaben verlangt die Kursleiterin genaues lesen der Aufgabenstellung und sich dementsprechend vorzubereiten im Sinne mit einer Tabelle, Mind map und Concept map. Dies soll helfen Zusammenhänge und Hintergründe effektiver darstellen zu können.  Es soll keine Aufzählung von Fakten sein, sondern eine Art Erörterung mit Fachbegriffen und Quellen belegen.  Quellenbezüge sollen mit einem Kontext integriert werden.
+	
+	\subsection*{Schriftliches und Mündliches Abitur}
+	Bestehend aus drei Anfordungsbereiche
+	\begin{enumerate}
+		\item Reproduktion 
+		\item Zusammenhänge herstellen
+		\item Relfexion und Verallgemeinerung 
+	\end{enumerate}
+	
+	\subsection{Beispiel Übung}
+	
+	\begin{histaufgabe}{Textüberarbeitung}
+		Zur Aufgabe "Stellen Sie die Innenpolitik Bismarcks dar" wurde der folgende Text verfasst. Überarbeiten Sie ihn, indem Sie problematische Textstellen markieren, fehlende Aspekte ergänzen und Verbesserungen notieren.
+	\end{histaufgabe}
+	
+	
+	\newpage
+	
+	
+	\section{Der kalte Krieg - stabile oder labile Weltordnung?}
+	\section{Die Teilung Deutschlands - eine Nation, zwei Staaten}
+	\section{Deutschland von der Teilung zur Einheit}
+	\section{Weltpolitische Entwicklungen zwischen Bipolarität und Multipolarität}
+	\section{Der Nahostkonflickt als weltpoltischer Krisenherd}
+	\section{Umgang mit der nationalsozialistischen Vergangenheit - "Vergangenheitsbewältigung" ?}
+	
+	\newpage
+	
+	\section{Beispielboxen}
+	
+	\begin{histnote}
+		Dies ist ein kontextgebender Hinweis – z. B. ein kurzer historiographischer Abriss oder ein wichtiger Hinweis für die Lehrkraft.
+	\end{histnote}
+
+	
+	\begin{primarysource}{Friedrich Schlegel, 1798}
+		„Dies ist ein Beispieltext, der im Schreibmaschinenstil dargestellt wird, um Primärquellen-Feeling zu erzeugen.
+		Datum: 12. April 1798. Ort: Berlin.“
+	\end{primarysource}
+	
+	\begin{timeline}{1789 — Französische Revolution}
+		Stichpunkte zu Ablauf und wichtigen Daten:
+		\begin{itemize}
+			\item 5. Mai 1789: Einberufung der Generalstände.
+			\item 14. Juli 1789: Sturm auf die Bastille.
+			\item 1792: Sturz der Monarchie.
+		\end{itemize}
+	\end{timeline}
+	
+	\begin{histaufgabe}{Quellenanalyse}
+		Lest die Quelle (S. 12) und analysiert Ansatzpunkte für die Entstehung von Nationalbewusstsein.
+	\end{histaufgabe}
+	
+	\begin{histloesung}{Lösungsskizze}
+		Mögliche Stichpunkte: Bildung von Identität durch gemeinsame Sprache, Revolution als kollektives Ereignis, ...
+	\end{histloesung}
+	
+	\begin{quoteBox}
+		„War die Revolution notwendig? — Diese Frage bleibt bis heute Gegenstand intensiver Debatten.“ — Lehrbuchzitat
+	\end{quoteBox}
+	
+\end{document}

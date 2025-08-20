@@ -1,0 +1,262 @@
+% ============== Dark-Mode Skript (Deutsch-Grundkurs, literarischer Stil) ==============
+\documentclass[11pt,a4paper,oneside]{article}
+
+% -------------------- Engine & Fonts --------------------
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont{Inter}
+%\setmainfont{Roboto}
+
+%\setmainfont{EB Garamond}        % Fließtext (ersetzen, falls nicht installiert)
+%\setsansfont{Source Sans Pro}   % Überschriften
+%\usepackage{unicode-math}
+%\setmathfont{Libertinus Math}   % für Formeln
+
+%\setmainfont{TeX Gyre Pagella}
+%\setsansfont{Source Sans Pro}
+
+
+
+% -------------------- Pakete --------------------
+\usepackage{acro}
+\usepackage[ngerman]{babel}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable,theorems}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+% -------------------- Layout --------------------
+\geometry{
+	left=28mm, right=28mm, top=28mm, bottom=28mm,
+	marginparwidth=36mm, marginparsep=6mm
+}
+\setlist{nosep}
+
+% -------------------- Farben (wärmere, harmonisierte Darkmode-Palette) --------------------
+\definecolor{PageBG}{RGB}{34,30,28}        % leicht wärmeres Anthrazit (nicht zu hart)
+\definecolor{TextCream}{RGB}{245,240,232}  % weiches Cremeweiß (Text)
+\definecolor{AccentRed}{RGB}{130,38,48}    % Bordeaux für wichtige Akzente / Titel
+\definecolor{AccentOcker}{RGB}{180,120,40} % Ocker/Gold als Sekundär-Akzent
+\definecolor{AccentGray}{RGB}{150,150,150} % warmes Grau
+\definecolor{BoxInner}{RGB}{46,40,36}      % Box-Hintergrund (heller als PageBG)
+\definecolor{BoxTint}{RGB}{58,50,46}       % leichte Innen-Tönung für Notizen
+\definecolor{MarginalGray}{RGB}{130,130,130}
+
+% Farbabstufung von Rot nach Gelb (für die einzelnen Boxen)
+\definecolor{AccentA}{RGB}{130,38,48}   % kräftiges Bordeaux (zitat)
+\definecolor{AccentB}{RGB}{170,78,45}   % rot-orangig (interpret)
+\definecolor{AccentC}{RGB}{200,110,52}  % orange (hinweis)
+\definecolor{AccentD}{RGB}{220,140,55}  % ocker / amber (aufgabe)
+\definecolor{AccentE}{RGB}{240,180,70}  % warmes Gelb (lösung)
+
+\pagecolor{PageBG}
+\color{TextCream}
+
+% -------------------- Kopf / Fuß --------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+\fancyfoot[C]{%
+	\scriptsize\scshape Ferdinand-Braun Schule \;•\;  Deutsch Grundkurs Q3 \;•\; \thepage
+	% dekorative Linie (wird in der Fußzeile für jede Seite gezeichnet)
+	\begin{tikzpicture}[remember picture,overlay]
+		\draw[line width=0.8pt,color=AccentRed!70!black]
+		($(current page.south west)+(28mm,22mm)$) -- ($(current page.south east)+(-28mm,22mm)$);
+	\end{tikzpicture}%
+}
+
+% Section (größte Überschrift) → tiefrot (AccentA)
+\titleformat{\section}
+{\normalfont\Large\bfseries\sffamily\color{AccentA}}
+{\thesection}{1em}{}
+
+% Subsection → rot-orangig (AccentB)
+\titleformat{\subsection}
+{\normalfont\large\bfseries\sffamily\color{AccentC}}
+{\thesubsection}{0.8em}{}
+
+% Subsubsection → orange (AccentC)
+\titleformat{\subsubsection}
+{\normalfont\normalsize\itshape\sffamily\color{AccentE}}
+{\thesubsubsection}{0.6em}{}
+
+% -------------------- TCBOX Grundstil (sanfter, lesefreundlich) --------------------
+\tcbset{
+	mybase/.style={
+		enhanced,
+		breakable,
+		boxrule=0.9pt,                 % Randstärke (wird pro Box farbig)
+		colframe=AccentA,              % Default-Frame (wird in Box-Definitionen überschrieben)
+		colback=PageBG,                % "transparent" => gleiche Farbe wie Seite
+		colupper=TextCream,            % Textfarbe innerhalb der Box
+		arc=4mm,
+		boxsep=6pt,
+		left=12pt,right=12pt,top=12pt,bottom=12pt,
+		before skip=10pt, after skip=10pt,
+		fonttitle=\sffamily\bfseries\small,
+		title after break=\vspace{4pt},
+		boxed title style={
+			arc=3mm,
+			boxrule=0pt,
+			left=6pt,right=6pt,top=2pt,bottom=2pt
+		}
+	}
+}
+
+% -------------------- Box-Typen (jeweils eigene Rahmenfarbe + Titelsticker) --------------------
+% ZITAT (tiefrot)
+\newtcolorbox{zitat}[1][]{%
+	mybase,
+	colframe=AccentA,
+	colback=PageBG,                % transparent
+	colbacktitle=AccentA,          % Titelsticker hat die Rahmenfarbe
+	coltitle=TextCream,
+	fontupper=\itshape,
+	attach boxed title to top left={yshift=-2mm, xshift=8mm},
+	title={Zitat},
+	#1
+}
+
+% INTERPRETATION (rot->orange)
+\newtcolorbox{interpret}[1][]{%
+	mybase,
+	colframe=AccentB,
+	colback=PageBG,
+	colbacktitle=AccentB,
+	coltitle=TextCream,
+	attach boxed title to top left={yshift=-2mm, xshift=8mm},
+	title={Interpretation},
+	#1
+}
+
+% HINWEIS (orange)
+\newtcolorbox{hinweis}[1][]{%
+	mybase,
+	colframe=AccentC,
+	colback=PageBG,
+	colbacktitle=AccentC,
+	coltitle=TextCream,
+	attach boxed title to top left={yshift=-2mm, xshift=8mm},
+	title={Hinweis},
+	#1
+}
+
+% AUFGABE (amber / ocker)
+\newtcolorbox[auto counter,number within=section]{aufgabe}[2][]{%
+	mybase,
+	colframe=AccentD,
+	colback=PageBG,
+	colbacktitle=AccentD,
+	coltitle=TextCream,
+	attach boxed title to top left={yshift=-2mm, xshift=8mm},
+	title={Aufgabe~\thetcbcounter: #2},
+	#1
+}
+
+% LÖSUNG (gelb)
+\newtcolorbox[use counter from=aufgabe]{loesung}[2][]{%
+	mybase,
+	colframe=AccentE,
+	colback=PageBG,
+	colbacktitle=AccentE,
+	coltitle=TextCream,
+	attach boxed title to top left={yshift=-2mm, xshift=8mm},
+	title={Lösung~\thetcbcounter: #2},
+	#1
+}
+
+
+% kleiner Befehl für Datumsanzeige rechts
+\newcommand{\lessondate}[1]{\noindent\hfill\textcolor{MarginalGray}{\textsc{#1}}\\\vspace{0.5cm}}
+
+% -------------------- Titelblatt --------------------
+\newcommand{\MakeArtTitle}[4]{%
+	\begin{titlepage}
+		\centering
+		\vspace*{24mm}
+		{\sffamily\bfseries\huge #1 \par}
+		\vspace{8mm}
+		{\Large \scshape#2 \par}
+		\vspace{16mm}
+		{\large\scshape\color{TextCream} #3 \par}
+		\vspace{6mm}
+		{\small\color{MarginalGray} #4 \par}
+		\vspace{8mm}
+		{\small\color{MarginalGray}\today \par}
+		\vfill
+		%\begin{tikzpicture}
+		%	\draw[line width=1.2pt,color=AccentRed!60!black] (-6,0) -- (6,0);
+		%	\draw[line width=0.5pt,color=AccentOcker!40!black] (-6,-0.4) -- (6,-0.4);
+		%\end{tikzpicture}
+		\vspace{6cm}
+		\centering
+		\includegraphics[width=0.75\textwidth]{2.png} % Logo anpassen / entfernen
+	\end{titlepage}
+}
+
+% ==================== Dokumentbeginn ====================
+
+\begin{document}
+	
+	% Titelblatt
+	\MakeArtTitle
+	{Grundkurs Deutsch — Q3}
+	{Zwischen Tradition und Experiment, Krise und Neuanfang — Skript}
+	{Shamsher Singh Kalsi}
+	{Berufliches Gymnasium — Ferdinand-Braun Schule \\ Kursleiterin: Frau Dagmar Sieverding}
+	
+	\tableofcontents
+	\clearpage
+	
+	\section{Einleitung}
+	\subsection{lol}
+	\subsubsection{lel}
+	\lessondate{20.08.2025}
+	Dieses Skript begleitet den Grundkurs Deutsch: Texte, Zitate, Interpretationsansätze und Übungen werden gesammelt. Die Gestaltung ist dunkel und leseschonend — ideal für Beamer-Notizen oder Ausdrucke auf hochwertigem Papier.
+	
+	
+	\newpage
+	
+	\section{Subjektivität und Verantwortung - anthropologische Grundfragen}
+	\section{Epochenumbruch 19./20. Jahrhundert – literarische Moderne im frühen 20. Jahrhundert}
+	\section{Neuanfänge nach historischen Zäsuren 1945/1990}
+	\section{Sprache und Identität – Sprachkrise als Identitätskrise}
+	\section{Film und Literatur}
+	
+	\newpage
+	
+	\section{Beispieltexte und Analyse}
+	
+	\begin{zitat}
+		Es ist alles eitel. \\
+		— Andreas Gryphius
+	\end{zitat}
+	
+	\begin{interpret}
+		Das Gedicht arbeitet mit barocker Vanitas-Symbolik. Die Sprache ist pointiert, Antithesen und Metaphern strukturieren das Bild.
+	\end{interpret}
+	
+	\begin{hinweis}
+		Achte bei der Analyse auf rhetorische Mittel (Alliteration, Antithese, Hyperbel) und auf das historische Setting (Barock).
+	\end{hinweis}
+	
+	\begin{aufgabe}{Kurze Analyse}
+		Analysiere das obige Zitat bezüglich Bildsprache und Intention in 6–8 Sätzen.
+	\end{aufgabe}
+	
+	\begin{loesung}{Hinweise}
+		Mögliche Punkte: Vanitas-Motiv, Gegenüberstellung von Eitelkeit vs. Ewigkeit, Verwendung von starken Bildwörtern. (Stichpunkte genügen.)
+	\end{loesung}
+	
+\end{document}

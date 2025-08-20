@@ -1,0 +1,57 @@
+% --- Sprachen und Kodierung ---
+\usepackage[ngerman]{babel}   % deutsche Sprachunterstützung
+\usepackage{csquotes}         % korrekte Anführungszeichen
+
+% --- Mathematik ---
+\usepackage{amsmath}          % grundlegende Mathematikumgebung
+\usepackage{mathtools}        % Erweiterungen für amsmath
+\usepackage{physics}          % nützliche Makros für Physik
+\usepackage{dsfont}           % Mengensymbole (z. B. \mathds{R})
+
+% --- Schriften ---
+% für XeLaTeX/LuaLaTeX: fontspec, unicode-math und Libertinus
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\setmonofont{Libertinus Mono}
+\setmathfont{Libertinus Math}
+
+% --- Layout und Typografie ---
+\usepackage[top=3cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{microtype}        % schönerer Randausgleich
+\usepackage[onehalfspacing]{setspace} % 1,5-facher Zeilenabstand
+\usepackage{tocloft}          % Inhaltsverzeichnis anpassen
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} 
+
+% --- Farben und Boxen ---
+\usepackage{xcolor}
+\newcommand{\ricardo}[1]{%
+	\colorbox{ForestGreen}{\color{white}\textsf{\textbf{Ricardo}}}%
+	\textcolor{ForestGreen}{#1}%
+}
+
+% --- Tabellen und Listen ---
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{dcolumn}
+\usepackage{adjustbox}
+
+% --- Grafiken ---
+\usepackage{graphicx}
+\usepackage{here}
+\usepackage{floatflt}     % Bilder im Fließtext (eher alt)
+\usepackage{epsfig}       % alte EPS-Unterstützung
+\usepackage{epstopdf}     % Konvertierung EPS -> PDF
+
+% --- Zitate und Literatur ---
+\usepackage{cite}
+\usepackage{bibgerm}      % deutsche BibTeX-Stile (alt; besser biblatex)
+
+% --- Sonstiges ---
+\usepackage{acro}         % Abkürzungsverzeichnis
+\usepackage{blindtext}
+\usepackage{lipsum}
+\usepackage{listings}     % Quellcode
+\usepackage{lettrine}     % Initialen
+\usepackage[cute inductors,siunitx]{circuitikz} % Schaltpläne
