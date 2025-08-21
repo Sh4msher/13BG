@@ -11,6 +11,7 @@
 
 % -------------------- Pakete --------------------
 %\include{Pakete}
+\usepackage{amsmath}
 \usepackage[ngerman]{babel}
 \usepackage{acro}
 \usepackage{microtype}
@@ -19,8 +20,6 @@
 \usepackage{fancyhdr}
 \usepackage{xcolor}
 \usepackage{pagecolor}
-\usepackage{tikz}
-\usetikzlibrary{shadings,shadows,calc}
 \usepackage[most]{tcolorbox}
 \tcbuselibrary{skins,breakable,theorems}
 \usepackage{enumitem}
@@ -28,6 +27,17 @@
 \usepackage{everypage}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{wrapfig}
+\usepackage{caption}
+% -------------------- Tikz --------------------
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing} % für geschweifte Klammern
+\usetikzlibrary{shadings,shadows,calc}
+
+% --------------------PGF Plots ---------------------
+
+
+
 
 % -------------------- Layout --------------------
 \geometry{
@@ -219,50 +229,63 @@
 	\newpage
 	
 	
-	\section{Der Doppelspalt}
-	\lessondate{19.08.2025}\\
+	\section{Wiederholung}
+	%\lessondate{19.08.2025}\\
 	
-	\begin{tikzpicture}[scale=1.2]
-		
-		% Quelle (links)
-		\filldraw[blue!70] (-4,0) circle (0.15) node[left=3pt]{\small Quelle};
-		
-		% Doppelspalt
-		\draw[thick] (0,-2) -- (0,2);
-		\draw[white,line width=4pt] (0,-0.3) -- (0,0.3); % Doppelspaltöffnung
-		\draw[thick] (0,-0.3) -- (0,0.3);
-		\node[above right] at (0,2) {\small Doppelspalt};
-		
-		% Schirm (rechts)
-		\draw[thick,fill=gray!10] (6,-2) -- (6,2);
-		\node[above] at (6,2) {\small Schirm};
-		
-		% Strahlen von Quelle zum Doppelspalt
-		\draw[->,blue,thick] (-4,0) -- (0,-0.3);
-		\draw[->,blue,thick] (-4,0) -- (0,0.3);
-		
-		% Strahlen von den Spalten zum Schirm
-		\foreach \y in {-1.5,-0.75,0,0.75,1.5}{
-			\draw[->,red!70,thick] (0,-0.3) -- (6,\y);
-			\draw[->,red!70,thick] (0,0.3) -- (6,\y);
-		}
-		
-		% angedeutetes Interferenzmuster
-		\foreach \i in {-1.5,-0.9,-0.3,0.3,0.9,1.5}{
-			\draw[very thick,red] (6,\i) -- ++(0,0.3);
-		}
-		
-	\end{tikzpicture}
+	\subsection{Interferenz und Beugung am Doppelspalt}
+	
+	Die Überlagerung von Lichtwellen am Doppelspalt ist eines der klassischen Experimente der Wellenoptik und wurde erstmals von \textsc{Thomas Young} im Jahr 1801 durchgeführt. Es zeigt, dass Licht Welleneigenschaften besitzt, da sich charakteristische Interferenzmuster nur durch das Prinzip der Überlagerung erklären lassen. Die beobachteten Helligkeitsmaxima und -minima entstehen durch konstruktive und destruktive Interferenz zweier kohärenter Wellenzüge, die durch die beiden Spalte hindurchlaufen.
 	
 	
-	\section{Elektromagnetische Wellen}
-	\begin{theo}{Definitionen von Wellenverhältnisse - Tipler Seite 493} 
+	\begin{minipage}[t]{0.45\textwidth}
+		\vspace{0mm}
+		\includegraphics[width=\textwidth]{Doppelspalt_Einstiegsaufgaben_Bild.png}
+		\captionof{figure}{Doppelspalt Nahaufnahme}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}[t]{0.45\textwidth}
+		\vspace{0pt} % zwingt die Oberkante wirklich nach oben
+		\begin{itemize}
+			\item [$d:$] Abstand der Mittelpunkte der Spalten 
+			\item [$e:$] Abstand zwischen Doppelspalt und Schirm 
+			\item [$a:$] Abstand eines Punktes $A$ auf dem Schirm zum Punkt $O$ , an dem sich das 0. Maximum befindet
+			\item [$\alpha:$] Weite des Winkels 
+		\end{itemize}
+	\end{minipage}
+
+	Die Bedingung für konstruktive Interferenz lautet
+	\begin{align*}
+		\sin \alpha &= \frac{k \cdot \lambda}{d}, \quad k \in \mathbb{Z},
+	\end{align*}
+	wobei $k$ die Ordnung des Maximums bezeichnet. Für destruktive Interferenz ergibt sich entsprechend
+	\begin{align*}
+		\sin \alpha &= \frac{(2k - 1)\cdot \frac{\lambda}{2}}{d}, \quad k \in \mathbb{N}.
+	\end{align*}
+	
+	Für kleine Winkel $\alpha$ kann man näherungsweise $\sin \alpha \approx \tan \alpha \approx \frac{a}{e}$ setzen, sodass die Position $a$ der Maxima auf dem Schirm berechnet werden kann:
+	\begin{align*}
+		a_k \approx \frac{e \cdot k \cdot \lambda}{d}.
+	\end{align*}
+	
+	
+	\subsection*{Wichtige Wellenphänomene (vgl. Tipler, S. 493)}
+	
+	\begin{theo}{Definitionen grundlegender Wellenphänomene}
 		\begin{enumerate}
-			\item \textbf{Reflexion:} 
-			\item \textbf{Beugung:} 
-			\item \textbf{Brechung:} 
+			\item \textbf{Reflexion:} Richtungsänderung einer Welle an einer Grenzfläche, sodass sie in das Ursprungsmedium zurückkehrt (z.~B. Spiegel).
+			\item \textbf{Beugung:} Ablenkung und Ausbreitung einer Welle hinter Hindernissen oder Öffnungen, die mit der Wellenlänge vergleichbar sind.
+			\item \textbf{Brechung:} Änderung der Ausbreitungsrichtung einer Welle beim Übergang in ein Medium mit unterschiedlicher Ausbreitungsgeschwindigkeit.
 		\end{enumerate}
 	\end{theo}
+	
+	%\begin{figure}[h]
+	%	\includegraphics[width=0.5\textwidth]{Doppelspalt_Einstiegsaufgaben_Bild.png}
+	%\end{figure}
+	
+	\newpage
+	
+	\section{Elektromagnetische Wellen}
+
 	\section{Welle-Teilchen-Dualismus}
 	\section{Atomvorstellungen}
 	

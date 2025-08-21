@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.16)  19 AUG 2025 12:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.16)  21 AUG 2025 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -512,6 +512,9 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 (/usr/share/texmf-dist/tex/latex/pagecolor/pagecolor.sty
 Package: pagecolor 2025-01-28 v1.2d Provides thepagecolor (HMM)
 )
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+
 (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -774,32 +777,7 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shadings.code.tex
-File: tikzlibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryshadings.code.tex
-File: pgflibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shadows.code.tex
-File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-fadings.code.tex
-File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
-File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-calc.code.tex
-File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
-
-(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+))) (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks40
 \verbatim@line=\toks41
@@ -913,7 +891,15 @@ Library (tcolorbox): 'tcbexternal.code.tex' version '6.4.1'
 Library (tcolorbox): 'tcbmagazine.code.tex' version '6.4.1'
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
 Library (tcolorbox): 'tcbvignette.code.tex' version '6.4.1'
-) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+fadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '6.4.1'
 )) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
@@ -969,44 +955,85 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks45
 \@floatcapt=\box85
 )
-\c@tcb@cnt@theo=\count357
-\c@tcb@cnt@exem=\count358
-\c@tcb@cnt@aufgabe=\count359
-\c@tcb@cnt@experiment=\count360
+(/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen294
+\WF@size=\dimen295
+\c@WF@wrappedlines=\count357
+\WF@box=\box86
+\WF@everypar=\toks46
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathreplacing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen296
+\pgfdecoratedremainingdistance=\dimen297
+\pgfdecoratedinputsegmentcompleteddistance=\dimen298
+\pgfdecoratedinputsegmentremainingdistance=\dimen299
+\pgf@decorate@distancetomove=\dimen300
+\pgf@decorate@repeatstate=\count358
+\pgfdecorationsegmentamplitude=\dimen301
+\pgfdecorationsegmentlength=\dimen302
+)
+\tikz@lib@dec@box=\box87
+)
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathreplacing.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shadings.code.tex
+File: tikzlibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryshadings.code.tex
+File: pgflibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+calc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+\c@tcb@cnt@theo=\count359
+\c@tcb@cnt@exem=\count360
+\c@tcb@cnt@aufgabe=\count361
+\c@tcb@cnt@experiment=\count362
  (./Phyik-Skript_Q3.aux)
 \openout1 = `Phyik-Skript_Q3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 201.
-LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  TU/LibertinusMath(1)/m/n --> TU/lmr/m/n on input line 2
-01.
+11.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 201.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 211.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 201.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 211.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 201.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 211.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 201.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 211.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 201.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 211.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 201.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 211.
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-ger
 man.trsl
@@ -1014,14 +1041,14 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 201.
-LaTeX Info: Redefining \microtypecontext on input line 201.
-Package microtype Info: Applying patch `item' on input line 201.
-Package microtype Info: Applying patch `toc' on input line 201.
-Package microtype Info: Applying patch `eqnum' on input line 201.
-Package microtype Info: Applying patch `footnote' on input line 201.
-Package microtype Info: Applying patch `verbatim' on input line 201.
-LaTeX Info: Redefining \microtypesetup on input line 201.
+or `german'. on input line 211.
+LaTeX Info: Redefining \microtypecontext on input line 211.
+Package microtype Info: Applying patch `item' on input line 211.
+Package microtype Info: Applying patch `toc' on input line 211.
+Package microtype Info: Applying patch `eqnum' on input line 211.
+Package microtype Info: Applying patch `footnote' on input line 211.
+Package microtype Info: Applying patch `verbatim' on input line 211.
+LaTeX Info: Redefining \microtypesetup on input line 211.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1065,9 +1092,10 @@ ern Roman (RS)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count361
+\c@lstlisting=\count363
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
@@ -1105,29 +1133,29 @@ LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-
- []
-
+File: Doppelspalt_Einstiegsaufgaben_Bild.png Graphic file (type bmp)
+<Doppelspalt_Einstiegsaufgaben_Bild.png>
 
 
 [3]
 
 [4]
 
-[5] (./Phyik-Skript_Q3.aux)
+[5]
+
+[6] (./Phyik-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 35044 strings out of 475235
- 779930 string characters out of 5760660
- 1380185 words of memory out of 5000000
- 57552 multiletter control sequences out of 15000+600000
- 561198 words of font info for 71 fonts, out of 8000000 for 9000
+ 35565 strings out of 475235
+ 796820 string characters out of 5760660
+ 1390523 words of memory out of 5000000
+ 58050 multiletter control sequences out of 15000+600000
+ 561214 words of font info for 73 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 102i,13n,107p,1012b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,13n,121p,1012b,1357s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Phyik-Skript_Q3.pdf (6 pages).
+Output written on Phyik-Skript_Q3.pdf (7 pages).

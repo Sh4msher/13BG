@@ -3,13 +3,14 @@
 \contentsline {section}{\numberline {1}Einleitung}{2}{}%
 \contentsline {subsection}{\numberline {1.1}Ablauf des Kurses}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Randbemerkungen}{2}{}%
-\contentsline {section}{\numberline {2}Der Doppelspalt}{3}{}%
-\contentsline {section}{\numberline {3}Elektromagnetische Wellen}{3}{}%
-\contentsline {section}{\numberline {4}Welle-Teilchen-Dualismus}{3}{}%
-\contentsline {section}{\numberline {5}Atomvorstellungen}{3}{}%
-\contentsline {section}{\numberline {6}Quantenobjekte}{3}{}%
-\contentsline {section}{\numberline {7}Astrophysik}{3}{}%
-\contentsline {section}{\numberline {8}Mechanik}{4}{}%
-\contentsline {section}{\numberline {9}Elektrizitätslehre}{4}{}%
-\contentsline {section}{\numberline {10}Optik}{4}{}%
-\contentsline {section}{\numberline {11}Thermodynamik}{4}{}%
+\contentsline {section}{\numberline {2}Wiederholung}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Interferenz und Beugung am Doppelspalt}{3}{}%
+\contentsline {section}{\numberline {3}Elektromagnetische Wellen}{4}{}%
+\contentsline {section}{\numberline {4}Welle-Teilchen-Dualismus}{4}{}%
+\contentsline {section}{\numberline {5}Atomvorstellungen}{4}{}%
+\contentsline {section}{\numberline {6}Quantenobjekte}{4}{}%
+\contentsline {section}{\numberline {7}Astrophysik}{4}{}%
+\contentsline {section}{\numberline {8}Mechanik}{5}{}%
+\contentsline {section}{\numberline {9}Elektrizitätslehre}{5}{}%
+\contentsline {section}{\numberline {10}Optik}{5}{}%
+\contentsline {section}{\numberline {11}Thermodynamik}{5}{}%
