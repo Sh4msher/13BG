@@ -10,6 +10,8 @@
 
 % -------------------- Pakete --------------------
 \include{Pakete}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % aktuelle Version, sonst 1.17 oder 1.16
 \usepackage{paralist}
 \usepackage{tasks}
 \usepackage{acro}
@@ -359,6 +361,255 @@
 		\end{align*}
 	\end{loesung}
 	
+	\newpage 
+	\lessondate{25.08.2025}\\
+	
+	\begin{aufgabe}{Bearbeiten Sie die Aufgaben 1 bis 4 von Wdh. Statistik}
+		\begin{enumerate}
+			\item Berechnen Sie den Mittelwert, die Varianz und die Standardabweichung der Liste ${2; 0; 5; 6; 3; 8}$
+			\item Von einer Lieferung Fahrradspeichen wurde bei einer Stichprobe die Länge der Speichen (in mm) gemessen: ${269; 274; 269; 268; 272; 270; 269; 270; 268; 271}$. 
+			\begin{itemize}
+				\item Nenne Sie die bei dieser Erhebung die Grundgesamtheit, den Mermalsträger, das untersuchte Merkmal, den Stichprobenumfang und die Merkmalsausprägungen. 
+				\item Berechnen Sie den Mittelwert, die Varianz und die Standardabweichung 
+			\end{itemize}
+			\item Die Anzahl der Regentage beträgt im langjährigen Mittel für Amsterdam bzw. Rangun: 
+			\begin{itemize}
+				\item Stellen Sie die Verteilung der Anzahl der Regentage grafisch dar. 
+				\item Berechnen Sie für beide Messreihen den Mittelwert und die Standartabweichung
+			\end{itemize}
+			\item Gegeben ist die nebenstehende relative Häufgikeitsveteilung.
+			\begin{itemize}
+				\item Beschriften Sie die Achsen passend 
+				\item Bestimmen Sie den Mittelwert und die Standardabwichung 
+				\item Untersuchen Sie, welche Werte aus b) sich ändern, wenn alle Säulen gleich hoch sind
+			\end{itemize}
+		\end{enumerate}
+	\end{aufgabe}
+	
+	\newpage
+	
+	\begin{theo}{Die Bedeutung von Mittelwert, Varianz und Standardabweichung}
+		\subsection*{Mittelwert}
+		Der Mittelwert gibt sozusagen den Durchschnitt gegebener Daten an. Diesen Berechnet man durch das Addieren aller Elemente und dem Teilen von der Anzahl der Elemente. 
+		\[
+		\overline{x} = \frac{1}{n} \sum^{n}_{i = 1} x_i 
+		\]
+		\subsection*{Varianz}
+		Die Varianz misst, wie stark die Werte um den Mittelwert streuen. Dazu berechnet man die Abweichungen jedes Wertes vom Mittelwert, quadriert diese (damit Abweichungen nach oben und unten nicht wegfallen) und mittelt sie wieder:
+		\[
+		s^2 = \frac{1}{n} \sum^{n}_{i = 1} (x_i - \overline{x})^2 
+		\]
+		\subsection*{Standardabweichung}
+		Die Standardabweichung ist die Wurzel der Varianz. Sie gibt die Streuung in derselben Einheit wie die Daten an (praktischer als die quadrierten Werte der Varianz):
+		\[
+		s = \sqrt{s^2}
+		\]
+	\end{theo}
+	
+	\begin{loesung}{Aufgabe 1}
+	\begin{enumerate}
+		\item \subsection*{Mittelwert}
+		\vspace{-4mm}
+		\[
+			\overline{x} = \frac{2 + 0 + 5 + 6 + 3 + 8}{6} = \boxed{\frac{24}{6} = 4}
+		\]
+		\item \subsection*{Varianz}
+		\vspace{-6mm}
+		\begin{align*}
+			s^2 &= \frac{1}{n} \sum^{n}_{i = 1} (x_i - \overline{x})^2 = \frac{\sum^{n}_{i = 1} (x_i - \overline{x})^2}{n}\\
+			&= \frac{(2 - 4)^2 + (0 - 4)^2 + (5 - 4)^2 + (6 - 4)^2 + (3 - 4)^2 + (8 - 4)^2}{6}\\
+			&= \frac{4 + 16 + 1 + 4 + 1 + 16}{6} = \boxed{\frac{42}{6} = 7}
+		\end{align*}
+	\item \subsection*{Standardabweichung} 
+	\[
+	s = \sqrt{s^2} \rightarrow \boxed{\sqrt{7} \approx 2.65}
+	\]
+	\end{enumerate}
+	\end{loesung}
+	
+	\newpage
+	
+	\begin{loesung}{Aufgabe 2}
+		\begin{enumerate}
+			\item \subsection*{Aufgabe A}
+			\begin{itemize}[left=4cm]
+				\item[\textbf{Grundgesamtheit:}] Alle Fahrradspeichen in der gesamten Lieferung 
+				\item[\textbf{Merkmalsträger:}] Eine einzelne Fahrradspeiche 
+				\item[\textbf{Merkmal:}] Die Länge der Speiche in mm 
+				\item[\textbf{Stichprobenumfang:}] Es wurden 10 Speichen gemessen $\rightarrow n = 10$ 
+				\item[\textbf{Merkmalausprägungen:}] ${269; 274; 269; 268; 272; 270; 269; 270; 268; 271}$
+			\end{itemize}
+			
+			\item \subsection*{Aufgabe B}
+			
+			\subsubsection*{Mittelwert}
+			\vspace{-4mm}
+			\[
+			\overline{x} = \frac{269 + 274 + 269 + 268 + 272 + 270 + 269 + 270 + 268 + 271}{10} 
+			= \boxed{\frac{2700}{10} = 270}
+			\]
+			
+			\subsubsection*{Varianz}
+			\vspace{-6mm}
+			\begin{align*}
+				s^2 &= \frac{1}{n} \sum^{n}_{i = 1} (x_i - \overline{x})^2 \\[2mm]
+				&= \frac{(269-270)^2 + (274-270)^2 + (269-270)^2 + (268-270)^2 + (272-270)^2}{10} \\
+				&\quad + \frac{(270-270)^2 + (269-270)^2 + (270-270)^2 + (268-270)^2 + (271-270)^2}{10} \\[2mm]
+				&= \frac{1 + 16 + 1 + 4 + 4 + 0 + 1 + 0 + 4 + 1}{10} \\[2mm]
+				&= \boxed{\frac{32}{10} = 3.2}
+			\end{align*}
+			
+			\subsubsection*{Standardabweichung}
+			\[
+			s = \sqrt{s^2} = \sqrt{3.2} \approx \boxed{1.79}
+			\]
+			
+		\end{enumerate}
+	\end{loesung}
+	
+	\newpage
+	
+	\begin{loesung}{Aufgabe 3}
+    \subsection{Aufgabe A}
+		\resizebox{\textwidth}{!}{
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				Monat & Jan. & Feb. & März & April & Mai & Juni & Juli & Aug. & Sept. & Okt. & Nov. & Dez. \\
+				\hline
+				Amsterdam & 10 & 8 & 11 & 8 & 9 & 9 & 11 & 11 & 10 &13  & 11 & 11 \\
+				\hline
+				Rangun & 1 & 1 & 1 & 2 & 13 & 23 & 25 & 24 & 20 & 11 & 4 & 1 \\
+				\hline
+			\end{tabular}
+		}
+		
+	\vspace{1cm}
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=\textwidth,
+				height=8cm,
+				ybar=0.4,
+				bar width=8pt,
+				enlarge x limits=0.1,
+				ylabel={Regentage},
+				xlabel={Monat},
+				xtick=data,
+				xticklabels={Jan,Feb,März,Apr,Mai,Juni,Juli,Aug,Sept,Okt,Nov,Dez},
+				legend style={at={(0.5,-0.15)}, anchor=north, legend columns=-1}
+				]
+				\addplot[fill=blue!70!black] coordinates {(1,10) (2,8) (3,11) (4,8) (5,9) (6,9) (7,11) (8,11) (9,10) (10,13) (11,11) (12,11)};
+				\addplot[fill=red!70!black]  coordinates {(1,1) (2,1) (3,1) (4,2) (5,13) (6,23) (7,25) (8,24) (9,20) (10,11) (11,4) (12,1)};
+				\legend{\color{black}Amsterdam, \color{black}Rangun}
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	
+		\subsection{Aufgabe B}
+			\noindent
+			\begin{minipage}[t]{0.48\textwidth}
+				\subsubsection*{Amsterdam}
+				\vspace{-3mm}
+				{
+					\begin{align*}
+						\overline{x}_A &= \tfrac{10 + 8 + 11 + 8 + 9 + 9 + 11 + 11 + 10 + 13 + 11 + 11}{12} \\
+						&= \boxed{\tfrac{122}{12} \approx 10.17}
+					\end{align*}
+				}
+				{\footnotesize % unwichtige Zwischenschritte kleiner
+					\begin{align*}
+						s_A^2 &= \frac{1}{12}\sum_{i=1}^{12}(x_i-\overline{x}_A)^2 \\
+						&= \frac{(10-10.17)^2 + (8-10.17)^2 + \dots + (11-10.17)^2}{12} \\
+						&= \frac{24.67}{12} \approx \boxed{2.06}
+					\end{align*}
+				}% Ende footnotesize
+				\[
+				s_A = \sqrt{s_A^2} = \boxed{\sqrt{2.06}\approx 1.43}
+				\]
+			\end{minipage}\hfill
+			\begin{minipage}[t]{0.48\textwidth}
+				\subsubsection*{Rangun}
+				\vspace{-3mm}
+				{\footnotesize
+				\begin{align*}
+					\overline{x}_R &= \frac{1 + 1 + 1 + 2 + 13 + 23 + 25 + 24 + 20 + 11 + 4 + 1}{12} \\
+					&= \boxed{\tfrac{126}{12} = 10.5}
+				\end{align*}
+				}
+				{\footnotesize
+					\begin{align*}
+						s_R^2 &= \frac{1}{12}\sum_{i=1}^{12}(x_i-\overline{x}_R)^2 \\
+						&= \frac{(1-10.5)^2 + (1-10.5)^2 + \dots + (1-10.5)^2}{12} \\
+						&= \frac{971}{12} \approx \boxed{80.92}
+					\end{align*}
+				}
+				\[
+				s_R = \sqrt{s_R^2} = \boxed{\sqrt{80.92}\approx 8.99}
+				\]
+			\end{minipage}
+	\end{loesung}
+	
+	\newpage
+	
+	\begin{loesung}{Aufgabe 4}
+		\subsection*{1. Achsenbeschriftung}
+		\begin{itemize}
+			\item X-Achse: „Merkmal“ bzw. „Anzahl Ereignisse“
+			\item Y-Achse: „Relative Häufigkeit [\%]“
+			\item Skalierung: $0 \%$ bis $40 \%$ in $10 \%$-Schritten
+		\end{itemize}
+		
+		\subsection*{2. Mittelwert und Standardabweichung}
+		
+		Gegeben:
+		\[
+		x_i = 0,1,2,3, \qquad f_i = 0.1,0.2,0.3,0.4
+		\]
+		
+		\paragraph{Mittelwert:}
+		\[
+		\overline{x} = \sum_i x_i \cdot f_i 
+		= 0\cdot 0.1 + 1\cdot 0.2 + 2\cdot 0.3 + 3\cdot 0.4
+		= 2.0
+		\]
+		
+		\paragraph{Varianz:}
+		\[
+		s^2 = \sum_i f_i \cdot (x_i - \overline{x})^2
+		= 0.1\cdot (0-2)^2 + 0.2\cdot (1-2)^2 + 0.3\cdot (2-2)^2 + 0.4\cdot (3-2)^2
+		= 1.0
+		\]
+		
+		\paragraph{Standardabweichung:}
+		\[
+		s = \sqrt{1.0} = 1.0
+		\]
+		
+		\subsection*{3. Gleich hohe Säulen}
+		
+		Falls alle $f_i = 0.25$ gilt:
+		
+		\paragraph{Mittelwert:}
+		\[
+		\overline{x} = 0\cdot0.25 + 1\cdot0.25 + 2\cdot0.25 + 3\cdot0.25 = 1.5
+		\]
+		
+		\paragraph{Varianz:}
+		\[
+		s^2 = 0.25\cdot(0-1.5)^2 + 0.25\cdot(1-1.5)^2 
+		+ 0.25\cdot(2-1.5)^2 + 0.25\cdot(3-1.5)^2 = 1.25
+		\]
+		
+		\paragraph{Standardabweichung:}
+		\[
+		s = \sqrt{1.25} \approx 1.118
+		\]
+	\end{loesung}
+	
+	
+	\newpage
+
 	
 	\section{Berechnung von Wahrscheinlichkeiten}
 	

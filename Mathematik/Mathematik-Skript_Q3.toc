@@ -5,7 +5,15 @@
 \contentsline {subsection}{\numberline {1.1}Leistungsbewertung und Klausurplanung in der Q3}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Randbemerkungen}{2}{}%
 \contentsline {section}{\numberline {2}Grundlegende Begriffe der Stochastik}{3}{}%
-\contentsline {section}{\numberline {3}Berechnung von Wahrscheinlichkeiten}{6}{}%
-\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{6}{}%
-\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{6}{}%
-\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{6}{}%
+\contentsline {subsection}{\numberline {2.1}Aufgabe A}{9}{}%
+\contentsline {subsection}{\numberline {2.2}Aufgabe B}{9}{}%
+\contentsline {paragraph}{Mittelwert:}{10}{}%
+\contentsline {paragraph}{Varianz:}{10}{}%
+\contentsline {paragraph}{Standardabweichung:}{10}{}%
+\contentsline {paragraph}{Mittelwert:}{10}{}%
+\contentsline {paragraph}{Varianz:}{10}{}%
+\contentsline {paragraph}{Standardabweichung:}{10}{}%
+\contentsline {section}{\numberline {3}Berechnung von Wahrscheinlichkeiten}{11}{}%
+\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{11}{}%
+\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{11}{}%
+\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{11}{}%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.16)  22 AUG 2025 03:40
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  25 AUG 2025 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1445,48 +1445,152 @@ Package: siunitx 2025-02-27 v3.4.6 A comprehensive (SI) units package
 \l__siunitx_unit_position_int=\count415
 \l__siunitx_unit_total_int=\count416
 ))
-(/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
+(/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks50
+\t@pgfplots@tokb=\toks51
+\t@pgfplots@tokc=\toks52
+\pgfplots@tmpa=\dimen367
+\c@pgfplots@coordindex=\count417
+\c@pgfplots@scanlineindex=\count418
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_l
+oader.code.tex
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks53
+\t@pgf@tokb=\toks54
+\t@pgf@tokc=\toks55
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gfutil-common-lists.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+ext.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.te
+x
+\c@pgfplotsarray@tmp=\count419
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.t
+ex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.t
+ex
+\c@pgfplotstable@counta=\count420
+\t@pgfplotstable@a=\toks56
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading
+.code.tex
+\c@pgfplotslibrarysurf@no=\count421
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.
+pgfsys-xetex.def
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.
+pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count422
+))))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen368
+\pgfdecoratedremainingdistance=\dimen369
+\pgfdecoratedinputsegmentcompleteddistance=\dimen370
+\pgfdecoratedinputsegmentremainingdistance=\dimen371
+\pgf@decorate@distancetomove=\dimen372
+\pgf@decorate@repeatstate=\count423
+\pgfdecorationsegmentamplitude=\dimen373
+\pgfdecorationsegmentlength=\dimen374
+)
+\tikz@lib@dec@box=\box96
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathmorphing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathmorphing.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathreplacing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathreplacing.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua
+.code.tex)
+\pgfplots@numplots=\count424
+\pgfplots@xmin@reg=\dimen375
+\pgfplots@xmax@reg=\dimen376
+\pgfplots@ymin@reg=\dimen377
+\pgfplots@ymax@reg=\dimen378
+\pgfplots@zmin@reg=\dimen379
+\pgfplots@zmax@reg=\dimen380
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+plotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip96
 \plpartopsep=\skip97
 \plitemsep=\skip98
 \plparsep=\skip99
-\pl@lab=\toks50
+\pl@lab=\toks57
 )
 (/usr/share/texmf-dist/tex/latex/tasks/tasks.sty
 (/usr/share/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2024-08-16 L3 Experimental prototype document functions
 )
 Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
-\g__tasks_total_items_int=\count417
-\l__tasks_columns_int=\count418
-\g__tasks_rows_int=\count419
-\g__tasks_current_col_num_int=\count420
-\g__tasks_current_row_num_int=\count421
-\l__tasks_item_columns_int=\count422
-\g__tasks_env_int=\count423
-\l__tasks_start_int=\count424
-\l__tasks_item_indent_dim=\dimen367
-\l__tasks_item_default_indent_dim=\dimen368
-\l__tasks_item_width_dim=\dimen369
-\l__tasks_label_width_dim=\dimen370
-\l__tasks_label_default_width_dim=\dimen371
-\l__tasks_label_offset_dim=\dimen372
-\l__tasks_label_default_offset_dim=\dimen373
-\l__tasks_column_sep_dim=\dimen374
-\l__tasks_correction_dim=\dimen375
-\l__tasks_full_width_dim=\dimen376
+\g__tasks_total_items_int=\count425
+\l__tasks_columns_int=\count426
+\g__tasks_rows_int=\count427
+\g__tasks_current_col_num_int=\count428
+\g__tasks_current_row_num_int=\count429
+\l__tasks_item_columns_int=\count430
+\g__tasks_env_int=\count431
+\l__tasks_start_int=\count432
+\l__tasks_item_indent_dim=\dimen381
+\l__tasks_item_default_indent_dim=\dimen382
+\l__tasks_item_width_dim=\dimen383
+\l__tasks_label_width_dim=\dimen384
+\l__tasks_label_default_width_dim=\dimen385
+\l__tasks_label_offset_dim=\dimen386
+\l__tasks_label_default_offset_dim=\dimen387
+\l__tasks_column_sep_dim=\dimen388
+\l__tasks_correction_dim=\dimen389
+\l__tasks_full_width_dim=\dimen390
 \l__tasks_after_item_skip=\skip100
 \l__tasks_custom_after_item_skip=\skip101
 \l__tasks_before_list_skip=\skip102
 \l__tasks_after_list_skip=\skip103
-\l__tasks_item_coffin=\box96
-\l__tasks_label_coffin=\box97
-\c@task=\count425
-\l__tasks_tmpa_int=\count426
-\l__tasks_tmpb_int=\count427
-\l__tasks_tmpa_coffin=\box98
-\l__tasks_tmpa_box=\box99
+\l__tasks_item_coffin=\box97
+\l__tasks_label_coffin=\box98
+\c@task=\count433
+\l__tasks_tmpa_int=\count434
+\l__tasks_tmpb_int=\count435
+\l__tasks_tmpa_coffin=\box99
+\l__tasks_tmpa_box=\box100
 
 LaTeX template Info: Declaring template type 'tasks' taking 3 argument(s) on
 (template)           line 450.
@@ -1495,15 +1599,15 @@ LaTeX template Info: Declaring template type 'tasks' taking 3 argument(s) on
 (/usr/share/texmf-dist/tex/latex/tasks/tasks.cfg))
 (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box100
+\ttl@box=\box101
 \beforetitleunit=\skip104
 \aftertitleunit=\skip105
-\ttl@plus=\dimen377
-\ttl@minus=\dimen378
-\ttl@toksa=\toks51
-\titlewidth=\dimen379
-\titlewidthlast=\dimen380
-\titlewidthfirst=\dimen381
+\ttl@plus=\dimen391
+\ttl@minus=\dimen392
+\ttl@toksa=\toks58
+\titlewidth=\dimen393
+\titlewidthlast=\dimen394
+\titlewidthfirst=\dimen395
 )
 (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
@@ -1522,7 +1626,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip117
 \f@nch@widthC=\skip118
 \f@nch@widthR=\skip119
-\@temptokenb=\toks52
+\@temptokenb=\toks59
 )
 (/usr/share/texmf-dist/tex/latex/pagecolor/pagecolor.sty
 Package: pagecolor 2025-01-28 v1.2d Provides thepagecolor (HMM)
@@ -1543,8 +1647,8 @@ Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
 
 (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks53
-\verbatim@line=\toks54
+\every@verbatim=\toks60
+\verbatim@line=\toks61
 \verbatim@in@stream=\read4
 )
 (/usr/share/texmf-dist/tex/latex/environ/environ.sty
@@ -1553,26 +1657,26 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box101
-\tcb@upperbox=\box102
-\tcb@lowerbox=\box103
-\tcb@phantombox=\box104
-\c@tcbbreakpart=\count428
-\c@tcblayer=\count429
-\c@tcolorbox@number=\count430
-\l__tcobox_tmpa_box=\box105
-\l__tcobox_tmpa_dim=\dimen382
-\tcb@temp=\box106
+\tcb@titlebox=\box102
+\tcb@upperbox=\box103
+\tcb@lowerbox=\box104
+\tcb@phantombox=\box105
+\c@tcbbreakpart=\count436
+\c@tcblayer=\count437
+\c@tcolorbox@number=\count438
+\l__tcobox_tmpa_box=\box106
+\l__tcobox_tmpa_dim=\dimen396
 \tcb@temp=\box107
 \tcb@temp=\box108
 \tcb@temp=\box109
+\tcb@temp=\box110
 
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '6.4.1'
-\c@tcbrastercolumn=\count431
-\c@tcbrasterrow=\count432
-\c@tcbrasternum=\count433
-\c@tcbraster=\count434
+\c@tcbrastercolumn=\count439
+\c@tcbrasterrow=\count440
+\c@tcbrasternum=\count441
+\c@tcbraster=\count442
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
 (/usr/share/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
@@ -1583,7 +1687,7 @@ Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 )
 (/usr/share/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box110
+\l__tikzfill_img_box=\box111
 ))
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
@@ -1594,9 +1698,9 @@ Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
 )
 Package pdfcol Info: pdfTeX's color stacks are not available.
-\tcb@testbox=\box111
-\tcb@totalupperbox=\box112
-\tcb@totallowerbox=\box113
+\tcb@testbox=\box112
+\tcb@totalupperbox=\box113
+\tcb@totallowerbox=\box114
 )
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
 Library (tcolorbox): 'tcbhooks.code.tex' version '6.4.1'
@@ -1604,10 +1708,10 @@ Library (tcolorbox): 'tcbhooks.code.tex' version '6.4.1'
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.4.1'
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '6.4.1'
-\tcbfitdim=\dimen383
-\tcb@lowerfitdim=\dimen384
-\tcb@upperfitdim=\dimen385
-\tcb@cur@hbadness=\count435
+\tcbfitdim=\dimen397
+\tcb@lowerfitdim=\dimen398
+\tcb@upperfitdim=\dimen399
+\tcb@cur@hbadness=\count443
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.4.1'
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
@@ -1617,7 +1721,7 @@ Library (tcolorbox): 'tcblistingscore.code.tex' version '6.4.1'
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '6.4.1'
 )
-\c@tcblisting=\count436
+\c@tcblisting=\count444
 ))
 Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
 Library `listings` is loaded instead. on input line 29.
@@ -1632,29 +1736,29 @@ Library (tcolorbox): 'tcbposter.code.tex' version '6.4.1'
 )) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip120
-\enit@outerparindent=\dimen386
-\enit@toks=\toks55
-\enit@inbox=\box114
-\enit@count@id=\count437
-\enitdp@description=\count438
+\enit@outerparindent=\dimen400
+\enit@toks=\toks62
+\enit@inbox=\box115
+\enit@count@id=\count445
+\enitdp@description=\count446
 )
 (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen387
-\captionmargin=\dimen388
-\caption@leftmargin=\dimen389
-\caption@rightmargin=\dimen390
-\caption@width=\dimen391
-\caption@indent=\dimen392
-\caption@parindent=\dimen393
-\caption@hangindent=\dimen394
+\caption@tempdima=\dimen401
+\captionmargin=\dimen402
+\caption@leftmargin=\dimen403
+\caption@rightmargin=\dimen404
+\caption@width=\dimen405
+\caption@indent=\dimen406
+\caption@parindent=\dimen407
+\caption@hangindent=\dimen408
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count439
-\c@continuedfloat=\count440
+\c@caption@flags=\count447
+\c@continuedfloat=\count448
 Package caption Info: float package is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
@@ -1682,9 +1786,9 @@ Package everypage Warning: You appear to be running a version of LaTeX
 (everypage)                loading of an older code base.
 
 )
-\c@tcb@cnt@theo=\count441
-\c@tcb@cnt@exem=\count442
-\c@tcb@cnt@aufgabe=\count443
+\c@tcb@cnt@theo=\count449
+\c@tcb@cnt@exem=\count450
+\c@tcb@cnt@aufgabe=\count451
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1692,22 +1796,22 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
  (./Mathematik-Skript_Q3.aux)
 \openout1 = `Mathematik-Skript_Q3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 217.
+LaTeX Font Info:    ... okay on input line 217.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 217.
+LaTeX Font Info:    ... okay on input line 217.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 217.
+LaTeX Font Info:    ... okay on input line 217.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 217.
+LaTeX Font Info:    ... okay on input line 217.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 217.
+LaTeX Font Info:    ... okay on input line 217.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 217.
+LaTeX Font Info:    ... okay on input line 217.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 217.
+LaTeX Font Info:    ... okay on input line 217.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 217.
+LaTeX Font Info:    ... okay on input line 217.
 
 
 Package unicode-math Warning: Using \overbracket and \underbracket from
@@ -1762,15 +1866,15 @@ Package unicode-math Warning: I'm going to overwrite the following commands
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package microtype Info: Patching varwidth to enable character protrusion.
-\MT@vwid@leftmargin=\dimen395
-\MT@vwid@rightmargin=\dimen396
-LaTeX Info: Redefining \microtypecontext on input line 215.
-Package microtype Info: Applying patch `item' on input line 215.
-Package microtype Info: Applying patch `toc' on input line 215.
-Package microtype Info: Applying patch `eqnum' on input line 215.
-Package microtype Info: Applying patch `footnote' on input line 215.
-Package microtype Info: Applying patch `verbatim' on input line 215.
-LaTeX Info: Redefining \microtypesetup on input line 215.
+\MT@vwid@leftmargin=\dimen409
+\MT@vwid@rightmargin=\dimen410
+LaTeX Info: Redefining \microtypecontext on input line 217.
+Package microtype Info: Applying patch `item' on input line 217.
+Package microtype Info: Applying patch `toc' on input line 217.
+Package microtype Info: Applying patch `eqnum' on input line 217.
+Package microtype Info: Applying patch `footnote' on input line 217.
+Package microtype Info: Applying patch `verbatim' on input line 217.
+LaTeX Info: Redefining \microtypesetup on input line 217.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1790,11 +1894,14 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 215.
-\c@lstlisting=\count444
+or `german'. on input line 217.
+\c@lstlisting=\count452
+
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
 
 Package siunitx Warning: Detected the "physics" package:
 (siunitx)                omitting definition of \qty.
@@ -1847,7 +1954,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 ]
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 310--318
+Underfull \hbox (badness 10000) in paragraph at lines 312--320
 
  []
 
@@ -1856,22 +1963,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 310--318
 [4]
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+
 
 [6]
 
-[7] (./Mathematik-Skript_Q3.aux)
+[7]
+
+[8]
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 9.00096pt on input line 521.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 521.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 521.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 521.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 521.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 521.
+
+Overfull \hbox (2.50548pt too wide) detected at line 525
+[]
+ []
+
+
+Overfull \hbox (15.42436pt too wide) detected at line 538
+[]
+ []
+
+
+Overfull \hbox (2.07153pt too wide) in paragraph at lines 510--551
+[] [] 
+ []
+
+
+
+[9]
+
+[10]
+
+[11]
+
+[12] (./Mathematik-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 61464 strings out of 475235
- 1512205 string characters out of 5760660
- 2460542 words of memory out of 5000000
- 83719 multiletter control sequences out of 15000+600000
- 561398 words of font info for 96 fonts, out of 8000000 for 9000
+ 71565 strings out of 475235
+ 1856346 string characters out of 5760660
+ 2900707 words of memory out of 5000000
+ 93673 multiletter control sequences out of 15000+600000
+ 562709 words of font info for 108 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 105i,14n,117p,1017b,1341s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,16n,117p,1017b,2548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Mathematik-Skript_Q3.pdf (8 pages).
+Output written on Mathematik-Skript_Q3.pdf (13 pages).
