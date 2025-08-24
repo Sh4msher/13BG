@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.16)  20 AUG 2025 12:52
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.16)  22 AUG 2025 03:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1445,36 +1445,84 @@ Package: siunitx 2025-02-27 v3.4.6 A comprehensive (SI) units package
 \l__siunitx_unit_position_int=\count415
 \l__siunitx_unit_total_int=\count416
 ))
+(/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip96
+\plpartopsep=\skip97
+\plitemsep=\skip98
+\plparsep=\skip99
+\pl@lab=\toks50
+)
+(/usr/share/texmf-dist/tex/latex/tasks/tasks.sty
+(/usr/share/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2024-08-16 L3 Experimental prototype document functions
+)
+Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
+\g__tasks_total_items_int=\count417
+\l__tasks_columns_int=\count418
+\g__tasks_rows_int=\count419
+\g__tasks_current_col_num_int=\count420
+\g__tasks_current_row_num_int=\count421
+\l__tasks_item_columns_int=\count422
+\g__tasks_env_int=\count423
+\l__tasks_start_int=\count424
+\l__tasks_item_indent_dim=\dimen367
+\l__tasks_item_default_indent_dim=\dimen368
+\l__tasks_item_width_dim=\dimen369
+\l__tasks_label_width_dim=\dimen370
+\l__tasks_label_default_width_dim=\dimen371
+\l__tasks_label_offset_dim=\dimen372
+\l__tasks_label_default_offset_dim=\dimen373
+\l__tasks_column_sep_dim=\dimen374
+\l__tasks_correction_dim=\dimen375
+\l__tasks_full_width_dim=\dimen376
+\l__tasks_after_item_skip=\skip100
+\l__tasks_custom_after_item_skip=\skip101
+\l__tasks_before_list_skip=\skip102
+\l__tasks_after_list_skip=\skip103
+\l__tasks_item_coffin=\box96
+\l__tasks_label_coffin=\box97
+\c@task=\count425
+\l__tasks_tmpa_int=\count426
+\l__tasks_tmpb_int=\count427
+\l__tasks_tmpa_coffin=\box98
+\l__tasks_tmpa_box=\box99
+
+LaTeX template Info: Declaring template type 'tasks' taking 3 argument(s) on
+(template)           line 450.
+
+
+(/usr/share/texmf-dist/tex/latex/tasks/tasks.cfg))
 (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box96
-\beforetitleunit=\skip96
-\aftertitleunit=\skip97
-\ttl@plus=\dimen367
-\ttl@minus=\dimen368
-\ttl@toksa=\toks50
-\titlewidth=\dimen369
-\titlewidthlast=\dimen370
-\titlewidthfirst=\dimen371
+\ttl@box=\box100
+\beforetitleunit=\skip104
+\aftertitleunit=\skip105
+\ttl@plus=\dimen377
+\ttl@minus=\dimen378
+\ttl@toksa=\toks51
+\titlewidth=\dimen379
+\titlewidthlast=\dimen380
+\titlewidthfirst=\dimen381
 )
 (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip98
-\f@nch@offset@elh=\skip99
-\f@nch@offset@erh=\skip100
-\f@nch@offset@olh=\skip101
-\f@nch@offset@orh=\skip102
-\f@nch@offset@elf=\skip103
-\f@nch@offset@erf=\skip104
-\f@nch@offset@olf=\skip105
-\f@nch@offset@orf=\skip106
-\f@nch@height=\skip107
-\f@nch@footalignment=\skip108
-\f@nch@widthL=\skip109
-\f@nch@widthC=\skip110
-\f@nch@widthR=\skip111
-\@temptokenb=\toks51
+\f@nch@headwidth=\skip106
+\f@nch@offset@elh=\skip107
+\f@nch@offset@erh=\skip108
+\f@nch@offset@olh=\skip109
+\f@nch@offset@orh=\skip110
+\f@nch@offset@elf=\skip111
+\f@nch@offset@erf=\skip112
+\f@nch@offset@olf=\skip113
+\f@nch@offset@orf=\skip114
+\f@nch@height=\skip115
+\f@nch@footalignment=\skip116
+\f@nch@widthL=\skip117
+\f@nch@widthC=\skip118
+\f@nch@widthR=\skip119
+\@temptokenb=\toks52
 )
 (/usr/share/texmf-dist/tex/latex/pagecolor/pagecolor.sty
 Package: pagecolor 2025-01-28 v1.2d Provides thepagecolor (HMM)
@@ -1495,8 +1543,8 @@ Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
 
 (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks52
-\verbatim@line=\toks53
+\every@verbatim=\toks53
+\verbatim@line=\toks54
 \verbatim@in@stream=\read4
 )
 (/usr/share/texmf-dist/tex/latex/environ/environ.sty
@@ -1505,26 +1553,26 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box97
-\tcb@upperbox=\box98
-\tcb@lowerbox=\box99
-\tcb@phantombox=\box100
-\c@tcbbreakpart=\count417
-\c@tcblayer=\count418
-\c@tcolorbox@number=\count419
-\l__tcobox_tmpa_box=\box101
-\l__tcobox_tmpa_dim=\dimen372
-\tcb@temp=\box102
-\tcb@temp=\box103
-\tcb@temp=\box104
-\tcb@temp=\box105
+\tcb@titlebox=\box101
+\tcb@upperbox=\box102
+\tcb@lowerbox=\box103
+\tcb@phantombox=\box104
+\c@tcbbreakpart=\count428
+\c@tcblayer=\count429
+\c@tcolorbox@number=\count430
+\l__tcobox_tmpa_box=\box105
+\l__tcobox_tmpa_dim=\dimen382
+\tcb@temp=\box106
+\tcb@temp=\box107
+\tcb@temp=\box108
+\tcb@temp=\box109
 
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '6.4.1'
-\c@tcbrastercolumn=\count420
-\c@tcbrasterrow=\count421
-\c@tcbrasternum=\count422
-\c@tcbraster=\count423
+\c@tcbrastercolumn=\count431
+\c@tcbrasterrow=\count432
+\c@tcbrasternum=\count433
+\c@tcbraster=\count434
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
 (/usr/share/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
@@ -1535,7 +1583,7 @@ Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 )
 (/usr/share/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box106
+\l__tikzfill_img_box=\box110
 ))
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
@@ -1546,9 +1594,9 @@ Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
 )
 Package pdfcol Info: pdfTeX's color stacks are not available.
-\tcb@testbox=\box107
-\tcb@totalupperbox=\box108
-\tcb@totallowerbox=\box109
+\tcb@testbox=\box111
+\tcb@totalupperbox=\box112
+\tcb@totallowerbox=\box113
 )
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
 Library (tcolorbox): 'tcbhooks.code.tex' version '6.4.1'
@@ -1556,10 +1604,10 @@ Library (tcolorbox): 'tcbhooks.code.tex' version '6.4.1'
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.4.1'
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '6.4.1'
-\tcbfitdim=\dimen373
-\tcb@lowerfitdim=\dimen374
-\tcb@upperfitdim=\dimen375
-\tcb@cur@hbadness=\count424
+\tcbfitdim=\dimen383
+\tcb@lowerfitdim=\dimen384
+\tcb@upperfitdim=\dimen385
+\tcb@cur@hbadness=\count435
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.4.1'
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
@@ -1569,7 +1617,7 @@ Library (tcolorbox): 'tcblistingscore.code.tex' version '6.4.1'
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '6.4.1'
 )
-\c@tcblisting=\count425
+\c@tcblisting=\count436
 ))
 Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
 Library `listings` is loaded instead. on input line 29.
@@ -1583,30 +1631,30 @@ Library (tcolorbox): 'tcbvignette.code.tex' version '6.4.1'
 Library (tcolorbox): 'tcbposter.code.tex' version '6.4.1'
 )) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip112
-\enit@outerparindent=\dimen376
-\enit@toks=\toks54
-\enit@inbox=\box110
-\enit@count@id=\count426
-\enitdp@description=\count427
+\labelindent=\skip120
+\enit@outerparindent=\dimen386
+\enit@toks=\toks55
+\enit@inbox=\box114
+\enit@count@id=\count437
+\enitdp@description=\count438
 )
 (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen377
-\captionmargin=\dimen378
-\caption@leftmargin=\dimen379
-\caption@rightmargin=\dimen380
-\caption@width=\dimen381
-\caption@indent=\dimen382
-\caption@parindent=\dimen383
-\caption@hangindent=\dimen384
+\caption@tempdima=\dimen387
+\captionmargin=\dimen388
+\caption@leftmargin=\dimen389
+\caption@rightmargin=\dimen390
+\caption@width=\dimen391
+\caption@indent=\dimen392
+\caption@parindent=\dimen393
+\caption@hangindent=\dimen394
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count428
-\c@continuedfloat=\count429
+\c@caption@flags=\count439
+\c@continuedfloat=\count440
 Package caption Info: float package is loaded.
 Package caption Info: floatflt package is loaded.
 Package caption Info: listings package is loaded.
@@ -1634,9 +1682,9 @@ Package everypage Warning: You appear to be running a version of LaTeX
 (everypage)                loading of an older code base.
 
 )
-\c@tcb@cnt@theo=\count430
-\c@tcb@cnt@exem=\count431
-\c@tcb@cnt@aufgabe=\count432
+\c@tcb@cnt@theo=\count441
+\c@tcb@cnt@exem=\count442
+\c@tcb@cnt@aufgabe=\count443
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1644,22 +1692,22 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
  (./Mathematik-Skript_Q3.aux)
 \openout1 = `Mathematik-Skript_Q3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 213.
-LaTeX Font Info:    ... okay on input line 213.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 213.
-LaTeX Font Info:    ... okay on input line 213.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 213.
-LaTeX Font Info:    ... okay on input line 213.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 213.
-LaTeX Font Info:    ... okay on input line 213.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 213.
-LaTeX Font Info:    ... okay on input line 213.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 213.
-LaTeX Font Info:    ... okay on input line 213.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 213.
-LaTeX Font Info:    ... okay on input line 213.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 213.
-LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 215.
+LaTeX Font Info:    ... okay on input line 215.
 
 
 Package unicode-math Warning: Using \overbracket and \underbracket from
@@ -1714,15 +1762,15 @@ Package unicode-math Warning: I'm going to overwrite the following commands
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package microtype Info: Patching varwidth to enable character protrusion.
-\MT@vwid@leftmargin=\dimen385
-\MT@vwid@rightmargin=\dimen386
-LaTeX Info: Redefining \microtypecontext on input line 213.
-Package microtype Info: Applying patch `item' on input line 213.
-Package microtype Info: Applying patch `toc' on input line 213.
-Package microtype Info: Applying patch `eqnum' on input line 213.
-Package microtype Info: Applying patch `footnote' on input line 213.
-Package microtype Info: Applying patch `verbatim' on input line 213.
-LaTeX Info: Redefining \microtypesetup on input line 213.
+\MT@vwid@leftmargin=\dimen395
+\MT@vwid@rightmargin=\dimen396
+LaTeX Info: Redefining \microtypecontext on input line 215.
+Package microtype Info: Applying patch `item' on input line 215.
+Package microtype Info: Applying patch `toc' on input line 215.
+Package microtype Info: Applying patch `eqnum' on input line 215.
+Package microtype Info: Applying patch `footnote' on input line 215.
+Package microtype Info: Applying patch `verbatim' on input line 215.
+LaTeX Info: Redefining \microtypesetup on input line 215.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1742,8 +1790,8 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 213.
-\c@lstlisting=\count433
+or `german'. on input line 215.
+\c@lstlisting=\count444
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1788,35 +1836,42 @@ LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
 
 
 [1]
-Overfull \hbox (17.49174pt too wide) in paragraph at lines 232--234
-\TU/LibertinusSerif(0)/m/n/10.95 Es werden in dem Schuljahr 3 Klausuren geschri
-eben. Die zweite Klausur wird unter Abitur-Bedinungen
- []
-
-
-
-[2
-
-]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSans' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-[3] (./Mathematik-Skript_Q3.aux)
+[2
+
+]
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 310--318
+
+ []
+
+
+
+[4]
+
+[5]
+
+[6]
+
+[7] (./Mathematik-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 61032 strings out of 475235
- 1502564 string characters out of 5760660
- 2447611 words of memory out of 5000000
- 83304 multiletter control sequences out of 15000+600000
- 561374 words of font info for 93 fonts, out of 8000000 for 9000
+ 61464 strings out of 475235
+ 1512205 string characters out of 5760660
+ 2460542 words of memory out of 5000000
+ 83719 multiletter control sequences out of 15000+600000
+ 561398 words of font info for 96 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 105i,12n,117p,1017b,1341s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,14n,117p,1017b,1341s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Mathematik-Skript_Q3.pdf (4 pages).
+Output written on Mathematik-Skript_Q3.pdf (8 pages).

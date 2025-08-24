@@ -10,6 +10,8 @@
 
 % -------------------- Pakete --------------------
 \include{Pakete}
+\usepackage{paralist}
+\usepackage{tasks}
 \usepackage{acro}
 \usepackage{microtype}
 \usepackage{geometry}
@@ -228,19 +230,134 @@
 	\lessondate{17.08.2025}\\
 	Dieses Skript dient als Fortsetzung von der Q2. Hierbei werden nur thematisch theoretische Unterrichtsinhalte notiert, wobei die Aufgaben und Übungen hauptsächlich in Obsidian bearbeitet werden, um den wahnsinnigen Dokumentationsaufwand zu reduzieren. 
 	
-	\subsection{Ablauf der Q3}
+	\subsection{Leistungsbewertung und Klausurplanung in der Q3}
 	\lessondate{20.08.2025}\\
-	Es werden in dem Schuljahr 3 Klausuren geschrieben. Die zweite Klausur wird unter Abitur-Bedinungen - 5 Stunden - geschrieben. Doch da das Thema zu dem Zeitpunkt nur Stochastik behandeln darf und eine 5 stündige Klausur über das Thema einem Schüler unzumutbar sind, wird es in dem Hilfsmittelfreienteil Aufgaben aus dem Feld der Q1 und Q2 beeinhalten. Die erste Klausur wird sehr wahrscheinlich vor den Herbstferien geschrieben.
+	Im Verlauf des Schuljahres werden in diesem Kurs drei Klausuren geschrieben.
+	Die zweite Klausur wird als Abiturklausur unter authentischen Bedingungen angesetzt, was eine Bearbeitungszeit von fünf Zeitstunden umfasst. Da der bis zu diesem Zeitpunkt behandelte abiturrelevante Stoff der Q3 ausschließlich die Stochastik abdeckt, wäre eine fünfstündige Prüfung allein zu diesem Thema für die Schülerinnen und Schüler eine unzumutbare Belastung. 
+	Aus diesem Grund wird der hilfsmittelfreie Teil dieser Klausur auch Aufgaben aus den Qualifikationsphasen Q1 (Analysis) und Q2 (Analytische Geometrie/Lineare Algebra) beinhalten, um eine angemessene Themenbreite zu gewährleisten.
+	Die erste Klausur ist für den Zeitraum vor den Herbstferien vorgesehen.
 	
 	\subsubsection{Randbemerkungen}
-	\begin{itemize}
-		\item laplace wahrscheinlickeiten 
-	\end{itemize}
+
+	%Zufallsexperimente, bei denen alle möglichen Ergebnisse \emph{gleich wahrscheinlich} angenommen werden. Dies ist kein naturwissenschaftliches Faktum, sondern ein mathematisches Modell unter Symmetrieannahmen.
+	\begin{theo}{Laplace Experiment}
+		Ein Zufallsexperiment mit endlicher Ergebnismenge $\Omega$ heißt
+		\emph{Laplace-Experiment}, wenn für jedes Elementarereignis $\omega \in \Omega$
+		gilt:
+		\[
+		P(\{\omega\}) = \frac{1}{|\Omega|}.
+		\]
+		Die Wahrscheinlichkeit eines Ereignisses $E \subseteq \Omega$ ist dann
+		\[
+		P(E) = \frac{|E|}{|\Omega|}.
+		\]
+	\end{theo}
 	
+	\begin{exem}
+		Das Werfen eines idealen Würfels: $\Omega = \{1,2,3,4,5,6\}$,
+		jedes Ergebnis hat Wahrscheinlichkeit $\tfrac{1}{6}$.
+		Für das Ereignis $E=\{\text{gerade Zahl}\}$ gilt
+		$P(E)=\tfrac{3}{6}=\tfrac{1}{2}$.
+	\end{exem}
 	
+	\newpage
 	
 	\section{Grundlegende Begriffe der Stochastik}
 	
+	\begin{aufgabe}{Check in Kapitel 1}
+		\begin{enumerate}
+			\item Jan hat 20-mal in eine Lostrommel hineingegriffen und dabei 18 Nieten gezogen. 
+			\begin{itemize}
+				\item Berechnen Sie die relative Häufigkeit für den Gewinn als Bruch und in Prozent
+				\item Jana erreichte bei 12 Ziehungen die Gewinnquote 25\%. Berechnen Sie die absolute und die relative Häufigkeit. 
+			\end{itemize}
+		\item Bei der Bundestagswahl 2013 haben sich $71.5\%$ der 62 Mio. Wahlberechtigten an der Wahl beteiligt. Die Stimmenverteilung für die einzelnen Parteien ist in Fig. 1 Dargstellt. 
+		\begin{itemize}
+			\item Geben Sie die Anteile der Stimmenverteilung als Bruch und Dezimalzahl an
+			\item Berechnen Sie, wie groß der Stimmenanteil der einzelnen Parteien bezogen auf alle 62 Mio. Wahlberechtigten ist.
+		\end{itemize}
+		\item Begründen Sie welche Situation ein Laplace-Experiment darstellt
+		\begin{itemize}
+			\item Sie fragen einen Lehrer, an welchem Wochentag er sein Auto gewaschen hat 
+			\item Sie ziehen ein Los aus einem Loseimer mit 120 Losen 
+			\item Sie beobachten, ob der nächste Plattfuß an iuhrem Fahrrad vorne oder hinten auftritt
+		\end{itemize}
+		\item Berechnen Sie den Mittelwert der folgenden Zahlen: \\
+		$2,5 \qquad 6,3 \qquad 1,9 \qquad 10, 0 \qquad 2,8 \qquad 5,6 \qquad 5,1 \qquad 7,8$
+		\end{enumerate}
+	\end{aufgabe}
+	
+	\newpage
+	
+	\begin{loesung}{}
+		\subsection*{Aufgabe 1}
+		\begin{align*}
+			h = \frac{H}{n}, &\qquad n = 20, \qquad H = 20 - 18 = 2 \\
+			h  &= \frac{2}{20} = \boxed{ \frac{1}{10} = 0.1 = 10\%}
+		\end{align*}
+		Jana's relative häufige Gewinnquote Beträgt $25\%$, sodass $75\% \lor \frac{3}{4}$ Nieten sein müssen. Es gilt; 
+		\[
+		h_n(A) = \frac{H_n(A)}{n},
+		\]
+		wobei $h_n(A)$ die relative und $H_n(A)$ die absolute Häufigkeit sind. 
+		\begin{align*}
+			H &= h \cdot n\\
+			H &= \boxed{0.25 \cdot 12 = 3}  
+		\end{align*}
+		\subsection*{Aufgabe 2}		
+		\subsubsection*{Stimmenverteilung}
+		\begin{inparaitem}
+			\item [\textbf{CDU}] : 34.1 \% $= \frac{34.1}{100} = 0.341$ |
+			\item [\textbf{CSU}] : 7.4\% $= \frac{7.4}{100} = 0.074$ |
+			\item [\textbf{SPD}] : 25.7 \% $= \frac{25.7}{100} = 0.257$ |
+			\item [\textbf{FDP}] : 4.8\% $= \frac{4,8}{100} = 0.048$ |
+			\item [\textbf{Die Linke}] : 8.6\%  $= \frac{8.6}{100} = 0.086$ |
+			\item [\textbf{Die Grünen}] : 8.4\% $= \frac{8.4}{100} = 0.084$ |
+			\item [\textbf{sonstige}] : 10.9 \%$= \frac{10.9}{100} = 0.109$ |
+		\end{inparaitem}\\ 
+		\subsubsection*{Stimmenanteil}
+		\[
+		\text{Wähler} = 62.000.000 \cdot 0.715 = 44.330.000
+		\]
+		\begin{itemize}[leftmargin= 4cm, font=\bfseries]
+			\item [\textbf{CDU}] : 34.1 \% $= 0.341 \cdot 44.330.000 \approx \boxed{15.112.000}$ 
+			\item [\textbf{CSU}] : 7.4\% $= 0.074 \cdot 44.330.000 \approx \boxed{3.280.420} $ 
+			\item [\textbf{SPD}] : 25.7 \% $= 0.257 \cdot 44.330.000 \approx \boxed{11.392.810}$ 
+			\item [\textbf{FDP}] : 4.8\% $= 0.048 \cdot 44.330.000 \approx \boxed{2.127.840}$ 
+			\item [\textbf{Linke}] : 8.6\%  $=0.086 \cdot 44.330.000 \approx \boxed{3.812.380}$ 
+			\item [\textbf{Grünen}] : 8.4\% $= 0.084 \cdot 44.330.000 \approx \boxed{3.723.720}$ 
+			\item [\textbf{sonstige}] : 10.9 \%$= 0.109 \cdot 44.330.000 \approx \boxed{4.831.970}$ 
+		\end{itemize}		
+	\end{loesung}
+	
+	\newpage
+	
+	\begin{loesung}{}
+		\subsection*{Aufgabe 3}
+		\begin{enumerate}
+			\item Kein Laplace-Experiment, da der Lehrer nicht mit gleicher Wahrscheinlichkeit an jedem Wochentag sein Auto wäscht; Alltagsroutinen und äußere Zwänge machen die Wahrscheinlichkeiten ungleich.
+			\item Laplace-Experiment: Jedes der 120 Lose ist gleich wahrscheinlich gezogen zu werden, sofern alle Lose gleich beschaffen und gut gemischt sind. Dass die Gewinnchancen inhaltlich ungleich verteilt sind (1 Gewinnlos, 119 Nieten), widerspricht dem Laplace-Modell nicht, da sich dieses nur auf die Elementarereignisse (jedes einzelne Los) bezieht.
+			\item Kein sauberes Laplace-Experiment, da das Vorderrad physikalisch häufiger betroffen ist (führt, trifft zuerst Hindernisse, andere Belastung). Nur unter starker Modellannahme „beide Räder gleich gefährdet“ könnte man es als Laplace-Experiment ansehen.
+		\end{enumerate}
+		\subsection*{Aufgabe 4}
+		\begin{itemize}
+			\item $2 + 5 = 7, \frac{7}{2} = 3,5$
+			\item $6 + 3 = 9, \frac{9}{2} = 4.5$
+			\item $1 + 9 = 10, \frac{10}{2} = 5$
+			\item $10 + 0 = 10, \frac{10}{2} = 5$
+			\item $2 + 8 = 10, \frac{10}{2} = 5$
+			\item $5 + 6 = 11, \frac{11}{2} = 5.5$
+			\item $5 + 1 = 6, \frac{6}{2} = 3$
+			\item $7 + 8 = 15, \frac{15}{2}$
+		\end{itemize}
+		
+		\textbf{Oder:} Um den Mittelwert (das arithmetische Mittel) $\bar{x}$ zu berechnen, werden alle Zahlen summiert und die Summe wird durch die Anzahl der Zahlen geteilt.
+		\begin{align*}
+			\bar{x} &= \frac{2,5 + 6,3 + 1,9 + 10,0 + 2,8 + 5,6 + 5,1 + 7,8}{8} \\
+			\bar{x} &= \frac{42,0}{8} \\
+			\bar{x} &= \boxed{5,25}
+		\end{align*}
+	\end{loesung}
 	
 	
 	\section{Berechnung von Wahrscheinlichkeiten}
@@ -253,8 +370,6 @@
 	
 	\newpage
 	
-	
-	Die Boxen sind jetzt wie gewünscht gestaltet (arc=4mm, dezenter Rahmen, Titelsticker oben links). Der Text innerhalb der Boxen ist cremefarben (kein Schwarz mehr).
 	
 	\begin{theo}{Quadratische Ergänzung}
 		Sei \(a,b\in \mathbb{R}\). Dann gilt
@@ -281,7 +396,7 @@
 		\]
 	\end{loesung}
 	
-	\begin{infobox}{test}
+	\begin{infobox}
 		Diese Box ist ein Beispiel für Hinweise, farblich und formal abgesetzt.
 	\end{infobox}
 	

@@ -1,0 +1,255 @@
+% ============== Adjusted LaTeX Template (XeLaTeX / LuaLaTeX) ==============
+\documentclass[11pt,a4paper,oneside]{article}
+
+% -------------------- Engine & Fonts --------------------
+\usepackage{fontspec}
+\setmainfont{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\usepackage{unicode-math}
+\setmathfont{Libertinus Math}
+
+% -------------------- Packages --------------------
+\usepackage{paralist}
+\usepackage{tasks}
+\usepackage{acro}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable,theorems}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{everypage}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+% -------------------- Layout --------------------
+\geometry{
+	left=28mm, right=28mm, top=28mm, bottom=28mm,
+	marginparwidth=36mm, marginparsep=6mm
+}
+
+% -------------------- Colors (adjusted) --------------------
+% Page background: slightly lighter yellow (helleres gelb)
+\definecolor{PageBG}{RGB}{255,253,230} % very pale warm yellow
+\definecolor{TextBlack}{RGB}{34,34,34}
+
+% Accent palette (flow: orange -> red -> black)
+\definecolor{AccentOrange}{RGB}{255,140,0}   % strong orange
+\definecolor{AccentRed}{RGB}{220,20,60}      % crimson-ish red
+\definecolor{AccentDark}{RGB}{20,20,20}      % near-black for final boxes
+
+% Subtle box backgrounds (tints derived from accents)
+\colorlet{BoxOrange}{AccentOrange!8!white}
+\colorlet{BoxRed}{AccentRed!6!white}
+\colorlet{BoxDark}{AccentDark!6!white}
+\definecolor{MarginalGray}{RGB}{112,128,144}
+
+
+\definecolor{TextCream}{RGB}{246,241,234}       % creme / sehr hell
+
+\definecolor{AccentBlue}{RGB}{76,104,150}       % akademisches Blau (unverändert)
+\definecolor{AccentViolet}{RGB}{105,77,145}     % seriöses Violett (unverändert)
+
+% Hint: mehr ins violett/pinke ziehen (Hauch von Fuchsia)
+\definecolor{AccentMagenta}{RGB}{140,60,120}       % violett-pink (sanfter Übergang)
+
+% Magenta: rötlicher, dichter, aber nicht grell
+\definecolor{AccentHint}{RGB}{170,40,60}     % rötliches Magenta (mehr Rotanteil)
+
+% Elegantes Rot: orientiert sich am bisherigen "AccentHint" (tiefes Weinrot)
+\definecolor{AccentRed}{RGB}{120,10,25}         % elegantes Weinrot / tiefes Rot
+
+\definecolor{BoxBackground}{RGB}{15,9,27}       % Box-Hintergrund
+\definecolor{MarginalGray}{RGB}{150,150,160}    % Rand-Datum
+
+
+
+
+	
+\pagecolor{PageBG}
+\color{TextBlack}
+
+% -------------------- Header / Footer --------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+\fancyfoot[C]{%
+	\vspace{6pt}%
+	{\scriptsize\scshape\color{MarginalGray}Ferdinand-Braun Schule \quad • \quad Advanced English Course (Q3) \quad • \quad \thepage}%
+	\begin{tikzpicture}[remember picture,overlay]
+		\draw[line width=0.9pt,color=AccentOrange!70!black] ($(current page.south west)+(28mm,22mm)$) -- ($(current page.south east)+(-28mm,22mm)$);
+	\end{tikzpicture}%
+}
+
+% -------------------- Title Styles (follow color flow) --------------------
+\titleformat{\section}
+{\normalfont\large\bfseries\color{AccentOrange!95!black}}
+{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries\color{AccentRed!85!black}}{\thesubsection}{0.8em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{AccentDark!85!black}}{\thesubsubsection}{0.6em}{}
+
+% ========================= TCBOX BASE STYLE (sauber, nicht ineinander verwoben) =========================
+\tcbset{
+	mybase/.style={
+		enhanced,
+		breakable,
+		boxrule=0.8pt,
+		colframe=black!20,
+		colback=white,
+		colupper=TextBlack,
+		arc=3mm,
+		boxsep=6pt,
+		left=14pt,right=14pt,top=12pt,bottom=12pt,
+		before skip=12pt, after skip=12pt, % mehr Abstand, verhindert "ineinander verwoben"
+		boxed title style={
+			arc=4mm,
+			boxrule=0pt,
+			interior style={left color=white,right color=white},
+			attach boxed title to top left={yshift=-\tcboxedtitleheight/2,xshift=8mm}
+		},
+		fonttitle=\sffamily\bfseries\small,
+		title after break=\vspace{6pt}
+	}
+}
+
+% -------------------- BOX TYPES (klarer, sequentieller Farbübergang) --------------------
+\newtcolorbox[auto counter,number within=section]{theorem}[2][]{%
+	mybase,
+	colframe = AccentOrange!85!black,
+	colback = BoxOrange,
+	colbacktitle = AccentOrange!85!black,
+	coltitle = PageBG,
+	title = {Theorem~\thetcbcounter: #2},
+	#1
+}
+
+\newtcolorbox[auto counter,number within=section]{example}[2][]{%
+	mybase,
+	colframe = AccentRed!85!black,
+	colback = BoxRed,
+	colbacktitle = AccentRed!85!black,
+	coltitle = PageBG,
+	title = {Example~\thetcbcounter: #2},
+	#1
+}
+
+\newtcolorbox[auto counter,number within=section]{task}[2][]{%
+	mybase,
+	colframe = AccentDark!80!black,
+	colback = BoxDark,
+	colbacktitle = AccentDark!90!black,
+	coltitle = PageBG,
+	title = {Task~\thetcbcounter: #2},
+	#1
+}
+
+\newtcolorbox[use counter from=task]{solution}[2][]{%
+	mybase,
+	colframe = AccentDark!80!black,
+	colback = BoxDark,
+	colbacktitle = AccentDark!90!black,
+	coltitle = PageBG,
+	title = {Solution~\thetcbcounter: #2},
+	#1
+}
+
+% -------------------- Note Box (neutral, but follows dark accent) --------------------
+\newtcolorbox{infobox}[1][]{%
+	mybase,
+	colframe = AccentDark!60!black,
+	colback = BoxDark,
+	colbacktitle = AccentDark!80!black,
+	coltitle = PageBG,
+	title = {Note},
+	#1
+}
+
+\newcommand{\lessondate}[1]{
+	\noindent\hfill\textcolor{gray}{\textsc{#1}} \\
+	\vspace{0.5cm}
+}
+
+
+
+	
+% ==================== Feines Titelblatt ====================
+\newcommand{\MakeArtTitle}[4]{%
+	\begin{titlepage}
+		\vspace*{18mm}
+		\begin{center}
+			\vspace{12mm}
+			{\huge\color{AccentOrange!90!black} #1 \par}
+			\vspace{6mm}
+			{\Large\itshape\color{AccentRed!70!black} #2 \par}
+			\vspace{10mm}
+			{\Large\scshape\color{AccentDark} #3 \par}
+			\vspace{6mm}
+			{\small\color{MarginalGray} #4 \par}
+			\vspace{5mm}
+			{\small\color{MarginalGray} \today \par}
+		\end{center}
+		\vspace{7.5cm}
+		\centering
+		\includegraphics[width=0.75\textwidth]{image.png} % Logo einfügen (Pfad anpassen)
+	\end{titlepage}
+}
+
+
+% -------------------- Start Document --------------------
+\begin{document}
+
+	
+
+	
+		
+	% Titelblatt
+	\MakeArtTitle{
+		Grundkurs Englisch Q3 Hessen}
+	{Skript}
+	{Shamsher Singh Kalsi}
+	{Berufliches Gymnasium — Ferdinand-Braun Schule \\ Kursleiter: Herr Klaus Heinz}
+	
+	\tableofcontents
+	\bigskip
+	\clearpage
+	
+	
+	% ==================== Small demo: show boxes sequentiell (orange -> red -> schwarz) ====================
+	\section{Farb- und Box-Demonstration}
+
+	
+	\lessondate{24.08.2025}\\
+	Hier ist ein bewusst lineares Beispiel: die Kästchen folgen nacheinander von Orange zu Rot zu Schwarz, mit genügend Abstand, damit sie nicht ineinander greifen.
+	
+	\begin{theorem}{Lineares Beispiel}
+		Dies ist ein Demonstrations-Theorem. Die Rahmenfarbe ist orange, der Hintergrund des Kastens ist ein sehr heller Orangeton, so dass Inhalt und Rahmen klar getrennt bleiben.
+	\end{theorem}
+	
+	\begin{example}{Anwendungsbeispiel}
+		Dieses Beispiel folgt direkt dem Theorem. Die Rahmenfarbe ist rot; auch hier ist der Innenbereich nur leicht getönt, um Lesbarkeit und Druckverträglichkeit zu erhalten.
+	\end{example}
+	
+	\begin{task}{Aufgabe — Abschluss}
+		Dies ist die Aufgabenbox. Sie nutzt die fast schwarze Akzentfarbe. Aufgrund der erhöhten Kontraststärke ist der Innenraum nur sehr dezent getönt, damit Texte weiterhin im Vordergrund stehen.
+	\end{task}
+	
+	\begin{solution}{Beispiel-Lösung}
+		Kurze Musterlösung, die der Aufgabenbox folgt.
+	\end{solution}
+	
+	% ==================== Rest des Dokuments (Beispielhafte Reihenfolge beibehalten) ====================
+	\clearpage
+	\section{Introduction to the Course}
+	\lessondate{17.08.2025}\\
+	Diese Version des Skripts priorisiert klare Reihenfolgen und visuelle Hierarchie: von warm (Orange) über kritisch (Rot) zu definitorisch/präskriptiv (Schwarz).
+	
+	% (der restliche Inhalt aus dem ursprünglichen Template kann hier wieder eingefügt werden)
+	
+\end{document}

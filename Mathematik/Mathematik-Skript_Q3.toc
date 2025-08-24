@@ -2,10 +2,10 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Einleitung}{2}{}%
-\contentsline {subsection}{\numberline {1.1}Ablauf der Q3}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Leistungsbewertung und Klausurplanung in der Q3}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Randbemerkungen}{2}{}%
-\contentsline {section}{\numberline {2}Grundlegende Begriffe der Stochastik}{2}{}%
-\contentsline {section}{\numberline {3}Berechnung von Wahrscheinlichkeiten}{2}{}%
-\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{2}{}%
-\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{2}{}%
-\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{2}{}%
+\contentsline {section}{\numberline {2}Grundlegende Begriffe der Stochastik}{3}{}%
+\contentsline {section}{\numberline {3}Berechnung von Wahrscheinlichkeiten}{6}{}%
+\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{6}{}%
+\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{6}{}%
+\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{6}{}%
