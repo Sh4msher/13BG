@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.16)  24 AUG 2025 22:32
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  25 AUG 2025 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1049,45 +1049,45 @@ Package everypage Warning: You appear to be running a version of LaTeX
 \c@tcb@cnt@example=\count366
 \c@tcb@cnt@task=\count367
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 206.
+h' as default language. on input line 207.
  (./Englisch-Skript_Q3.aux)
 \openout1 = `Englisch-Skript_Q3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  TU/LibertinusMath(1)/m/n --> TU/LibertinusSerif(0)/m/n 
-on input line 206.
+on input line 207.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/LibertinusSerif(0)/m/it on input li
-ne 206.
+ne 207.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/LibertinusSerif(0)/b/n on input lin
-e 206.
+e 207.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/LibertinusSans(0)/m/n on input line
- 206.
+ 207.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/LibertinusSans(0)/b/n on input lin
-e 206.
+e 207.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 206.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 207.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 206.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 207.
 
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
 lish.trsl
@@ -1095,14 +1095,14 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 206.
-LaTeX Info: Redefining \microtypecontext on input line 206.
-Package microtype Info: Applying patch `item' on input line 206.
-Package microtype Info: Applying patch `toc' on input line 206.
-Package microtype Info: Applying patch `eqnum' on input line 206.
-Package microtype Info: Applying patch `footnote' on input line 206.
-Package microtype Info: Applying patch `verbatim' on input line 206.
-LaTeX Info: Redefining \microtypesetup on input line 206.
+or `english'. on input line 207.
+LaTeX Info: Redefining \microtypecontext on input line 207.
+Package microtype Info: Applying patch `item' on input line 207.
+Package microtype Info: Applying patch `toc' on input line 207.
+Package microtype Info: Applying patch `eqnum' on input line 207.
+Package microtype Info: Applying patch `footnote' on input line 207.
+Package microtype Info: Applying patch `verbatim' on input line 207.
+LaTeX Info: Redefining \microtypesetup on input line 207.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1163,17 +1163,24 @@ File: image.png Graphic file (type bmp)
 
 
 [1]
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+
+
+[2
+
+]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSans' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-[2
+[3]
 
-]
-
-[3
+[4
 
 ] (./Englisch-Skript_Q3.aux)
  ***********
@@ -1182,12 +1189,12 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34029 strings out of 475235
- 762320 string characters out of 5760660
- 1336905 words of memory out of 5000000
- 56557 multiletter control sequences out of 15000+600000
+ 34039 strings out of 475235
+ 762532 string characters out of 5760660
+ 1337980 words of memory out of 5000000
+ 56567 multiletter control sequences out of 15000+600000
  559743 words of font info for 77 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  102i,12n,107p,1015b,962s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Englisch-Skript_Q3.pdf (4 pages).
+Output written on Englisch-Skript_Q3.pdf (5 pages).
