@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  26 AUG 2025 01:18
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  26 AUG 2025 09:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1223,22 +1223,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--296
 [3]
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+
+ []
+
+
 
 [5]
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 9.00096pt on input line 350.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 350.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 350.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 350.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 350.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 350.
 
-[6] (./Geschichte-Skript_Q3.aux)
+
+[6]
+
+[7]
+
+[8] (./Geschichte-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 35412 strings out of 475235
- 794516 string characters out of 5760660
- 1379138 words of memory out of 5000000
- 57890 multiletter control sequences out of 15000+600000
- 561438 words of font info for 101 fonts, out of 8000000 for 9000
+ 35473 strings out of 475235
+ 796699 string characters out of 5760660
+ 1379233 words of memory out of 5000000
+ 57935 multiletter control sequences out of 15000+600000
+ 562785 words of font info for 118 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  102i,12n,107p,1017b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Geschichte-Skript_Q3.pdf (7 pages).
+Output written on Geschichte-Skript_Q3.pdf (9 pages).

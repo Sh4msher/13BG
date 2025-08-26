@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.16)  20 AUG 2025 03:33
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  27 AUG 2025 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1071,8 +1071,8 @@ LaTeX Font Info:    Font shape `TU/Inter(0)/m/sc' will be
 (Font)              scaled to size 9.47424pt on input line 217.
 LaTeX Font Info:    Font shape `TU/Inter(0)/m/n' will be
 (Font)              scaled to size 7.8952pt on input line 217.
-File: 2.png Graphic file (type bmp)
-<2.png>
+File: image.png Graphic file (type bmp)
+<image.png>
 
 
 [1
@@ -1113,10 +1113,59 @@ LaTeX Font Info:    Font shape `TU/Inter(0)/m/sc' will be
 [2
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--269
+
+ []
+
+
 
 [3]
 
-[4] (./Deutsch-Skript_Q3.aux)
+[4]
+
+[5]
+
+[6] (./Deutsch-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1126,15 +1175,15 @@ L3 programming layer <2025-01-18>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Deutsch-Skript_Q3.out' has not changed.
-(rerunfilecheck)             Checksum: 5E5E3E623A7A92BB6B4BD510D7C48BC8;2058.
+(rerunfilecheck)             Checksum: 133D76022DA1C39D16426EF3BD25F288;2058.
  ) 
 Here is how much of TeX's memory you used:
- 37329 strings out of 475235
- 815157 string characters out of 5760660
- 1321826 words of memory out of 5000000
- 59798 multiletter control sequences out of 15000+600000
+ 37349 strings out of 475235
+ 815585 string characters out of 5760660
+ 1324573 words of memory out of 5000000
+ 59818 multiletter control sequences out of 15000+600000
  563143 words of font info for 79 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 102i,12n,116p,1014b,1359s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,12n,116p,1014b,1353s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Deutsch-Skript_Q3.pdf (5 pages).
+Output written on Deutsch-Skript_Q3.pdf (7 pages).

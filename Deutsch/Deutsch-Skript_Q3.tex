@@ -59,8 +59,8 @@
 \definecolor{AccentD}{RGB}{220,140,55}  % ocker / amber (aufgabe)
 \definecolor{AccentE}{RGB}{240,180,70}  % warmes Gelb (lösung)
 
-\pagecolor{PageBG}
-\color{TextCream}
+%\pagecolor{PageBG}
+%\color{TextCream}
 
 % -------------------- Kopf / Fuß --------------------
 \pagestyle{fancy}
@@ -97,9 +97,9 @@
 		enhanced,
 		breakable,
 		boxrule=0.9pt,                 % Randstärke (wird pro Box farbig)
-		colframe=AccentA,              % Default-Frame (wird in Box-Definitionen überschrieben)
-		colback=PageBG,                % "transparent" => gleiche Farbe wie Seite
-		colupper=TextCream,            % Textfarbe innerhalb der Box
+		%colframe=AccentA,              % Default-Frame (wird in Box-Definitionen überschrieben)
+		%colback=PageBG,                % "transparent" => gleiche Farbe wie Seite
+		%colupper=TextCream,            % Textfarbe innerhalb der Box
 		arc=4mm,
 		boxsep=6pt,
 		left=12pt,right=12pt,top=12pt,bottom=12pt,
@@ -119,7 +119,7 @@
 \newtcolorbox{zitat}[1][]{%
 	mybase,
 	colframe=AccentA,
-	colback=PageBG,                % transparent
+	%colback=PageBG,                % transparent
 	colbacktitle=AccentA,          % Titelsticker hat die Rahmenfarbe
 	coltitle=TextCream,
 	fontupper=\itshape,
@@ -132,7 +132,7 @@
 \newtcolorbox{interpret}[1][]{%
 	mybase,
 	colframe=AccentB,
-	colback=PageBG,
+	%colback=PageBG,
 	colbacktitle=AccentB,
 	coltitle=TextCream,
 	attach boxed title to top left={yshift=-2mm, xshift=8mm},
@@ -144,7 +144,7 @@
 \newtcolorbox{hinweis}[1][]{%
 	mybase,
 	colframe=AccentC,
-	colback=PageBG,
+	%colback=PageBG,
 	colbacktitle=AccentC,
 	coltitle=TextCream,
 	attach boxed title to top left={yshift=-2mm, xshift=8mm},
@@ -156,7 +156,7 @@
 \newtcolorbox[auto counter,number within=section]{aufgabe}[2][]{%
 	mybase,
 	colframe=AccentD,
-	colback=PageBG,
+	%colback=PageBG,
 	colbacktitle=AccentD,
 	coltitle=TextCream,
 	attach boxed title to top left={yshift=-2mm, xshift=8mm},
@@ -168,7 +168,7 @@
 \newtcolorbox[use counter from=aufgabe]{loesung}[2][]{%
 	mybase,
 	colframe=AccentE,
-	colback=PageBG,
+	%colback=PageBG,
 	colbacktitle=AccentE,
 	coltitle=TextCream,
 	attach boxed title to top left={yshift=-2mm, xshift=8mm},
@@ -189,7 +189,7 @@
 		\vspace{8mm}
 		{\Large \scshape#2 \par}
 		\vspace{16mm}
-		{\large\scshape\color{TextCream} #3 \par}
+		{\large\scshape #3 \par}
 		\vspace{6mm}
 		{\small\color{MarginalGray} #4 \par}
 		\vspace{8mm}
@@ -201,7 +201,7 @@
 		%\end{tikzpicture}
 		\vspace{6cm}
 		\centering
-		\includegraphics[width=0.75\textwidth]{2.png} % Logo anpassen / entfernen
+		\includegraphics[width=0.75\textwidth]{image.png} % Logo anpassen / entfernen
 	\end{titlepage}
 }
 
@@ -222,16 +222,84 @@
 	\section{Einleitung}
 	\subsection{lol}
 	\subsubsection{lel}
-	\lessondate{20.08.2025}
+	\lessondate{20.08.2025}\\
 	Dieses Skript begleitet den Grundkurs Deutsch: Texte, Zitate, Interpretationsansätze und Übungen werden gesammelt. Die Gestaltung ist dunkel und leseschonend — ideal für Beamer-Notizen oder Ausdrucke auf hochwertigem Papier.
 	
 	
 	\newpage
 	
+	\section{Sprache und Identität – Sprachkrise als Identitätskrise}
+	\lessondate{27.08.2025}\\
+	
+	\begin{hinweis}
+		\subsection*{Hugo von Hofmannsthal (1874 - 1929)}
+		\subsubsection*{Weltgeheimnis}
+		Der tiefe Brunnen weiß es wohl,\\
+		Einst waren alle tief und stumm,\\
+		Und alle wußten drum.\\
+		
+		Wie Zauberworte, nachgelallt\\
+		Und nicht begriffen in den Grund,\\
+		So geht es jetzt von Mund zu Mund.\\
+		
+		Der tiefe Brunnen weiß es wohl;\\
+		In den gebückt, begriffs ein Mann,\\
+		Begriff es und verlor es dann.\\
+		
+		Und redet' irr und sang ein Lied –\\
+		Auf dessen dunklen Spiegel bückt\\
+		Sich einst ein Kind und wird entrückt.\\
+		
+		Und wächst und weiß nichts von sich selbst\\
+		Und wird ein Weib, das einer liebt\\
+		Und – wunderbar wie Liebe gibt!\\
+		
+		Wie Liebe tiefe Kunde gibt! – \\
+		Da wird an Dinge, dumpf geahnt,\\
+		In ihren Küssen tief gemahnt...\\
+		
+		In unsern Worten liegt es drin,\\
+		So tritt des Bettlers Fuß den Kies,\\
+		Der eines Edelsteins Verlies.\\
+		
+		Der tiefe Brunnen weiß es wohl, \\
+		Einst aber wußten alle drum,\\
+		Nun zuckt im Kreis ein Traum herum.\\
+		%\footnote{\href{https://www.deutschelyrik.de/weltgeheimnis.html}{Quelle}}
+	\end{hinweis}
+	
+	\newpage
+	
+	\begin{aufgabe}{Hausaufgabe: Buch Seite 291}
+		\begin{itemize}[left=15mm]
+			\item [Aufgabe 1:] Stellen Sie die Kennzeichnung von Vergangenheit und Gegenwart gegenüber, wie das lyrische Ich sie vornimmt. 
+			\item [Aufgabe 2:] Erklären Sie die Überschrift des Gedichts 
+			\item [Aufgabe 3:] Untersuchen Sie die formale und sprachliche Gestaltung des Gedichts und setzen Sie sie in Beziehung zum Inhalt.
+		\end{itemize}
+	\end{aufgabe}
+
+	
+	\begin{loesung}{Aufgabe 1}
+	In der Vergangenheit „Einst (aber) wussten alle drum“ wird durch das Adverb „Einst“ ein zeitlich klar abgeschlossener Zustand markiert. Das Präteritum „wussten“ beschreibt ein allgemeines, gesichertes Wissen, das keinen weiteren Kommentar mehr benötigt. Die Gegenwart dagegen zeigt sich im Präsens: „[es] zuckt“. Hier steht „Nun“ im Kontrast zu „Einst“ und verweist auf die aktuelle, nicht abgeschlossene Situation. Während früher ein gemeinsames Wissen selbstverständlich war, bleibt heute nur ein unsicheres „Zucken“ oder ein kreisender Traum übrig.
+	\end{loesung}
+	
+	\begin{loesung}{Aufgabe 2}
+		%Die Überschrift ist eine Zusammensetzung (womöglich Neologismus) aus "Welt" und "Geheimnis", welche semantisch ein Mysterium, um das zugrundeliegende Fundament der Co-existenz von Individuen, bildet. Darunter liese sich im allgemeinen Verstehen, dass innerhalb des irdischen Lebens die existenzielle Funktion in frage gestellt wird, wie der Ursprung, das Fortbestehen und die Zukunft aussehen. In dem Kontext des Gedichtes ließe sich die Überschrift aber anders verstehen. Das Gedicht thematisiert die missverständliche reproduktion von deplazierten Inhalten in einem Sachverhalt, sodass der wahre Kern des Sachverhaltes verzerrt oder verloren geht. In diesem Sinne könnte man ebenfalls von dem Weltgeheimnis sprechen, da die Wahrnehmung und Integration in die Persönlichkeitsentwicklung eine hohe Diskrepanz zur Realität und dem Kontext aufweisen.
+		Die Überschrift ist eine Zusammensetzung aus „Welt“ und „Geheimnis“ und bezeichnet ein großes, verborgenes Mysterium. Allgemein lässt sich darunter das Rätsel um Ursprung, Fortbestehen und Zukunft des menschlichen Lebens verstehen. Im Kontext des Gedichts erhält der Titel jedoch eine speziellere Bedeutung: Es geht um ein Wissen, das in seiner ursprünglichen Klarheit verloren gegangen ist. Durch die mündliche Weitergabe von „Mund zu Mund“ wird der Kern verzerrt oder unverständlich. So wird das „Weltgeheimnis“ im Gedicht zum Bild für etwas, das zwar in Sprache und Erinnerung weiterlebt, aber nie mehr vollständig erfasst werden kann.  
+	\end{loesung}
+	
+	\begin{loesung}{Aufgabe 3}
+	Formal besteht das Gedicht aus acht Strophen mit jeweils drei Versen. Auffällig sind die häufigen Wiederholungen von Sätzen und Satzstrukturen, einige Enjambements sowie polysyndetische Verknüpfungen. Dies erinnert an ein Mantra, das paraphrasierend in tranceartiger Wiederholung gesprochen wird. Die Liedhaftigkeit verstärkt den Eindruck des Phrasenhaften: Inhalte werden knapp weitergegeben und dabei in andere Kontexte verschoben. So stimmen Form und Inhalt überein: Die musikalisch-volkstümliche Gestaltung verdeutlicht, wie ursprüngliches Wissen verflacht und schließlich als kurze, formelhafte Phrasen als vermeintliche Wahrheit fortbesteht.
+	\end{loesung}
+	
+	
+	\newpage
+	
+	
+	
 	\section{Subjektivität und Verantwortung - anthropologische Grundfragen}
 	\section{Epochenumbruch 19./20. Jahrhundert – literarische Moderne im frühen 20. Jahrhundert}
 	\section{Neuanfänge nach historischen Zäsuren 1945/1990}
-	\section{Sprache und Identität – Sprachkrise als Identitätskrise}
 	\section{Film und Literatur}
 	
 	\newpage
