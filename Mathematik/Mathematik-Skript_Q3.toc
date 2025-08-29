@@ -16,6 +16,8 @@
 \contentsline {section}{\numberline {3}Berechnung von Wahrscheinlichkeiten}{11}{}%
 \contentsline {subsection}{\numberline {3.1}Boolische Algebra - Elemente der Mengenlehre}{11}{}%
 \contentsline {subsection}{\numberline {3.2}Absolute und Relative Häufigkeit}{13}{}%
-\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{13}{}%
-\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{13}{}%
-\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{13}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Relative Häufigkeit}{13}{}%
+\contentsline {subsection}{\numberline {3.3}Laplace Wahrscheinlichkeit}{14}{}%
+\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{15}{}%
+\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{15}{}%
+\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{15}{}%

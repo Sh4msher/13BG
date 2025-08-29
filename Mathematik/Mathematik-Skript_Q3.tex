@@ -28,7 +28,7 @@
 \usepackage{enumitem}
 \usepackage{caption}
 \usepackage{everypage}
-
+\usepackage{diagbox}
 % -------------------- Layout --------------------
 \geometry{
 	left=28mm, right=28mm, top=28mm, bottom=28mm,
@@ -675,6 +675,103 @@
 	\newpage
 	
 	\subsection{Absolute und Relative Häufigkeit}
+	
+	\subsubsection{Relative Häufigkeit}
+	
+	\begin{aufgabe}{Übungen relative Häufigkeiten}
+		\begin{itemize}[left=15mm]
+			\item [Aufgabe 4]
+			\item [Aufgabe 5]
+			\item [Aufgabe 6]
+			\item [Aufgabe 7]
+			\item [Aufgabe 8]
+		\end{itemize}
+	\end{aufgabe}
+	
+	\begin{loesung}{Aufgabe 4}
+		Das Würfeln wurde mithilfe eines Programmcodes simuliert. 
+		Dabei ergaben sich die in Abbildung \ref{fig:wuerfel} dargestellten Resultate.
+		%\begin{figure}[h!]
+			\centering
+			\includegraphics[width=\textwidth]{wuerfel.png}
+			%\caption{Simulation der Würfelergebnisse}
+			\label{fig:wuerfel}
+		%\end{figure}
+		\footnote{Unfertiger Code zur Vereinfachung}
+	\end{loesung}
+	
+	\newpage
+	
+	\subsection{Laplace Wahrscheinlichkeit}
+	
+	\lessondate{27.08.2025}\\
+	
+	\begin{theo}{Satz: Wahrscheinlichkeiten bei Laplace Experimenten}
+		Bei einem Laplace-Experiment sei \(\Omega = \{e_{1}, \dots, e_{m}\}\) der Ergebnisraum und \(E = \{e_{i_1}, \dots, e_{i_k}\}
+		\) ein beliebiges Ereignis: Dann gilt für die Wahrscheinlichkeit deieses Ergebnisses; 
+		\[
+		P(E) =  \frac{|E|}{\Omega} =  \frac{k}{m} \qquad P(E) = \frac{\text{Anzahl der für E günstigen Ergebnisse}}{\text{Anzahl aller möglichen Ergebnisse}}
+		\] 
+	\end{theo}
+	
+	\begin{exem}
+		content...
+	\end{exem}
+	
+	\begin{aufgabe}{Aufgaben 9 bis 11}
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\end{aufgabe}
+	
+	\begin{loesung}{Aufgabe 9}
+		Urne 2
+	\end{loesung}
+	
+	\begin{loesung}{Aufgabe 10}
+		\begin{enumerate}
+			\item $\frac{1}{32}$
+			\item $\frac{8}{32} = \frac{1}{4}$
+			\item $P_L (E) = \frac{12}{32} \land P_H (E) = \frac{8}{32}$ 
+		\end{enumerate}
+	\end{loesung}
+	
+	\begin{loesung}{Aufgabe 11}
+		\begin{enumerate}
+			\item $\frac{4}{500}$
+			\item $\frac{20}{500}$
+			 \item $\frac{480}{500}$
+			 \item 497 lose
+		\end{enumerate}
+	\end{loesung}
+	
+	
+	\newpage
+	
+	Buch Seite 44 / 45 15 - 18
+	
+	\begin{aufgabe}{Buch Seite 45 Aufgaben 15 bis 18}
+		content...
+	\end{aufgabe}
+	
+	\begin{loesung}{Aufgabe 15}
+		
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|c|c|}
+				\hline
+				\diagbox{W1}{W2} & \color{red} 1 & \color{red} 2 & \color{red} 3  & \color{red} 4 & \color{red} 5 & \color{red} 6  \\ \hline
+			    \color{red} 1 & 1& 2& 3 & 4 & 5 & 6 \\ \hline
+				\color{red} 2 & 2 & 4 & 6 & 8 & 10 & 12 \\ \hline
+				\color{red} 3 & 3 & 6 & 9 & 12 & 15 & 18 \\ \hline
+				\color{red} 4 & 4 & 8 & 12 &  16& 20 & 24 \\ \hline
+				\color{red} 5 & 5 & 10 & 15 & 20 & 25 & 30 \\ \hline
+				\color{red} 6 & 6 & 12 & 18 & 24 & 30 & 36 \\ \hline
+			\end{tabular}
+		\end{center}
+		\[
+		\Omega = 36 
+		\]
+	\end{loesung}
 	
 	\section{Wahrscheinlichkeitsverteilung}
 	
