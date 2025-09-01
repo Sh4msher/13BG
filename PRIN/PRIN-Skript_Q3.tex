@@ -1,0 +1,312 @@
+% ================= Terminal-Style Template mit Box-zu-Box-Farbverlauf =================
+\documentclass[11pt,a4paper,oneside]{article}
+
+% ---------- Fonts & Math (Xe/Lua) ----------
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+% --- Hauptschrift ---
+\setmainfont{IBM Plex Sans}
+\setsansfont{IBM Plex Sans}
+
+% --- Mathematik ---
+\setmathfont{Libertinus Math}
+
+% --- Monospace / Terminal ---
+% VT323 für Retro-Terminal-Look
+\setmonofont{VT323}[Scale=1.1]
+
+
+% ---------- Packages ----------
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable,listings}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{listings}
+
+% ---------- Layout ----------
+\geometry{left=26mm,right=26mm,top=28mm,bottom=30mm}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{\textsf{\small PRIN — Q3}}
+\fancyhead[R]{\textsf{\small Ferdinand-Braun Schule}}
+\fancyfoot[C]{\scriptsize\scshape Leistungskurs Praktische Informatik Q3 \; • \; \thepage}
+
+
+
+% -------------------- Farben (fein abgestuft, subtiler Fluss) --------------------
+\definecolor{PageBG}{RGB}{17,11,31}             % sehr dunkler Hintergrund
+\definecolor{TextCream}{RGB}{246,241,234}       % creme / sehr hell
+
+\definecolor{AccentBlue}{RGB}{76,104,150}       % akademisches Blau (unverändert)
+\definecolor{AccentViolet}{RGB}{105,77,145}     % seriöses Violett (unverändert)
+
+% Hint: mehr ins violett/pinke ziehen (Hauch von Fuchsia)
+\definecolor{AccentMagenta}{RGB}{140,60,120}       % violett-pink (sanfter Übergang)
+
+% Magenta: rötlicher, dichter, aber nicht grell
+\definecolor{AccentHint}{RGB}{170,40,60}     % rötliches Magenta (mehr Rotanteil)
+
+% Elegantes Rot: orientiert sich am bisherigen "AccentHint" (tiefes Weinrot)
+\definecolor{AccentRed}{RGB}{120,10,25}         % elegantes Weinrot / tiefes Rot
+
+\definecolor{BoxBackground}{RGB}{15,9,27}       % Box-Hintergrund
+\definecolor{MarginalGray}{RGB}{150,150,160}    % Rand-Datum
+
+% ---------- Terminal-Farben ----------
+\definecolor{TermBG}{RGB}{10,12,14}
+\definecolor{TermText}{RGB}{236,240,241}
+\definecolor{MatrixGreen}{RGB}{57,255,20}
+\definecolor{MatrixGreenDim}{RGB}{35,180,12}
+\definecolor{MatrixGreenDeep}{RGB}{18,110,6}
+\definecolor{Steel}{RGB}{80,90,100}
+\definecolor{AccentWarn}{RGB}{200,40,40}
+
+%\pagecolor{TermBG}
+\pagecolor{black!93}
+\color{TermText}
+
+% ================= Palette: Schritte von Grün -> Rot =================
+% Du kannst hier mehr Stufen erzeugen (Step0 .. StepN)
+\definecolor{Step0}{RGB}{57,255,20}   % sattes Grün
+\definecolor{Step1}{RGB}{110,230,20}
+\definecolor{Step2}{RGB}{170,200,25}
+\definecolor{Step3}{RGB}{210,160,30}
+\definecolor{Step4}{RGB}{230,120,35}
+\definecolor{Step5}{RGB}{240,80,40}
+\definecolor{Step6}{RGB}{220,50,40}
+\definecolor{Step7}{RGB}{200,30,40}   % Rot-ähnlich
+
+% ---------- Sequenzzähler ----------
+\newcounter{boxseq}
+\setcounter{boxseq}{-1} % beginnt bei 0 nach erstem \stepcounter
+
+% ---------- Makro: nächste Palette-Farben als NAMEN setzen ----------
+% Wir setzen drei Makros:
+% \CurrentAccentName         = z.B. "Step3"
+% \CurrentAccentDarkName     = z.B. "Step3!70!black"
+% \CurrentAccentFrameName    = z.B. "Step3!50!black"
+\makeatletter
+\newcommand{\nextboxcolors}{%
+	\stepcounter{boxseq}%
+	% Anzahl der Palette-Schritte minus 1 (hier 7 => max index 7)
+	\ifcase\value{boxseq}%
+	\def\CurrentAccentName{Step0}%
+	\or\def\CurrentAccentName{Step1}%
+	\or\def\CurrentAccentName{Step2}%
+	\or\def\CurrentAccentName{Step3}%
+	\or\def\CurrentAccentName{Step4}%
+	\or\def\CurrentAccentName{Step5}%
+	\or\def\CurrentAccentName{Step6}%
+	\else\def\CurrentAccentName{Step7}%
+	\fi
+	% dunklere Varianten als Strings (werden von xcolor zur Laufzeit interpretiert)
+	\edef\CurrentAccentDarkName{\CurrentAccentName!70!black}%
+	\edef\CurrentAccentFrameName{\CurrentAccentName!50!black}%
+}
+\makeatother
+
+% ================= tcolorbox Basis-Stil (Terminal-Look) =================
+\tcbset{
+	termbase/.style={
+		enhanced,
+		breakable,
+		boxrule=0.9pt,
+		colback=TermBG,
+		colupper=TermText,
+		arc=1mm,
+		boxsep=5pt,
+		left=14pt,right=14pt,top=12pt,bottom=12pt,
+		before skip=8pt, after skip=8pt,
+		attach boxed title to top left={yshift=-0.1mm-\tcboxedtitleheight/2, xshift=9mm},
+		boxed title style={
+			arc=1mm, left=6pt,right=6pt,top=3pt,bottom=3pt, boxrule=0pt
+		},
+		fonttitle=\sffamily\bfseries\small,
+		title after break=\vspace{4pt}
+	}
+}
+
+% ================= Umgebung-Implementierungen (mit eigenen Zählern) =================
+% Wir verwenden eigene LaTeX-Zähler (statt tcolorbox auto counter), damit wir
+% vorher \nextboxcolors aufrufen können und die Palette-Makros gesetzt sind.
+
+% ----- Theorem -----
+\newcounter{theorem}[section]
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+\newenvironment{theorem}[1]{%
+	\refstepcounter{theorem}%
+	\nextboxcolors%
+	\begin{tcolorbox}[termbase,
+		colframe=\CurrentAccentFrameName,
+		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		title={Theorem~\thetheorem: #1}]%
+	}{\end{tcolorbox}}
+
+% ----- Beispiel -----
+\newcounter{beispiel}[section]
+\renewcommand{\thebeispiel}{\thesection.\arabic{beispiel}}
+\newenvironment{beispiel}[1]{%
+	\refstepcounter{beispiel}%
+	\nextboxcolors%
+	\begin{tcolorbox}[termbase,
+		colframe=\CurrentAccentFrameName,
+		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		title={Beispiel~\thebeispiel: #1}]%
+	}{\end{tcolorbox}}
+
+% ----- Aufgabe -----
+\newcounter{aufgabe}[section]
+\renewcommand{\theaufgabe}{\thesection.\arabic{aufgabe}}
+\newenvironment{aufgabe}[1]{%
+	\refstepcounter{aufgabe}%
+	\nextboxcolors%
+	\begin{tcolorbox}[termbase,
+		colframe=\CurrentAccentFrameName,
+		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		title={Aufgabe~\theaufgabe: #1}]%
+	}{\end{tcolorbox}}
+
+% ----- Lösung (verwendet eigenen Zähler, kann optional an Aufgabe gekoppelt werden) -----
+\newcounter{loesung}[section]
+\renewcommand{\theloesung}{\thesection.\arabic{loesung}}
+\newenvironment{loesung}[1]{%
+	\refstepcounter{loesung}%
+	\nextboxcolors%
+	\begin{tcolorbox}[termbase,
+		colframe=\CurrentAccentFrameName,
+		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		title={Lösung~\theloesung: #1}]%
+	}{\end{tcolorbox}}
+
+% ----- Hinweis / Info -----
+\newenvironment{infobox}{%
+	\nextboxcolors%
+	\begin{tcolorbox}[termbase,
+		colframe=\CurrentAccentFrameName,
+		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		title={Hinweis}]%
+	}{\end{tcolorbox}}
+
+% ----- Terminal (Listing only) -----
+\newenvironment{terminal}[1]{%
+	\nextboxcolors%
+	\begin{tcolorbox}[termbase,
+		colframe=\CurrentAccentFrameName,
+		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		title={Terminal: #1},
+		listing only,
+		listing options={
+			basicstyle=\ttfamily\small, columns=fullflexible,
+			showstringspaces=false, tabsize=2, breaklines=true,
+			backgroundcolor=\color{TermBG},
+			keywordstyle=\color{MatrixGreen},
+			commentstyle=\color{Steel},
+			stringstyle=\color{MatrixGreenDim},
+			frame=none, numbersep=8pt, numbers=none
+		}]%
+	}{\end{tcolorbox}}
+
+% ================= Sonstiges =================
+\lstdefinestyle{darkterm}{
+	basicstyle=\ttfamily\small, columns=fullflexible,
+	showstringspaces=false, tabsize=2, breaklines=true,
+	backgroundcolor=\color{TermBG},
+	keywordstyle=\color{MatrixGreen},
+	commentstyle=\color{Steel},
+	stringstyle=\color{MatrixGreenDim},
+	frame=single, rulecolor=\color{MatrixGreenDeep!80!black},
+	xleftmargin=0pt, numbersep=8pt, numbers=left,
+	numberstyle=\tiny\color{Steel}
+}
+\lstset{style=darkterm}
+
+\newcommand{\lessondate}[1]{\noindent\hfill\textcolor{Steel}{\textsc{#1}}\\[6pt]}
+
+
+% ==================== Feines Titelblatt ====================
+\newcommand{\MakeArtTitle}[4]{%
+	\begin{titlepage}
+		\vspace*{18mm}
+		\begin{center}
+			%\begin{tikzpicture}
+			%	\fill[AccentViolet!85!black] (0,0) circle (1.2cm);
+			%	\fill[PageBG] (0.15,0.15) circle (0.95cm);
+			%	\draw[line width=1pt,color=AccentBlue] (0,0) circle (1.35cm);
+			%	\node[white] at (0,0) {\sffamily\bfseries\Large M};
+			%\end{tikzpicture}
+			\vspace{12mm}
+			%{\Huge\bfseries\sffamily\color{TextCream} #1 \par}
+			{\huge\color{TextCream} #1 \par}
+			\vspace{6mm}
+			{\Large\itshape\color{AccentBlue!50} #2 \par}
+			\vspace{10mm}
+			{\Large\scshape\color{TextCream} #3 \par}
+			\vspace{6mm}
+			{\small\color{MarginalGray} #4 \par}
+			%\vfill
+			\vspace{5mm}
+			{\small\color{MarginalGray} \today \par}
+			%\vspace{12mm}
+			%\begin{tikzpicture}
+			%	\draw[line width=1.2pt,color=AccentViolet!80!black] (-6,0) -- (6,0);
+			%	\draw[line width=0.45pt,color=AccentBlue!60!black] (-6,-0.3) -- (6,-0.3);
+			%\end{tikzpicture}
+		\end{center}
+		\vspace{7.5cm}
+		\centering
+		%\includegraphics[width=0.75\textwidth]{2.png} % Logo einfügen (Pfad anpassen)
+	\end{titlepage}
+}
+
+
+
+% ================= Dokumentbeginn =================
+\begin{document}
+	
+		% Titelblatt
+	\MakeArtTitle{
+		Leistungskurs Mathematik Q3 Hessen}
+	{Stochastik Skript}
+	{Shamsher Singh Kalsi}
+	{Berufliches Gymnasium — Ferdinand-Braun Schule \\ Kursleiter: Herr Thorsten Farnungen}
+	
+	\tableofcontents
+	\bigskip
+	\clearpage
+	
+	\section{Einführung}
+	\lessondate{Woche 1}
+	
+	\begin{theorem}{Fundamentaler Satz}
+		Inhalt des Theorems ...
+	\end{theorem}
+	
+	\begin{beispiel}{Erstes Beispiel}
+		Dieses Beispiel illustriert den Satz.
+	\end{beispiel}
+	
+	\begin{aufgabe}{Rechenaufgabe}
+		Bearbeite folgende Aufgabe ...
+	\end{aufgabe}
+	
+	\begin{loesung}{zur Aufgabe}
+		Hier die Lösungsschritte ...
+	\end{loesung}
+	
+	\begin{infobox}
+		Ein kurzer Hinweis.
+	\end{infobox}
+	
+	\begin{terminal}{Beispielcode}
+		echo "Hallo Welt"
+		ls -la
+	\end{terminal}
+	
+\end{document}

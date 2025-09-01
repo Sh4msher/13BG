@@ -773,6 +773,125 @@
 		\]
 	\end{loesung}
 	
+	
+	\newpage
+	
+	\lessondate{01.09.2025}\\
+	
+	\begin{aufgabe}{Übungen - Wahrscheinlichkeitsrechnung}
+		\begin{enumerate}
+			\item Berechnen Sie für die Urliste $\{4;3; 4; 5; 4 \}$ den Mittelwert, die Varianz und die Standardabweichung.
+			\item Nach einer Statistik der Deutschen Bahn verkehren etwa 95 Prozent der Fernzüge „pünktlich (d.h. mit maximal 5 Minuten Verspätung). Tim fährt 5-mal mit einem Fernzug.
+			\begin{itemize}
+				\item Er berechnet die Wahrscheinlichkeit, dass mindestens ein Zug nicht pünktlich ist, mit der Formel $1 - 0.95^5$. Erklären Sie.
+				\item Nehmen Sie Stellung zur Annahme: „Die Pünktlichkeit der Züge ist voneinander unabhängig."
+			\end{itemize} 
+		\item Wenn man Flügelmuttern auf einer Seite schwarz, auf der anderen weiß markiert, gibt es beim Würfeln drei mögliche Ergebnisse. Heiko hat 50-mal, Simon 200-mal gewürfelt.
+		\begin{itemize}
+			\item Notieren Sie sinnvolle Wahrscheinlichkeiten. Erläutern Sie Ihre Gedanken.
+			\item Fassen Sie die Ergebnisse zusammen und notieren Sie eine bessere Einschätzung 
+		\end{itemize}
+		\item Man wirft zwei Würfel. Untersuchen Sie die Ereignisse A und B auf Unabhängigkeit. 
+		\begin{itemize}
+			\item A: Die Augensumme ist 6. Und B: Die Differenz der Augenzahl ist 0.
+			\item A: Der erste Würfel zeigt 3. Und B: Die Augensumme ist größer als 5.
+			\item A: Der erste Würfel zeigt eine Augenzahl unter 3. Und B: Der zweite Würfel zeigt einer Augenzahl über 3. 
+		\end{itemize}
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|}
+				\hline 
+				\diagbox{Namen}{Ergebnisse} & Schwarz & Weiß & Boden\\ \hline 
+				Heiko & 20 & 24 & 6 \\ \hline
+				Simon & 88 & 95 & 17 \\ \hline 
+			\end{tabular}
+		\end{center}
+		\end{enumerate}
+	\end{aufgabe}
+	
+	
+	\newpage
+	
+	\begin{loesung}{Aufgabe 1}
+		\subsection*{MIttelwert}
+		\vspace{-10mm}
+		\begin{align*}
+			\overline{x} &= \frac{1}{n} \sum^{n}_{i = 1} x_i \\
+			\overline{x} &= \frac{4 + 3 + 4 + 5 + 4 }{5} = \boxed{\frac{20}{5} = 4}
+		\end{align*}
+		\subsection*{Varianz}
+		\vspace{-10mm}
+		\begin{align*}
+			s^2 &= \frac{1}{n} \sum_{i = 1}^{n} (x_i - \overline{x})^2 \\
+			s^2 &= \frac{(4 - 4)^2 + (3 - 4)^2 + (4 - 4)^2 + (5 - 4)^2 + (4 - 4)^2}{5} \\
+			s^2 &= \frac{0 + 1 + 0 + 1 + 0}{5} = \boxed{\frac{2}{5}  =0.4}
+		\end{align*}
+		\subsection*{Standardabweichung}
+		\vspace{-10mm}
+		\begin{align*}
+			s &= \sqrt{s^2}\\
+			s &= \sqrt{0.4} \approx \boxed{0.632} 
+		\end{align*}
+	\end{loesung}
+	
+	\begin{loesung}{Aufgabe 2}
+		\subsection*{Erklärung zu $1-0{,}95^5$}
+		Wir modellieren jede Fahrt als Bernoulli-Experiment mit der Erfolgswahrscheinlichkeit $p=0{,}95$ für „pünktlich“. Unter der (idealisierenden) Annahme stochastischer Unabhängigkeit ist die Wahrscheinlichkeit, dass \emph{alle} fünf Fahrten pünktlich sind, $0{,}95^5$. Das Gegenereignis lautet „mindestens eine Fahrt ist unpünktlich“, also $1-0{,}95^5\approx 1-0{,}77378094\approx 0{,}2262$.
+		
+		\subsection*{Zur Unabhängigkeits-Annahme}
+		Die Annahme unabhängiger Fahrten ist eine bequeme Modellvereinfachung, aber in der Realität fragil: Systemstörungen, Wetterlagen, Bauarbeiten oder Anschlussabhängigkeiten erzeugen Korrelationen. Fahrten am selben Tag, auf derselben Strecke oder mit engen Umstiegsbeziehungen sind typischerweise positiv korreliert in ihrer Pünktlichkeit. Das Binomialmodell liefert also eine sinnvolle Erstnäherung; streng genommen wäre ein Modell mit latenten „Zuständen“ (z.\,B. normaler Betrieb vs. Störungstag) plausibler, bei dem sich $p$ zwischen Tagen variiert, sodass die Unabhängigkeit nur \emph{bedingt} gilt.
+	\end{loesung}
+	
+	\begin{loesung}{Aufgabe 3}
+		\subsection*{Gedanken zu sinnvollen Wahrscheinlichkeiten}
+		Die Flügelmutter besitzt zwei markierte Flächen (schwarz/weiß), die geometrisch symmetrisch sind; hierfür ist ohne weitere Information $P(\text{Schwarz})\approx P(\text{Weiß})$ naheliegend. Ein Fall „Boden/Seite“ ist physikalisch möglich, aber aufgrund der kleineren stabilen Auflagefläche plausibel seltener als die Flächen. Eine uninformierte Vorabschätzung könnte also in der Größenordnung „je Flächenfarbe ähnlich groß, Boden merklich kleiner“ liegen, etwa symbolisch $P_S\approx P_W$ und $P_B$ deutlich darunter, ohne exakte Werte festzulegen.
+		
+		\subsection*{Schätzungen aus den Daten}
+		Heiko würfelt $n_H=50$-mal mit $(20,24,6)$ für (Schwarz, Weiß, Boden), Simon $n_S=200$-mal mit $(88,95,17)$. Die relativen Häufigkeiten einzeln sind
+		\[
+		\hat p^{(H)}_S= \tfrac{20}{50}=0{,}40,\quad 
+		\hat p^{(H)}_W= \tfrac{24}{50}=0{,}48,\quad
+		\hat p^{(H)}_B= \tfrac{6}{50}=0{,}12,
+		\]
+		\[
+		\hat p^{(S)}_S= \tfrac{88}{200}=0{,}44,\quad 
+		\hat p^{(S)}_W= \tfrac{95}{200}=0{,}475,\quad
+		\hat p^{(S)}_B= \tfrac{17}{200}=0{,}085.
+		\]
+		Fassen wir die Ergebnisse zusammen ($n=250$ Gesamtwürfe), erhalten wir
+		\[
+		\hat p_S=\frac{108}{250}=0{,}432,\qquad
+		\hat p_W=\frac{119}{250}=0{,}476,\qquad
+		\hat p_B=\frac{23}{250}=0{,}092.
+		\]
+		Diese gepoolte Schätzung ist robuster als die einzelne von Heiko, da $n$ größer ist. Sie bestätigt die Symmetrie zwischen den Flächen näherungsweise und zeigt einen kleineren, aber nicht vernachlässigbaren Anteil für „Boden“. Für weitere Präzision könnte man Konfidenzintervalle (z.\,B. Wilson) angeben; heuristisch liegt der Standardfehler pro Kategorie etwa bei $\sqrt{\hat p(1-\hat p)/n}$, also in einer Größenordnung von zwei bis drei Prozentpunkten für die Flächen und etwa zwei Prozentpunkten für „Boden“.
+	\end{loesung}
+	
+	\begin{loesung}{Aufgabe 4}
+		Es gelten $36$ gleichwahrscheinliche Ausgänge für zwei faire Würfel. Unabhängigkeit liegt genau dann vor, wenn $P(A\cap B)=P(A)\,P(B)$.
+		
+		\subsection*{A: Augensumme $=6$; B: Differenz $=0$}
+		Die Summe $6$ tritt in $5$ Paaren auf, also $P(A)=\tfrac{5}{36}$. Die Differenz $0$ bedeutet gleiche Augen, also $P(B)=\tfrac{6}{36}=\tfrac{1}{6}$. Im Schnittpunkt liegt nur $(3,3)$, somit $P(A\cap B)=\tfrac{1}{36}$. Da 
+		\[
+		P(A)P(B)=\tfrac{5}{36}\cdot\tfrac{1}{6}=\tfrac{5}{216}\neq \tfrac{1}{36},
+		\]
+		sind $A$ und $B$ \emph{abhängig}.
+		
+		\subsection*{A: Erster Würfel zeigt $3$; B: Augensumme $>5$}
+		Hier ist $P(A)=\tfrac{1}{6}$. Für $B$ gilt $P(B)=\tfrac{26}{36}=\tfrac{13}{18}$, da die Summen $\le 5$ insgesamt $1+2+3+4=10$ Fälle haben. Der Schnitt $A\cap B$ verlangt beim ersten Würfel $3$ und beim zweiten eine $3,4,5,6$, also $4$ von $36$: $P(A\cap B)=\tfrac{4}{36}=\tfrac{1}{9}$. Das Produkt
+		\[
+		P(A)P(B)=\tfrac{1}{6}\cdot \tfrac{13}{18}=\tfrac{13}{108}\neq \tfrac{1}{9},
+		\]
+		also \emph{abhängig}.
+		
+		\subsection*{A: Erster Würfel $<3$; B: Zweiter Würfel $>3$}
+		Es ist $P(A)=\tfrac{2}{6}=\tfrac{1}{3}$ und $P(B)=\tfrac{3}{6}=\tfrac{1}{2}$. Der Schnitt umfasst die $2\cdot 3=6$ Paare mit erstem Wurf $1$ oder $2$ und zweitem Wurf $4,5,6$, also $P(A\cap B)=\tfrac{6}{36}=\tfrac{1}{6}$. Da
+		\[
+		P(A)P(B)=\tfrac{1}{3}\cdot \tfrac{1}{2}=\tfrac{1}{6},
+		\]
+		sind $A$ und $B$ \emph{unabhängig}.
+	\end{loesung}
+	
+	
 	\section{Wahrscheinlichkeitsverteilung}
 	
 	\section{Hypothesentest (für binominalverteilte Zufallsgrößen)}
