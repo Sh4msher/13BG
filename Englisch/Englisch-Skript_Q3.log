@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  25 AUG 2025 14:42
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  1 SEP 2025 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1156,7 +1156,24 @@ File: image.png Graphic file (type bmp)
 
 [1
 
-] (./Englisch-Skript_Q3.toc)
+] (./Englisch-Skript_Q3.toc
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LibertinusMath' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 10.95116pt on input line 6.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 8.76093pt on input line 6.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+(Font)              scaled to size 6.5707pt on input line 6.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 6.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 8.75905pt on input line 6.
+LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+(Font)              scaled to size 6.5693pt on input line 6.
+)
 \tf@toc=\write4
 \openout4 = `Englisch-Skript_Q3.toc'.
 
@@ -1172,15 +1189,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--238
 [2
 
 ]
+
+[3]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSans' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-[3]
+[4]
 
-[4
+[5
 
 ] (./Englisch-Skript_Q3.aux)
  ***********
@@ -1189,12 +1208,12 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34039 strings out of 475235
- 762532 string characters out of 5760660
- 1337980 words of memory out of 5000000
- 56567 multiletter control sequences out of 15000+600000
- 559743 words of font info for 77 fonts, out of 8000000 for 9000
+ 34085 strings out of 475235
+ 764039 string characters out of 5760660
+ 1338027 words of memory out of 5000000
+ 56601 multiletter control sequences out of 15000+600000
+ 561334 words of font info for 88 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  102i,12n,107p,1015b,962s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Englisch-Skript_Q3.pdf (5 pages).
+Output written on Englisch-Skript_Q3.pdf (6 pages).

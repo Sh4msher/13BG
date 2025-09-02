@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  26 AUG 2025 09:27
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  2 SEP 2025 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1245,22 +1245,31 @@ LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
 
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+
+ []
+
+
 
 [7]
 
-[8] (./Geschichte-Skript_Q3.aux)
+[8]
+
+[9]
+
+[10] (./Geschichte-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 35473 strings out of 475235
- 796699 string characters out of 5760660
- 1379233 words of memory out of 5000000
- 57935 multiletter control sequences out of 15000+600000
- 562785 words of font info for 118 fonts, out of 8000000 for 9000
+ 35485 strings out of 475235
+ 796913 string characters out of 5760660
+ 1379329 words of memory out of 5000000
+ 57947 multiletter control sequences out of 15000+600000
+ 562787 words of font info for 118 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  102i,12n,107p,1017b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Geschichte-Skript_Q3.pdf (9 pages).
+Output written on Geschichte-Skript_Q3.pdf (11 pages).

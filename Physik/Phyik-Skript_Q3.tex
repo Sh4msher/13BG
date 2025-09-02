@@ -33,6 +33,7 @@
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathreplacing} % für geschweifte Klammern
 \usetikzlibrary{shadings,shadows,calc}
+\usetikzlibrary{arrows.meta,decorations.markings}
 
 % --------------------PGF Plots ---------------------
 
@@ -232,8 +233,8 @@
 	\section{Wiederholung}
 	%\lessondate{19.08.2025}\\
 	
-	\subsection{Herleitung der Interferenz und Beugung am Doppelspalt \lessondate{19.08.2025}}
-	
+	\subsection{Herleitung der Interferenz und Beugung am Doppelspalt}
+	%\lessondate{19.08.2025}\\
 	Die Überlagerung von Lichtwellen am Doppelspalt ist eines der klassischen Experimente der Wellenoptik und wurde erstmals von \textsc{Thomas Young} im Jahr 1801 durchgeführt. Es zeigt, dass Licht Welleneigenschaften besitzt, da sich charakteristische Interferenzmuster nur durch das Prinzip der Überlagerung erklären lassen. Die beobachteten Helligkeitsmaxima und -minima entstehen durch konstruktive und destruktive Interferenz zweier kohärenter Wellenzüge, die durch die beiden Spalte hindurchlaufen.
 	
 	
@@ -283,6 +284,170 @@
 	%\end{figure}
 	
 	\newpage
+	\lessondate{02.09.2025}\\
+	
+	\begin{aufgabe}{Bohr'sches Atommodell}
+		\small
+		\begin{itemize}[left=20mm]
+			\item [\textbf{Aufgabe 1}] Leitet aus den beiden Gleichungen 
+			\begin{align*}
+				2 \cdot \pi \cdot r &= n \cdot \lambda \\
+				\lambda &= \frac{h}{mv}
+			\end{align*}
+			die Quantenbedingung her. Dazu wird eine Gleichung nach der Wellenlänge aufgelöst und in die
+			andere eingesetzt. Die Wellenlänge ist somit eliminiert. In Gleichung 1 kann man erkennen, dass man
+			dem Kreisumfang eine De-Broglie-Welle einbeschreibt. Wir werden diese Gleichungen noch später in
+			Unterricht besprechen.
+			\item [\textbf{Aufgabe 2}] 
+			Das Elektron hat die Masse m und die negative Elementarladung e. Es bewegt sich mit der Bahngeschwindigkeit v auf einer Kreisbahn mit dem Radius r um den Atomkern.
+			\begin{itemize}[left=-10mm]
+				\item [A:] Erstelle eine Skizze des Wasserstoffatoms mit allen notwendigen und sinnvollen Angaben. Zeichne dabei mehrere Elektronenschalen ein.
+				\item [B:] Gebe die Formel zur Bestimmung der Zentrifugalkraft an, die auf das Elektron wirkt. Diese
+				Kraft wirkt nach außen.
+				\item [C:] Welche Gegenkraft wirkt auf das Elektron, damit es auf der Kreisbahn bleibt? Diese Gegenkraft muss zum Atomkern hin gerichtet sein, es stellt somit die Zentripetalkraft dar. Benenne diese Gegenkraft.
+				\item [D:] Gebe nun diese Formel aus b) zur Bestimmung der Gegenkraft an. \\
+				Diese beiden Gleichungen sind bereits im Rutherfordschen Atommodell gültig. Jetzt kommt noch die
+				Quantenbedingung hinzu. Jetzt wird die Quantenbedingung aus Aufgabe 1 benötigt.
+				\item [E:]
+				\item [F:]
+				\item [G:]
+				\item [H:]
+				\item [I:]
+				\item [J:]
+				\item [K:]
+				\item [L:]
+				\item [M:]
+				\item [N:]
+				\item [O:]
+				\item [P:]
+				\item [Q:]
+				\item [R:]		
+			\end{itemize}
+		\end{itemize}
+	\end{aufgabe}
+	
+	\newpage
+	
+	
+	\subsection{Probleme des Atommodells von Rutherford}
+	
+	Das Rutherford-Modell kann die Stabilität der Atome nicht erklären. 
+	Nach klassischer Elektrodynamik beschreibt ein Elektron auf Kreisbahn 
+	eine beschleunigte Bewegung. Beschleunigte Ladungen strahlen jedoch 
+	elektromagnetische Energie ab und müssten Energie verlieren – 
+	das Elektron stürzte in den Kern, stabile Atome wären unmöglich. \\
+	
+	Ebenso erklärt das Modell nicht die quantisierte Emission und Absorption 
+	von Licht. Experimente wie die Balmer-Serie, die Umkehr der Natrium-D-Linie 
+	oder der Franck-Hertz-Versuch zeigen eindeutig, dass Atome nur diskrete 
+	Energien aufnehmen oder abgeben können. Im Rutherford-Modell dagegen 
+	sind alle Bahnradii und Elektronengeschwindigkeiten erlaubt, 
+	die Gesamtenergie der Elektronen wäre beliebig.
+	
+	\begin{theo}{Bohrs Lösung durch drei Postulate (1913)}
+		Bohr übertrug die Quantenvorstellungen von Planck und Einstein 
+		auf den Atomaufbau und stellte drei Postulate auf, 
+		die zunächst vor allem beim Wasserstoff erfolgreich waren. 
+		Das dritte Postulat ist aus heutiger Sicht überholt.
+		
+		\begin{enumerate}
+			\item \textbf{Energiequantelung:} 
+			Ein Elektron im Atom kann nur diskrete Energiewerte $E_n$ besitzen.
+			
+			\item \textbf{Strahlung:} 
+			Die Frequenz $f$ der Strahlung ergibt sich aus der Energiedifferenz:
+			\[
+			h f = E_m - E_n \quad (m > n, \; m,n \in \mathbb{N})
+			\]
+			
+			\item \textbf{Bahnen (Quantenbedingung):} 
+			Elektronen bewegen sich nur auf stationären Bahnen ohne Energieabstrahlung. 
+			Es gilt:
+			\[
+			m_e r_n v_n = \frac{n h}{2 \pi}
+			\]
+		\end{enumerate}
+	\end{theo}
+	
+	\begin{loesung}{Bohr'sches Atommodell}
+		\subsection*{Aufgabe 1}		
+		Setzt man $\lambda = \tfrac{h}{mv}$ in $2 \pi r = n \lambda$ ein, so folgt:
+		\begin{align*}
+			2 \pi r &= n \cdot \frac{h}{m v} \\
+			m v r &= \frac{n h}{2 \pi}.
+		\end{align*}
+		
+		Damit erhält man die Quantenbedingung für den Bahndrehimpuls:
+		\[
+		L = m v r = n \hbar \quad \text{mit} \quad \hbar = \frac{h}{2 \pi}.
+		\]
+	\end{loesung}
+	
+	
+	
+	\begin{loesung}{Bohr'sches Atommodell}
+		\subsection*{Aufgabe 2 A bis D - Tipler Seite 1231}
+		\vspace{5mm}
+		\begin{minipage}[t]{0.5\textwidth}
+			\begin{tikzpicture}[scale=1.25]
+				
+				% Atomkern
+				\shade[ball color=red!50] (0,0) circle (0.3) node[white] {p$^+$};
+				
+				% Erste Elektronenschale
+				\draw[thick] (0,0) circle (1);
+				% Elektron auf erster Schale
+				\shade[ball color=blue!50] (1,0) circle (0.15) node[right=2pt] {e$^-$};
+				
+				% Zweite Elektronenschale
+				\draw[thick,dashed] (0,0) circle (1.8);
+				% Elektronen auf zweiter Schale
+				\shade[ball color=blue!50] (1.8,0) circle (0.12);
+				\shade[ball color=blue!50] (-1.8,0) circle (0.12);
+				
+				% Radius r beschriften (zum Elektron auf erster Schale)
+				\draw[<->] (0,0) -- (0.7,0.7)
+				node[midway,above left] {$r$};
+				
+				% Geschwindigkeitspfeil (Tangentialrichtung)
+				\draw[-{Latex[length=3mm]}] (1,0) -- (1,0.8)
+				node[right] {$v$};
+				
+				% Zentripetalkraft (zum Kern hin)
+				\draw[-{Latex[length=3mm]},red,thick] (1,0) -- (0.2,0)
+				node[midway,below] {$F_\text{z}$};
+				
+			\end{tikzpicture}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.5\textwidth}
+			\vspace{-40mm}
+			\begin{itemize}
+				\item[B:] \textbf{Zentrifugalkraft:} 
+				$
+				F_\text{zentrifugal} = \frac{m v^2}{r}
+				$
+				\item[C:] \textbf{Gegenkraft:} Coulomb-Kraft zwischen Elektron und Kern
+				\item[D:] \textbf{Zentripetalkraft:} 
+				\[
+				F_\text{Coulomb} = \frac{1}{4\pi \varepsilon_0} \cdot \frac{Z e^2}{r^2}
+				\]
+			\end{itemize}
+		\end{minipage}
+		
+		\vspace{5mm}
+		\begin{infobox}
+			\small
+			Stabilität liegt vor, weil gilt 
+			\[
+			F_\text{zentrifugal} = F_\text{Coulomb}.
+			\]
+			\footnote{(Vgl. Tipler, Abb. 34.3 und Gl. (34.5))}
+		\end{infobox}
+	\end{loesung}
+	
+	\newpage
+	
 	
 	\section{Elektromagnetische Wellen}
 

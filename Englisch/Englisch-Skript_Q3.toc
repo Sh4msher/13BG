@@ -4,7 +4,8 @@
 \contentsline {section}{\numberline {3}Modelling the future}{2}{}%
 \contentsline {section}{\numberline {4}Gender issues}{2}{}%
 \contentsline {subsection}{\numberline {4.1}Diversity in the Workplace}{2}{}%
-\contentsline {section}{\numberline {5}Nature and the environment}{2}{}%
-\contentsline {section}{\numberline {6}Globalization}{2}{}%
-\contentsline {section}{\numberline {7}Farb- und Box-Demonstration}{3}{}%
-\contentsline {section}{\numberline {8}Introduction to the Course}{4}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Cartoon Analysis}{2}{}%
+\contentsline {section}{\numberline {5}Nature and the environment}{3}{}%
+\contentsline {section}{\numberline {6}Globalization}{3}{}%
+\contentsline {section}{\numberline {7}Farb- und Box-Demonstration}{4}{}%
+\contentsline {section}{\numberline {8}Introduction to the Course}{5}{}%
