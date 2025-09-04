@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  1 SEP 2025 00:28
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  5 SEP 2025 00:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2099,10 +2099,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 779--780
 [17]
 
 [18]
+Underfull \hbox (badness 10000) in paragraph at lines 894--895
+
+ []
+
+
 
 [19]
+Underfull \hbox (badness 2564) in paragraph at lines 936--938
+[]\TU/LibertinusSerif(0)/b/n/10.95 Aufgabe 17: \TU/LibertinusSerif(0)/m/n/10.95
+ Bei dem abgebildeten Glücksrad tritt jedes der 10 Felder mit
+ []
 
-[20] (./Mathematik-Skript_Q3.aux)
+
+Underfull \hbox (badness 3815) in paragraph at lines 936--938
+\TU/LibertinusSerif(0)/m/n/10.95 der gleichen Wahrscheinlichkeit ein. Das Glück
+srad wird zweimal gedreht.
+ []
+
+
+
+[20]
+Overfull \hbox (20.30293pt too wide) detected at line 1010
+[][][][][][][] [] [][][][] [] [][][][] [] [][][][] [] [][][][] [] [] [] [] [] [
+] [] [] [] [] [][][][][][][][][][]
+ []
+
+
+
+[21]
+
+[22]
+
+[23]
+
+[24]
+
+[25]
+
+[26]
+
+[27]
+
+[28] (./Mathematik-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2113,12 +2152,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 71960 strings out of 475235
- 1863272 string characters out of 5760660
- 2907889 words of memory out of 5000000
- 94049 multiletter control sequences out of 15000+600000
- 563811 words of font info for 114 fonts, out of 8000000 for 9000
+ 72001 strings out of 475235
+ 1864054 string characters out of 5760660
+ 2908265 words of memory out of 5000000
+ 94090 multiletter control sequences out of 15000+600000
+ 563819 words of font info for 114 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  105i,16n,117p,1017b,2548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Mathematik-Skript_Q3.pdf (21 pages).
+Output written on Mathematik-Skript_Q3.pdf (29 pages).

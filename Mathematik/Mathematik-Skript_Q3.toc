@@ -18,6 +18,13 @@
 \contentsline {subsection}{\numberline {3.2}Absolute und Relative Häufigkeit}{13}{}%
 \contentsline {subsubsection}{\numberline {3.2.1}Relative Häufigkeit}{13}{}%
 \contentsline {subsection}{\numberline {3.3}Laplace Wahrscheinlichkeit}{14}{}%
-\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{19}{}%
-\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{19}{}%
-\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{19}{}%
+\contentsline {paragraph}{a) Montag ist schön. Wahrscheinlichkeit für schön am Mittwoch}{23}{}%
+\contentsline {paragraph}{b) Heute ist Dienstag und es ist schön. Wahrscheinlichkeit für Regen (schlechtes Wetter) am Freitag}{23}{}%
+\contentsline {paragraph}{a) Gewinnwahrscheinlichkeiten}{24}{}%
+\contentsline {paragraph}{b) Erwartungswert und Rentabilität}{24}{}%
+\contentsline {paragraph}{Antwort:}{24}{}%
+\contentsline {paragraph}{a) Ergebnismenge und Baumdiagramm}{25}{}%
+\contentsline {paragraph}{b) Ereignisse}{25}{}%
+\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{27}{}%
+\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{27}{}%
+\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{27}{}%

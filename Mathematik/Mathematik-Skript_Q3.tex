@@ -891,6 +891,303 @@
 		sind $A$ und $B$ \emph{unabhängig}.
 	\end{loesung}
 	
+	\lessondate{05.09.2025}\\	
+	
+	\begin{aufgabe}{ Buch Seite 49 Mehrstufige Zufallsversuche}
+		\begin{itemize}
+			\item \textbf{Aufgabe 5:} In einer Schublade liegen fünf Sicherungen, von denen zwei defekt sind. Wie groß ist die Wahrscheinlichkeit, dass bei zufälliger Entnahme von zwei Sicherungen aus der Schublade mindestens eine defekte Sicherung entnommen wird? 
+			\item \textbf{Aufgabe 7:} Das abgebildete Glücksrad (mit drei gleich gtoßen Sektoren) wird zweimal gedreht. Mit welcher Wahrscheinlichkeit
+			\begin{itemize}
+				\item erscheint in beiden Fällen rot, 
+				\item erscheint mindestens einmal rot? 
+			\end{itemize}
+			\item \textbf{Aufgabe 9:}
+			In einer Urne liegen 7 Buchstaben, viermal das "O" und dreimal das "T". Es werden vier Buchstaben der Reihe nach mit Zurücklegen gezogen. Mit welcher Wahrscheinlichkeit
+			\begin{itemize}
+				\item entsteht das Wort "OTTO"
+				\item lässt sich mit den gezogenen Buchstaben das Wort "OTTO" bilden? 
+			\end{itemize} 
+		\end{itemize}
+	\end{aufgabe}	
+	
+		\begin{aufgabe}{ Buch Seite 50 Mehrstufige Zufallsversuche}
+		\begin{itemize}
+			\item \textbf{Aufgabe 11:} Robinson hat festgestellt, dass auf seiner Insel folgende Wetterregeln gelten: Ist es schön, ist es morgen mit $80\%$ Wahrscheinlichkeit ebenfalls schön. Ist heute schlechtes Wetter, so ist morgen mit $75\%$ Wahrscheinlichkeit ebenfalls schlechtes Wetter. 
+			\begin{itemize}
+				\item Heute (Montag) scheint die Sonne. Mit welcher Wahrscheinlichkeit kann kann Robinson am Mittwoch mit schönem Wetter rechnen? 
+				\item Heute ist Dienstag und es ist schön. Mit welcher Wahrscheinlichkeit regnet es am Freitag? 
+			\end{itemize}
+			\item \textbf{Aufgabe 14:} Die drei Räder eines Glücksautomaten sind jeweils in 5 gleich große Sektoren eingeteilt und drehen sich unabhängig voneinander (Abbildung - Erstes Rad bestehend aus; x, y, z, y, z - Zweites Rad bestehend aus; x, y, z, y, z - Drittes Rad bestehend aus; y, z, x, x, x).Die Einzahlung beträgt 0.50 Euro.
+			\begin{itemize}
+				\item x, x, x, = 7 Euro 
+				\item y, x, y = 2 Euro
+				\item y, z, y = 2 Euro 
+				\item  y, y, y = 2 Euro 
+			\end{itemize} 
+			\begin{itemize}
+				\item Mit welcher Wahrscheinlichkeit gewinnt $7$ Euro bzw. $2$ Euro? 
+				\item Lohnt sich das Spiel auf langer sicht? 
+			\end{itemize}
+		\end{itemize}
+	\end{aufgabe}
+	
+		\begin{aufgabe}{ Buch Seite 51 Mehrstufige Zufallsversuche}
+		\begin{itemize}
+			\item \textbf{Aufgabe 17:} Bei dem abgebildeten Glücksrad tritt jedes der 10 Felder mit der gleichen Wahrscheinlichkeit ein. Das Glücksrad wird zweimal gedreht. \{9,7,9,9,7,9,9,7,1,9\}
+			\begin{itemize}
+				\item Stellen Sie eine geeignete Ergebnismenge für dieses Zufallsexperiment  auf und geben Sie die Wahrscheinlichkeiten aller Elementarereignisse mit Hilfe eines Baumdiagrammes an. 
+				\item Berechnen Sie die Wahrscheinlichkeiten der folgenden Ereignisse: 
+				\begin{itemize}
+					\item A: Es tritt höchstens einmal die 1 auf
+					\item B: Es tritt genau einmal die 7 auf 
+					\item C: Es tritt keine 9 auf 
+					\item D = B $\cap$ C
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+	\end{aufgabe}
+	
+	\begin{loesung}{Buch Seite 49 Mehrstufige Zufallsversuche}
+		
+		\subsection*{Aufgabe 5}
+		In einer Schublade liegen 5 Sicherungen, davon 2 defekt und damit 3 intakt. Es werden ohne Zurücklegen zwei Sicherungen gezogen. Gesucht ist
+		\[
+		P(\text{mindestens eine defekt}) = 1 - P(\text{keine defekt}).
+		\]
+		Anzahl günstiger Fälle für ``keine defekt'': aus den 3 intakten Sicherungen werden 2 gewählt:
+		\[
+		\binom{3}{2}=3.
+		\]
+		Anzahl aller gleich wahrscheinlichen Ziehungen:
+		\[
+		\binom{5}{2}=10.
+		\]
+		Also
+		\[
+		P(\text{keine defekt})=\frac{3}{10},
+		\]
+		und damit
+		\[
+		P(\text{mindestens eine defekt})=1-\frac{3}{10}=\frac{7}{10}=0{,}7.
+		\]
+	\end{loesung}
+	
+	\begin{loesung}{}
+		\subsection*{Aufgabe 7}
+		Das Glücksrad hat drei gleich große Sektoren, davon sei genau einer rot. Bei zwei unabhängigen Drehungen gilt für die Eintrittswahrscheinlichkeit von \textit{rot}:
+		\[
+		P(\text{rot})=\frac{1}{3},\qquad P(\text{nicht rot})=\frac{2}{3}.
+		\]
+		
+		\begin{itemize}
+			\item \textbf{Beide Male rot:}
+			\[
+			P(\text{rot, rot})=P(\text{rot})\cdot P(\text{rot})=\left(\frac{1}{3}\right)^2=\frac{1}{9}\approx 0{,}111111.
+			\]
+			
+			\item \textbf{Mindestens einmal rot:}
+			\[
+			P(\text{mindestens einmal rot})=1-P(\text{keinmal rot})=1-\left(\frac{2}{3}\right)^2
+			=1-\frac{4}{9}=\frac{5}{9}\approx 0{,}555556.
+			\]
+		\end{itemize}
+	\end{loesung}
+			
+	\begin{loesung}{}
+		\subsection*{Aufgabe 9}
+		Urne: \(7\) Buchstaben, davon \(4\) mal ``O'' und \(3\) mal ``T''. Es wird viermal \emph{mit Zurücklegen} gezogen. Damit sind die Züge unabhängig und
+		\[
+		P(O)=\frac{4}{7},\qquad P(T)=\frac{3}{7}.
+		\]
+		
+		\begin{enumerate}
+			\item \textbf{Wahrscheinlichkeit, dass in der Reihenfolge das Wort ``OTTO'' entsteht:}\\
+			Für die Folge \(O,T,T,O\) gilt (Unabhängigkeit der Ziehungen)
+			\[
+			P(OTTO)=P(O)\cdot P(T)\cdot P(T)\cdot P(O)
+			=\left(\frac{4}{7}\right)\left(\frac{3}{7}\right)\left(\frac{3}{7}\right)\left(\frac{4}{7}\right)
+			=\frac{4\cdot 3\cdot 3\cdot 4}{7^4}=\frac{144}{2401}\approx 0{,}0599750.
+			\]
+			
+			\item \textbf{Wahrscheinlichkeit, dass sich mit den gezogenen Buchstaben das Wort ``OTTO'' bilden lässt:}\\
+			Dafür braucht man in der Multimenge genau \(2\) O und \(2\) T (in beliebiger Reihenfolge). Die Anzahl der Positionen für die beiden O ist \(\binom{4}{2}=6\). Also
+			\[
+			P(\text{2 O und 2 T})=\binom{4}{2}\left(\frac{4}{7}\right)^2\left(\frac{3}{7}\right)^2
+			=6\cdot\frac{16}{49}\cdot\frac{9}{49}
+			=6\cdot\frac{144}{2401}=\frac{864}{2401}\approx 0{,}3598501.
+			\]
+		\end{enumerate}
+	\end{loesung}
+		
+	\newpage
+	
+	\begin{loesung}{}
+		\subsection*{Aufgabe 11}
+		Bezeichne die Zustände mit \(S\) für ``schön'' und \(R\) für ``schlecht''. Die Übergangswahrscheinlichkeiten lauten
+		\[
+		P(S\to S)=0{,}8,\quad P(S\to R)=0{,}2,\quad P(R\to R)=0{,}75,\quad P(R\to S)=0{,}25.
+		\]
+		
+		\paragraph{a) Montag ist schön. Wahrscheinlichkeit für schön am Mittwoch}
+		Dies sind zwei Schritte (\(M\to Di\to Mi\)). Es gilt
+		\[
+		\begin{aligned}
+			P(S\ \text{am Mi}\mid S\ \text{am Mo})
+			&=P(S\to S\to S)+P(S\to R\to S)\\
+			&=P(S\to S)\cdot P(S\to S)+P(S\to R)\cdot P(R\to S)\\
+			&=(0{,}8)^2 + (0{,}2)(0{,}25)\\
+			&=0{,}64+0{,}05=0{,}69.
+		\end{aligned}
+		\]
+		Also beträgt die Wahrscheinlichkeit \(69\%\) (als Bruch \(69/100\)).
+		
+		\paragraph{b) Heute ist Dienstag und es ist schön. Wahrscheinlichkeit für Regen (schlechtes Wetter) am Freitag}
+		Von Dienstag bis Freitag sind drei Schritte. Sei \(a_n\) die Wahrscheinlichkeit, am Tag \(n\) nach dem Start (Start = Dienstag, \(n=0\)) schön zu haben. Dann gilt wegen der Markov-Eigenschaft die Rekurrenz
+		\[
+		a_{n+1}=a_n\cdot 0{,}8 + (1-a_n)\cdot 0{,}25 = 0{,}55\,a_n + 0{,}25,
+		\]
+		mit Anfangswert \(a_0=1\) (da es am Dienstag schön ist). Damit
+		\[
+		\begin{aligned}
+			a_1 &= 0{,}55\cdot 1 + 0{,}25 = 0{,}8,\\
+			a_2 &= 0{,}55\cdot 0{,}8 + 0{,}25 = 0{,}69,\\
+			a_3 &= 0{,}55\cdot 0{,}69 + 0{,}25 = 0{,}6295 = \frac{1259}{2000}.
+		\end{aligned}
+		\]
+		\(a_3\) ist die Wahrscheinlichkeit, am Freitag schön zu haben. Die Wahrscheinlichkeit für schlechtes Wetter (Regen) am Freitag ist daher
+		\[
+		1-a_3 = 1-0{,}6295 = 0{,}3705 = \frac{741}{2000}\approx 37{,}05\%.
+		\]
+	\end{loesung}
+	
+	
+	\newpage
+	
+	\begin{loesung}{}
+		\subsection*{Aufgabe 14}
+		Die drei Räder drehen sich unabhängig und haben folgende Aufteilung:
+		
+		\begin{itemize}
+			\item Rad 1: \(\{x,y,z,y,z\}\) \(\Rightarrow P(x)=\tfrac{1}{5},\ P(y)=\tfrac{2}{5},\ P(z)=\tfrac{2}{5}\).
+			\item Rad 2: \(\{x,y,z,y,z\}\) \(\Rightarrow P(x)=\tfrac{1}{5},\ P(y)=\tfrac{2}{5},\ P(z)=\tfrac{2}{5}\).
+			\item Rad 3: \(\{y,z,x,x,x\}\) \(\Rightarrow P(x)=\tfrac{3}{5},\ P(y)=\tfrac{1}{5},\ P(z)=\tfrac{1}{5}\).
+		\end{itemize}
+		
+		Alle Räder drehen unabhängig.
+		
+		\paragraph{a) Gewinnwahrscheinlichkeiten}
+		\begin{enumerate}
+			\item \textbf{Gewinn von 7 Euro:} Ereignis \((x,x,x)\).  
+			\[
+			P(x,x,x)=P_1(x)\cdot P_2(x)\cdot P_3(x)
+			=\tfrac{1}{5}\cdot\tfrac{1}{5}\cdot\tfrac{3}{5}
+			=\tfrac{3}{125}=0{,}024.
+			\]
+			
+			\item \textbf{Gewinn von 2 Euro:} Vier mögliche Gewinnkombinationen:
+			\begin{align*}
+				P(y,x,y)&=P_1(y)\cdot P_2(x)\cdot P_3(y)
+				=\tfrac{2}{5}\cdot\tfrac{1}{5}\cdot\tfrac{1}{5}
+				=\tfrac{2}{125},\\[6pt]
+				P(y,z,y)&=P_1(y)\cdot P_2(z)\cdot P_3(y)
+				=\tfrac{2}{5}\cdot\tfrac{2}{5}\cdot\tfrac{1}{5}
+				=\tfrac{4}{125},\\[6pt]
+				P(y,y,y)&=P_1(y)\cdot P_2(y)\cdot P_3(y)
+				=\tfrac{2}{5}\cdot\tfrac{2}{5}\cdot\tfrac{1}{5}
+				=\tfrac{4}{125},\\[6pt]
+				\text{Summe} &= \tfrac{2}{125}+\tfrac{4}{125}+\tfrac{4}{125}
+				=\tfrac{10}{125}=0{,}08.
+			\end{align*}
+			
+		\end{enumerate}
+		
+		\paragraph{b) Erwartungswert und Rentabilität}
+		Der Einsatz beträgt \(0{,}50\,€\). Erwartungswert der Auszahlung:
+		\[
+		E(\text{Auszahlung})
+		=7\cdot \tfrac{3}{125} + 2\cdot \tfrac{10}{125}
+		=\tfrac{21}{125}+\tfrac{20}{125}
+		=\tfrac{41}{125}\approx 0{,}328.
+		\]
+		
+		Erwartungswert des Nettogewinns (Auszahlung minus Einsatz):
+		\[
+		E(\text{Nettogewinn}) = 0{,}328 - 0{,}50 = -0{,}172 \,€.
+		\]
+		
+		\paragraph{Antwort:}
+		Mit Wahrscheinlichkeit \(\tfrac{3}{125}\) gewinnt man 7 Euro, mit Wahrscheinlichkeit \(\tfrac{10}{125}\) gewinnt man 2 Euro.  
+		Auf lange Sicht lohnt sich das Spiel nicht, da der Erwartungswert negativ ist (\(-17{,}2\) Cent pro Spiel)).
+	\end{loesung}
+	
+	\newpage
+	
+	\begin{loesung}{}
+		\subsection*{Aufgabe 17}
+		Das Glücksrad hat \(10\) gleich große Felder mit der Verteilung
+		\[
+		\{9,7,9,9,7,9,9,7,1,9\}.
+		\]
+		Also gilt:
+		\[
+		P(9)=\tfrac{6}{10}=0{,}6,\qquad
+		P(7)=\tfrac{3}{10}=0{,}3,\qquad
+		P(1)=\tfrac{1}{10}=0{,}1.
+		\]
+		
+		Das Glücksrad wird zweimal gedreht. 
+		
+		\paragraph{a) Ergebnismenge und Baumdiagramm}
+		Die Ergebnismenge ist das kartesische Produkt
+		\[
+		\Omega=\{9,7,1\}\times\{9,7,1\}.
+		\]
+		Also
+		\[
+		\Omega=\{(9,9),(9,7),(9,1),(7,9),(7,7),(7,1),(1,9),(1,7),(1,1)\}.
+		\]
+		
+		Jedes Paar \((x,y)\) hat die Wahrscheinlichkeit
+		\[
+		P\big((x,y)\big)=P(x)\cdot P(y).
+		\]
+		Das kann man in einem Baumdiagramm darstellen:
+		
+		- Erster Dreh: \(P(9)=0{,}6,\ P(7)=0{,}3,\ P(1)=0{,}1\).  
+		- Zweiter Dreh: dieselben Wahrscheinlichkeiten.
+		
+		\paragraph{b) Ereignisse}
+		
+		\begin{itemize}
+			\item \textbf{Ereignis A: höchstens einmal die 1}\\
+			Komplement: zweimal die 1.  
+			\[
+			P(A)=1-P((1,1))=1-(0{,}1\cdot 0{,}1)=1-0{,}01=0{,}99.
+			\]
+			
+			\item \textbf{Ereignis B: genau einmal die 7}\\
+			Fälle: \((7,\text{nicht 7})\) oder \((\text{nicht 7},7)\).  
+			\[
+			P(B)=P(7)\cdot(1-P(7))+ (1-P(7))\cdot P(7)=2\cdot 0{,}3\cdot 0{,}7=0{,}42.
+			\]
+			
+			\item \textbf{Ereignis C: keine 9}\\
+			Dann darf nur 7 oder 1 kommen. Wahrscheinlichkeit pro Dreh: \(P(\text{kein 9})=0{,}4\).  
+			\[
+			P(C)=(0{,}4)^2=0{,}16.
+			\]
+			
+			\item \textbf{Ereignis D = B $\cap$ C}\\
+			Genau eine 7 und keine 9.  
+			Dann muss die andere Zahl eine 1 sein. Also günstige Paare: \((7,1),(1,7)\).  
+			\[
+			P(D)=P(7)\cdot P(1)+P(1)\cdot P(7)=2\cdot 0{,}3\cdot 0{,}1=0{,}06.
+			\]
+		\end{itemize}
+	\end{loesung}
+	
+	\newpage
+	
 	
 	\section{Wahrscheinlichkeitsverteilung}
 	
