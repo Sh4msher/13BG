@@ -29,6 +29,7 @@
 \usepackage{float}
 \usepackage{wrapfig}
 \usepackage{caption}
+\usepackage{booktabs} % schöne Tabellenkanten
 % -------------------- Tikz --------------------
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathreplacing} % für geschweifte Klammern
@@ -222,9 +223,46 @@
 	\lessondate{19.08.2025}\\
 	Dieses Skript ist als leicht lesbare Sammlung von Vorlesungsnotizen, Experimentbeschreibungen und Übungsaufgaben für den Physik-Grundkurs gedacht. Es wurde die alte Duden Paetek Formel abgelöst und von dem IQB eine Einheitliche veröffentlicht. Auf moodle steht die neue Formelsammlung. Thomsoneschwingungsgleichung. 
 	
-	\subsection{Ablauf des Kurses}
+	\subsection{Nachschlaginhalte}
+	\subsubsection{SI-Vorsätze}
+	\lessondate{02.09.2025}\\
+	\begin{table}[ht]
+		\centering
+		\caption{SI-Vorsätze (Symbole und Faktoren)}
+		\label{tab:si-prefixes}
+		\begin{tabular}{@{} l c c @{}}
+			\toprule
+			Name & Symbol & Faktor \\
+			\midrule
+			quetta  & Q  & \(10^{30}\) \\
+			ronna   & R  & \(10^{27}\) \\
+			yotta   & Y  & \(10^{24}\) \\
+			zetta   & Z  & \(10^{21}\) \\
+			exa     & E  & \(10^{18}\) \\
+			peta    & P  & \(10^{15}\) \\
+			tera    & T  & \(10^{12}\) \\
+			giga    & G  & \(10^{9}\)  \\
+			mega    & M  & \(10^{6}\)  \\
+			kilo    & k  & \(10^{3}\)  \\
+			hecto   & h  & \(10^{2}\)  \\
+			deca    & da & \(10^{1}\)  \\
+			(kein Vorsatz) &  & \(10^{0}\)  \\
+			deci    & d  & \(10^{-1}\) \\
+			centi   & c  & \(10^{-2}\) \\
+			milli   & m  & \(10^{-3}\) \\
+			micro   & \(\mu\) & \(10^{-6}\) \\
+			nano    & n  & \(10^{-9}\) \\
+			pico    & p  & \(10^{-12}\) \\
+			femto   & f  & \(10^{-15}\) \\
+			atto    & a  & \(10^{-18}\) \\
+			zepto   & z  & \(10^{-21}\) \\
+			yocto   & y  & \(10^{-24}\) \\
+			ronto   & r  & \(10^{-27}\) \\
+			quecto  & q  & \(10^{-30}\) \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
 	
-	\subsubsection{Randbemerkungen}
 	
 	
 	\newpage
@@ -283,6 +321,14 @@
 	%	\includegraphics[width=0.5\textwidth]{Doppelspalt_Einstiegsaufgaben_Bild.png}
 	%\end{figure}
 	
+	%\newpage
+	
+	%\lessondate{02.09.2025}\\
+	%\subsection{Lösung A.2}
+	
+	
+	
+	
 	\newpage
 	\lessondate{02.09.2025}\\
 	
@@ -308,20 +354,21 @@
 				\item [D:] Gebe nun diese Formel aus b) zur Bestimmung der Gegenkraft an. \\
 				Diese beiden Gleichungen sind bereits im Rutherfordschen Atommodell gültig. Jetzt kommt noch die
 				Quantenbedingung hinzu. Jetzt wird die Quantenbedingung aus Aufgabe 1 benötigt.
-				\item [E:]
-				\item [F:]
-				\item [G:]
-				\item [H:]
-				\item [I:]
-				\item [J:]
-				\item [K:]
-				\item [L:]
-				\item [M:]
-				\item [N:]
-				\item [O:]
-				\item [P:]
-				\item [Q:]
-				\item [R:]		
+				\item [E:]  Gebe mit Hilfe dieser drei Gleichungen eine Formel zur Bestimmung des Radius $r$ der Elektronenbahn in Abhängigkeit der Elektronenmasse und Elektronenladung, der Quantenzahl und
+				evtl. Naturkonstanten an, also $r_n = f(n)$
+				\item [F:] Bestimme den Radius der innersten Elektronenbahn zahlenmäßig.
+				\item [G:] Bestimme alle weiteren Radien in Abhängigkeit vom Radius der innersten Bahn $r_1$
+				\item [H:] estimme mit Hilfe dieser drei Gleichungen die Geschwindigkeit der Elektronen in Abhängigkeit der Elektronenladung, der Quantenzahl und evtl. Naturkonstanten formelmäßig, also $v_n = f(n)$
+				%\item [I:]
+				%\item [J:]
+				%\item [K:]
+				%\item [L:]
+				%\item [M:]
+				%\item [N:]
+				%\item [O:]
+				%\item [P:]
+				%\item [Q:]
+				%\item [R:]		
 			\end{itemize}
 		\end{itemize}
 	\end{aufgabe}
@@ -430,7 +477,10 @@
 				\item[C:] \textbf{Gegenkraft:} Coulomb-Kraft zwischen Elektron und Kern
 				\item[D:] \textbf{Zentripetalkraft:} 
 				\[
-				F_\text{Coulomb} = \frac{1}{4\pi \varepsilon_0} \cdot \frac{Z e^2}{r^2}
+				F_\text{Coulomb} = \frac{1}{4\pi \varepsilon_0} \cdot \frac{Z e^2}{r^2} 
+				\]
+				\[
+				F_C = \frac{1}{4 \cdot \pi \cdot \varepsilon_0 \cdot \varepsilon_r} \cdot \frac{Q_1 \cdot Q_2}{r^2}
 				\]
 			\end{itemize}
 		\end{minipage}
@@ -446,8 +496,71 @@
 		\end{infobox}
 	\end{loesung}
 	
+	\lessondate{04.09.2025}\\
+	\vspace{-1cm}
+	\begin{loesung}{Bohr'sches Atommodell}
+		\subsection*{Aufgabe E}
+		\[
+		F_\text{coulomb} = \frac{1}{4 \pi \epsilon_0} \cdot \frac{Ze^2}{r^2}, \qquad
+		F_\text{zentrifugal} = \frac{mv^2}{r}, \qquad m\cdot v \cdot r = n \cdot \hbar 
+		\]
+		\begin{align*}
+			F_\text{coulomb} &= F_\text{zentrifugal} \\\\
+			\frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r^2} &= \frac{m \cdot v^2}{r}, \quad v = \frac{n \cdot \hbar}{m \cdot r}\\\\
+			\frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r^2} &=  \frac{m \cdot \left( \frac{n \cdot \hbar}{m \cdot r}\right)^2 }{r}
+		\end{align*}
+	\end{loesung}
+	
 	\newpage
 	
+	\begin{loesung}{Bohr'sches Atommodell}
+		\subsection*{Aufgabe E}
+		\begin{align*}
+			\frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r^2} &= m \cdot \frac{n^2 \cdot \hbar^2}{m^2 \cdot r^2} \cdot \frac{1}{r} \quad | \cdot r^3 \\\\
+			\frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot Ze^2 \cdot r&= \frac{n^2 \cdot \hbar^2}{m}\\\\
+			r &= \boxed{ \frac{4 \cdot \pi \cdot \varepsilon_0 \cdot \hbar^2}{m \cdot e^2} \cdot \frac{n^2}{Z}}
+		\end{align*}
+		
+		\subsection*{Aufgabe F}
+		\begin{align*}
+			r &= \frac{4 \cdot \pi \cdot \varepsilon_0 \cdot \hbar^2}{m \cdot e^2} \cdot \frac{n^2}{Z}, \qquad
+			r_1 = \frac{4 \cdot \pi \cdot \varepsilon_0 \cdot \hbar^2}{m \cdot e^2} \cdot \underbrace{\frac{(1)^2}{(1)}}_{1}\\\\
+			r_1 &\approx \boxed{5.29 \cdot 10^{-11}m}
+		\end{align*}
+		\subsection*{Aufgabe G}
+		\begin{align*}
+			r_n &= r_1 \cdot \frac{n^2}{Z}\\ \quad
+			r_2 &= r_1 \cdot \frac{(2)^2}{1} = 5.29 \cdot 10^{-11}m \cdot 4 = \boxed{21.16 \cdot 10^{-11}m}\\
+			r_3 &= r_1 \cdot \frac{(3)^2}{1} = 5.29 \cdot 10^{-11}m \cdot 9 = \boxed{47.61 \cdot 10^{-11}m}
+		\end{align*}
+	\end{loesung}
+
+	\footnote{
+	\begin{align*}
+		\varepsilon_0 &\approx 8.854 \cdot 10^{-12} \frac{F}{m} \quad && \text{Permittivität des Vakuums} \\
+    	\hbar &= 1.054 \cdot 10^{-34} \, \text{Js} && \text{reduziertes plancksches Wirkungsquantum} \\
+		m_e &= 9.109 \cdot 10^{-31} \, \text{kg} && \text{Masse des Elektrons} \\
+		e &= 1.602 \cdot 10^{-19} \, \text{C} && \text{Elementarladung}
+	\end{align*}
+	}
+	
+	\newpage
+	
+	\begin{loesung}{Bohr'sches Atommodell}
+		\subsection*{Aufgabe H}
+		\[
+		F_\text{coulomb} = \frac{1}{4 \pi \epsilon_0} \cdot \frac{Ze^2}{r^2}, \qquad
+		F_\text{zentrifugal} = \frac{mv^2}{r}, \qquad m\cdot v \cdot r = n \cdot \hbar 
+		\]
+		\begin{align*}
+			F_\text{coulomb} &= F_\text{zentrifugal} \\\\
+			\frac{1}{4 \pi \varepsilon_0} \cdot \frac{Ze^2}{r^2} &= \frac{m v^2}{r}, \qquad r = \frac{n \hbar}{m v} \\\\
+			\frac{1}{4 \pi \varepsilon_0} \cdot \frac{Ze^2}{\left(\tfrac{n \hbar}{m v}\right)^2} &= \frac{m v^2}{\tfrac{n \hbar}{m v}} \\\\
+			\frac{1}{4 \pi \varepsilon_0} \cdot Ze^2 \cdot \frac{m^2 v^2}{n^2 \hbar^2} &= \frac{m^2 v^3}{n \hbar} \quad | : (m^2 v) \\\\
+			\frac{1}{4 \pi \varepsilon_0} \cdot Ze^2 \cdot \frac{1}{n^2 \hbar^2} &= \frac{v}{n \hbar} \\\\
+			v &= \boxed{\frac{Ze^2}{4 \pi \varepsilon_0 \hbar} \cdot \frac{1}{n}}
+		\end{align*}
+	\end{loesung}
 	
 	\section{Elektromagnetische Wellen}
 
