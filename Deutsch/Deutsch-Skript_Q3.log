@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  29 AUG 2025 11:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.9.9)  9 SEP 2025 23:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -170,7 +170,7 @@ Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
 eX and XeLaTeX
 \babel@savecnt=\count291
 \U@D=\dimen145
-\l@unhyphenated=\language37
+\l@unhyphenated=\language3
 
 (/usr/share/texmf-dist/tex/generic/babel/xebabel.def)
 \bbl@readstream=\read2
@@ -183,9 +183,19 @@ phy)
 (/usr/share/texmf-dist/tex/generic/babel-german/ngermanb.ldf
 Language: ngermanb 2024/12/10 v2.15 German support for babel (post-1996 orthogr
 aphy)
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'German (new orthography)' into the format.
+
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 48.
+
+Package babel Info: Hyphen rules for 'ngerman' set to \l@english
+(babel)             (\language0). Reported on input line 49.
 Package babel Info: Making " an active character on input line 122.
-)))
-(/usr/share/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
+))) (/usr/share/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
 Package babel Info: Importing font and identification data for ngerman
 (babel)             from babel-de.ini. Reported on input line 11.
 )
@@ -1164,8 +1174,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--269
 [4]
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
-[6] (./Deutsch-Skript_Q3.aux)
+ []
+
+
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+[]\TU/Inter(0)/m/sc/10.95 Abschließend lässt sich festhalten: \TU/Inter(0)/m/it
+/10.95 In den Grunewald \TU/Inter(0)/m/sc/10.95 verbindet im knappen, sinnlich-
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+\TU/Inter(0)/m/sc/10.95 dokumentarischen Stil unmittelbare Szenenbeschreibung m
+it einer subtilen, ironisch-
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 344--345
+\TU/Inter(0)/m/sc/10.95 melancholischen Kritik an Bürgerlichkeit und Romantisie
+rung der Massenkultur. Das Gedicht
+ []
+
+
+
+[7]
+
+[8]
+
+[9] (./Deutsch-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1175,15 +1215,15 @@ L3 programming layer <2025-01-18>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Deutsch-Skript_Q3.out' has not changed.
-(rerunfilecheck)             Checksum: 133D76022DA1C39D16426EF3BD25F288;2058.
+(rerunfilecheck)             Checksum: 2DC1628119EDD1C382EB7024C1262E52;2463.
  ) 
 Here is how much of TeX's memory you used:
- 37349 strings out of 475235
- 815585 string characters out of 5760660
- 1324575 words of memory out of 5000000
- 59818 multiletter control sequences out of 15000+600000
- 563143 words of font info for 79 fonts, out of 8000000 for 9000
- 350 hyphenation exceptions out of 8191
+ 37374 strings out of 475848
+ 815996 string characters out of 5776014
+ 1323953 words of memory out of 5000000
+ 59790 multiletter control sequences out of 15000+600000
+ 563145 words of font info for 79 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
  102i,12n,116p,1014b,1353s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Deutsch-Skript_Q3.pdf (7 pages).
+Output written on Deutsch-Skript_Q3.pdf (10 pages).

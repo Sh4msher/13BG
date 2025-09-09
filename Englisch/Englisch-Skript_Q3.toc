@@ -5,6 +5,7 @@
 \contentsline {section}{\numberline {4}Gender issues}{2}{}%
 \contentsline {subsection}{\numberline {4.1}Diversity in the Workplace}{2}{}%
 \contentsline {subsubsection}{\numberline {4.1.1}Cartoon Analysis}{2}{}%
+\contentsline {subsection}{\numberline {4.2}Ehtnicity}{7}{}%
 \contentsline {section}{\numberline {5}Nature and the environment}{7}{}%
 \contentsline {section}{\numberline {6}Globalization}{7}{}%
 \contentsline {section}{\numberline {7}Farb- und Box-Demonstration}{8}{}%

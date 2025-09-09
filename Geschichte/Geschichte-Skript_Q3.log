@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  2 SEP 2025 09:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  9 SEP 2025 08:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1252,8 +1252,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+
 
 [8]
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
+\TU/LibertinusSerif(0)/m/n/10.95 das imperialistisch-kapitalistische
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
+\TU/LibertinusSerif(0)/m/n/10.95 unter Führung der USA und das
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 448--449
+[]\TU/LibertinusSerif(0)/m/n/10.95 Alle progressiven und friedliebenden
+ []
+
+
 
 [9]
 
@@ -1264,11 +1284,11 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 35485 strings out of 475235
- 796913 string characters out of 5760660
+ 35494 strings out of 475235
+ 797213 string characters out of 5760660
  1379329 words of memory out of 5000000
- 57947 multiletter control sequences out of 15000+600000
- 562787 words of font info for 118 fonts, out of 8000000 for 9000
+ 57955 multiletter control sequences out of 15000+600000
+ 562795 words of font info for 119 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  102i,12n,107p,1017b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

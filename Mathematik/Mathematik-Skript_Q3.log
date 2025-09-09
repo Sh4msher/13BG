@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  5 SEP 2025 00:11
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  5 SEP 2025 08:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2138,10 +2138,17 @@ Overfull \hbox (20.30293pt too wide) detected at line 1010
 [25]
 
 [26]
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
+
+ []
+
+
 
 [27]
 
-[28] (./Mathematik-Skript_Q3.aux)
+[28]
+
+[29] (./Mathematik-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2152,12 +2159,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 72001 strings out of 475235
- 1864054 string characters out of 5760660
- 2908265 words of memory out of 5000000
- 94090 multiletter control sequences out of 15000+600000
- 563819 words of font info for 114 fonts, out of 8000000 for 9000
+ 72003 strings out of 475235
+ 1864099 string characters out of 5760660
+ 2908313 words of memory out of 5000000
+ 94092 multiletter control sequences out of 15000+600000
+ 563820 words of font info for 114 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  105i,16n,117p,1017b,2548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Mathematik-Skript_Q3.pdf (29 pages).
+Output written on Mathematik-Skript_Q3.pdf (30 pages).
