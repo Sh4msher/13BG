@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.9.9)  10 SEP 2025 21:37
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.9.9)  10 SEP 2025 22:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Phyik-Skript_Q3.tex
-(./Phyik-Skript_Q3.tex
+**Physik-Skript_Q3.tex
+(./Physik-Skript_Q3.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -932,8 +932,8 @@ ons.markings.code.tex))
 \c@tcb@cnt@exem=\count364
 \c@tcb@cnt@aufgabe=\count365
 \c@tcb@cnt@experiment=\count366
- (./Phyik-Skript_Q3.aux)
-\openout1 = `Phyik-Skript_Q3.aux'.
+ (./Physik-Skript_Q3.aux)
+\openout1 = `Physik-Skript_Q3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 213.
 LaTeX Font Info:    ... okay on input line 213.
@@ -1200,7 +1200,7 @@ File: image.png Graphic file (type bmp)
 
 [1
 
-] (./Phyik-Skript_Q3.toc
+] (./Physik-Skript_Q3.toc
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `latinmodern-math.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1219,7 +1219,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.47441pt on input line 4.
 )
 \tf@toc=\write4
-\openout4 = `Phyik-Skript_Q3.toc'.
+\openout4 = `Physik-Skript_Q3.toc'.
 
 
 
@@ -1286,22 +1286,31 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 [6]
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 596--598
+
+ []
+
+
 
 [8]
 
-[9] (./Phyik-Skript_Q3.aux)
+[9]
+
+[10]
+
+[11] (./Physik-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 36211 strings out of 473832
- 814627 string characters out of 5735459
- 1416952 words of memory out of 5000000
- 58734 multiletter control sequences out of 15000+600000
- 562936 words of font info for 101 fonts, out of 8000000 for 9000
+ 36223 strings out of 473832
+ 814880 string characters out of 5735459
+ 1422144 words of memory out of 5000000
+ 58746 multiletter control sequences out of 15000+600000
+ 562938 words of font info for 101 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,14n,121p,1012b,1940s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,14n,121p,1013b,1940s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Phyik-Skript_Q3.pdf (10 pages).
+Output written on Physik-Skript_Q3.pdf (12 pages).

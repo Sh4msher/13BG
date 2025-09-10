@@ -359,10 +359,12 @@
 				\item [F:] Bestimme den Radius der innersten Elektronenbahn zahlenmäßig.
 				\item [G:] Bestimme alle weiteren Radien in Abhängigkeit vom Radius der innersten Bahn $r_1$
 				\item [H:] estimme mit Hilfe dieser drei Gleichungen die Geschwindigkeit der Elektronen in Abhängigkeit der Elektronenladung, der Quantenzahl und evtl. Naturkonstanten formelmäßig, also $v_n = f(n)$
-				%\item [I:]
-				%\item [J:]
-				%\item [K:]
-				%\item [L:]
+				\item [I:] Bestimme die Geschwindigkeit der Elektronen auf der innersten Bahn zahlenmäßig.
+				\item [J:] Bestimme alle weiteren Geschwindigkeiten in Abhängigkeit der Geschwindigkeit auf der innersten Bahn.
+			    \item [K:] Auf welcher Bahn hat das Elektron die gr¨oßtm¨ogliche Geschwindigkeit? Gebe diese Geschwin-
+			    digkeit als Faktor der Lichtgeschwindigkeit an!
+				\item [L:] Bestimme die kinetische Energie der Elektronen in Abhängigkeit der Elektronenmasse und -
+				ladung, der Quantenzahl und evtl. Naturkonstanten formelmäßig, also $E_kin = f(n)$
 				%\item [M:]
 				%\item [N:]
 				%\item [O:]
@@ -560,9 +562,64 @@
 			\frac{1}{4 \pi \varepsilon_0} \cdot \frac{Ze^2}{\left(\tfrac{n \hbar}{m v}\right)^2} &= \frac{m v^2}{\tfrac{n \hbar}{m v}} \\\\
 			\frac{1}{4 \pi \varepsilon_0} \cdot Ze^2 \cdot \frac{m^2 v^2}{n^2 \hbar^2} &= \frac{m^2 v^3}{n \hbar} \quad | : (m^2 v) \\\\
 			\frac{1}{4 \pi \varepsilon_0} \cdot Ze^2 \cdot \frac{1}{n^2 \hbar^2} &= \frac{v}{n \hbar} \\\\
-			v &= \boxed{\frac{Ze^2}{4 \pi \varepsilon_0 \hbar} \cdot \frac{1}{n}}
+			%v &= \boxed{\frac{Ze^2}{4 \pi \varepsilon_0 \hbar} \cdot \frac{1}{n}}
 		\end{align*}
+		\vspace{-10mm}
+		\[
+		\boxed{v = \frac{Ze^2}{4 \pi \varepsilon_0 \hbar} \cdot \frac{1}{n}}
+		\]
 	\end{loesung}
+	
+	\lessondate{10.09.2025}\\
+	\vspace{-15mm}
+	\begin{loesung}{Bohr'sches Atommodell}
+		\subsection*{Aufgabe I}
+			Wir verwenden die bereits hergeleitete Formel
+		\[
+		v = \frac{Z e^2}{4\pi\varepsilon_0\hbar}\cdot\frac{1}{n}.
+		\]
+		Für das Wasserstoffatom mit \(Z=1\) und auf der innersten Bahn \(n=1\) gilt somit
+		\[
+		v_1 = \frac{e^2}{4\pi\varepsilon_0\hbar}.
+		\]
+		Numerisch ergibt das (mit den in den Fußnoten angegebenen Konstanten)
+		\[
+		\boxed{v_1 \approx 2{,}187691\times 10^{6}\ \mathrm{m/s}.}
+		\]
+	\end{loesung}
+	
+	\begin{loesung}{Bohr'sches Atommodell}
+		\subsection*{Aufgabe J}
+		Da \(v\propto 1/n\) folgt für beliebige Bahnen
+		\[
+		\boxed{v_n = \frac{v_1}{n} = \frac{Z e^2}{4\pi\varepsilon_0\hbar}\cdot\frac{1}{n}.}
+		\]
+		Damit sind die Geschwindigkeiten der höheren Bahnen einfach um den Faktor \(1/n\) gegenüber der innersten Bahn reduziert.\\
+		\subsection*{Aufgabe K}
+		Die Geschwindigkeit \(v_n\) fällt mit zunehmender Quantenzahl \(n\), da sie umgekehrt von \(n\) abhängt. Daher ist die größtmögliche Geschwindigkeit die auf der kleinsten erlaubten Bahn \(n=1\):
+		\[
+		v_\text{max} = v_1.
+		\]
+		Man kann \(v_\text{max}\) als Bruch der Lichtgeschwindigkeit \(c\) angeben:
+		\[
+		\boxed{\frac{v_\text{max}}{c} \approx 0{,}0073}
+		\]
+		\subsection*{Aufgabe L}
+		\begin{align*}
+			E_\text{kin} &= \frac{1}{2} m v^2, \qquad
+			v = \frac{Z e^2}{4 \pi \varepsilon_0 \hbar} \cdot \frac{1}{n} \\\\
+			E_\text{kin} &= \frac{1}{2} m \left(\frac{Z e^2}{4 \pi \varepsilon_0 \hbar} \cdot \frac{1}{n}\right)^2 = \frac{1}{2} m \frac{Z^2 e^4}{16 \pi^2 \varepsilon_0^2 \hbar^2} \cdot \frac{1}{n^2} \\\\
+			&= \frac{m Z^2 e^4}{32 \pi^2 \varepsilon_0^2 \hbar^2} \cdot \frac{1}{n^2}
+		\end{align*}
+		\[
+		\boxed{E_\text{kin}(n) = \frac{m Z^2 e^4}{32 \pi^2 \varepsilon_0^2 \hbar^2} \cdot \frac{1}{n^2}}.
+		\]
+		Numerisch ergibt das für \(Z=1, n=1\) die bekannte kinetische Energie des Elektrons im Wasserstoffgrundzustand:
+		\[
+		E_\text{kin}(1) \approx 13{,}606\ \mathrm{eV}.
+		\]
+	\end{loesung}
+	\newpage
 	
 	\section{Elektromagnetische Wellen}
 
