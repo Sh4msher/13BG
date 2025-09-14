@@ -46,23 +46,20 @@
 
 
 % -------------------- Farben (fein abgestuft, subtiler Fluss) --------------------
-\definecolor{PageBG}{RGB}{17,11,31}             % sehr dunkler Hintergrund
-\definecolor{TextCream}{RGB}{246,241,234}       % creme / sehr hell
+\definecolor{PageBG}{RGB}{17,11,31}
+\definecolor{TextCream}{RGB}{246,241,234}
 
-\definecolor{AccentBlue}{RGB}{76,104,150}       % akademisches Blau (unverändert)
-\definecolor{AccentViolet}{RGB}{105,77,145}     % seriöses Violett (unverändert)
+\definecolor{AccentBlue}{RGB}{76,104,150}
+\definecolor{AccentViolet}{RGB}{105,77,145}
 
-% Hint: mehr ins violett/pinke ziehen (Hauch von Fuchsia)
-\definecolor{AccentMagenta}{RGB}{140,60,120}       % violett-pink (sanfter Übergang)
+\definecolor{AccentMagenta}{RGB}{140,60,120}
 
-% Magenta: rötlicher, dichter, aber nicht grell
-\definecolor{AccentHint}{RGB}{170,40,60}     % rötliches Magenta (mehr Rotanteil)
+\definecolor{AccentHint}{RGB}{170,40,60}
 
-% Elegantes Rot: orientiert sich am bisherigen "AccentHint" (tiefes Weinrot)
-\definecolor{AccentRed}{RGB}{120,10,25}         % elegantes Weinrot / tiefes Rot
+\definecolor{AccentRed}{RGB}{120,10,25}
 
-\definecolor{BoxBackground}{RGB}{15,9,27}       % Box-Hintergrund
-\definecolor{MarginalGray}{RGB}{150,150,160}    % Rand-Datum
+\definecolor{BoxBackground}{RGB}{15,9,27}
+\definecolor{MarginalGray}{RGB}{150,150,160}
 
 % ---------- Terminal-Farben ----------
 \definecolor{TermBG}{RGB}{10,12,14}
@@ -77,45 +74,13 @@
 \pagecolor{black!93}
 \color{TermText}
 
-% ================= Palette: Schritte von Grün -> Rot =================
-% Du kannst hier mehr Stufen erzeugen (Step0 .. StepN)
-\definecolor{Step0}{RGB}{57,255,20}   % sattes Grün
-\definecolor{Step1}{RGB}{110,230,20}
-\definecolor{Step2}{RGB}{170,200,25}
-\definecolor{Step3}{RGB}{210,160,30}
-\definecolor{Step4}{RGB}{230,120,35}
-\definecolor{Step5}{RGB}{240,80,40}
-\definecolor{Step6}{RGB}{220,50,40}
-\definecolor{Step7}{RGB}{200,30,40}   % Rot-ähnlich
-
-% ---------- Sequenzzähler ----------
-\newcounter{boxseq}
-\setcounter{boxseq}{-1} % beginnt bei 0 nach erstem \stepcounter
-
-% ---------- Makro: nächste Palette-Farben als NAMEN setzen ----------
-% Wir setzen drei Makros:
-% \CurrentAccentName         = z.B. "Step3"
-% \CurrentAccentDarkName     = z.B. "Step3!70!black"
-% \CurrentAccentFrameName    = z.B. "Step3!50!black"
-\makeatletter
-\newcommand{\nextboxcolors}{%
-	\stepcounter{boxseq}%
-	% Anzahl der Palette-Schritte minus 1 (hier 7 => max index 7)
-	\ifcase\value{boxseq}%
-	\def\CurrentAccentName{Step0}%
-	\or\def\CurrentAccentName{Step1}%
-	\or\def\CurrentAccentName{Step2}%
-	\or\def\CurrentAccentName{Step3}%
-	\or\def\CurrentAccentName{Step4}%
-	\or\def\CurrentAccentName{Step5}%
-	\or\def\CurrentAccentName{Step6}%
-	\else\def\CurrentAccentName{Step7}%
-	\fi
-	% dunklere Varianten als Strings (werden von xcolor zur Laufzeit interpretiert)
-	\edef\CurrentAccentDarkName{\CurrentAccentName!70!black}%
-	\edef\CurrentAccentFrameName{\CurrentAccentName!50!black}%
-}
-\makeatother
+% --- NEUE, FESTE FARBEN FÜR JEDE UMGEBUNG ---
+\definecolor{aufgabeColor}{RGB}{57,255,20}       % Green
+\definecolor{loesungColor}{RGB}{230,120,35}       % Orange
+\definecolor{theoremColor}{RGB}{76,104,150}       % Blue
+\definecolor{beispielColor}{RGB}{105,77,145}      % Violet
+\definecolor{infoboxColor}{RGB}{170,40,60}       % Red-magenta
+\definecolor{terminalColor}{RGB}{120,10,25}       % Deep red
 
 % ================= tcolorbox Basis-Stil (Terminal-Look) =================
 \tcbset{
@@ -138,7 +103,7 @@
 	}
 }
 
-% ================= Umgebung-Implementierungen (mit eigenen Zählern) =================
+% ================= Umgebung-Implementierungen (mit festen Farben) =================
 % Wir verwenden eigene LaTeX-Zähler (statt tcolorbox auto counter), damit wir
 % vorher \nextboxcolors aufrufen können und die Palette-Makros gesetzt sind.
 
@@ -147,10 +112,9 @@
 \renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
 \newenvironment{theorem}[1]{%
 	\refstepcounter{theorem}%
-	\nextboxcolors%
 	\begin{tcolorbox}[termbase,
-		colframe=\CurrentAccentFrameName,
-		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		colframe=theoremColor!50!black,
+		boxed title style={interior style={left color=theoremColor, right color=theoremColor!70!black}},
 		title={Theorem~\thetheorem: #1}]%
 	}{\end{tcolorbox}}
 
@@ -159,10 +123,9 @@
 \renewcommand{\thebeispiel}{\thesection.\arabic{beispiel}}
 \newenvironment{beispiel}[1]{%
 	\refstepcounter{beispiel}%
-	\nextboxcolors%
 	\begin{tcolorbox}[termbase,
-		colframe=\CurrentAccentFrameName,
-		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		colframe=beispielColor!50!black,
+		boxed title style={interior style={left color=beispielColor, right color=beispielColor!70!black}},
 		title={Beispiel~\thebeispiel: #1}]%
 	}{\end{tcolorbox}}
 
@@ -171,10 +134,9 @@
 \renewcommand{\theaufgabe}{\thesection.\arabic{aufgabe}}
 \newenvironment{aufgabe}[1]{%
 	\refstepcounter{aufgabe}%
-	\nextboxcolors%
 	\begin{tcolorbox}[termbase,
-		colframe=\CurrentAccentFrameName,
-		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		colframe=aufgabeColor!50!black,
+		boxed title style={interior style={left color=aufgabeColor, right color=aufgabeColor!70!black}},
 		title={Aufgabe~\theaufgabe: #1}]%
 	}{\end{tcolorbox}}
 
@@ -183,28 +145,25 @@
 \renewcommand{\theloesung}{\thesection.\arabic{loesung}}
 \newenvironment{loesung}[1]{%
 	\refstepcounter{loesung}%
-	\nextboxcolors%
 	\begin{tcolorbox}[termbase,
-		colframe=\CurrentAccentFrameName,
-		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		colframe=loesungColor!50!black,
+		boxed title style={interior style={left color=loesungColor, right color=loesungColor!70!black}},
 		title={Lösung~\theloesung: #1}]%
 	}{\end{tcolorbox}}
 
 % ----- Hinweis / Info -----
 \newenvironment{infobox}{%
-	\nextboxcolors%
 	\begin{tcolorbox}[termbase,
-		colframe=\CurrentAccentFrameName,
-		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		colframe=infoboxColor!50!black,
+		boxed title style={interior style={left color=infoboxColor, right color=infoboxColor!70!black}},
 		title={Hinweis}]%
 	}{\end{tcolorbox}}
 
 % ----- Terminal (Listing only) -----
 \newenvironment{terminal}[1]{%
-	\nextboxcolors%
 	\begin{tcolorbox}[termbase,
-		colframe=\CurrentAccentFrameName,
-		boxed title style={interior style={left color=\CurrentAccentName, right color=\CurrentAccentDarkName}},
+		colframe=terminalColor!50!black,
+		boxed title style={interior style={left color=terminalColor, right color=terminalColor!70!black}},
 		title={Terminal: #1},
 		listing only,
 		listing options={
@@ -241,10 +200,10 @@
 		\vspace*{18mm}
 		\begin{center}
 			%\begin{tikzpicture}
-			%	\fill[AccentViolet!85!black] (0,0) circle (1.2cm);
-			%	\fill[PageBG] (0.15,0.15) circle (0.95cm);
-			%	\draw[line width=1pt,color=AccentBlue] (0,0) circle (1.35cm);
-			%	\node[white] at (0,0) {\sffamily\bfseries\Large M};
+			%    \fill[AccentViolet!85!black] (0,0) circle (1.2cm);
+			%    \fill[PageBG] (0.15,0.15) circle (0.95cm);
+			%    \draw[line width=1pt,color=AccentBlue] (0,0) circle (1.35cm);
+			%    \node[white] at (0,0) {\sffamily\bfseries\Large M};
 			%\end{tikzpicture}
 			\vspace{12mm}
 			%{\Huge\bfseries\sffamily\color{TextCream} #1 \par}
@@ -260,8 +219,8 @@
 			{\small\color{MarginalGray} \today \par}
 			%\vspace{12mm}
 			%\begin{tikzpicture}
-			%	\draw[line width=1.2pt,color=AccentViolet!80!black] (-6,0) -- (6,0);
-			%	\draw[line width=0.45pt,color=AccentBlue!60!black] (-6,-0.3) -- (6,-0.3);
+			%    \draw[line width=1.2pt,color=AccentViolet!80!black] (-6,0) -- (6,0);
+			%    \draw[line width=0.45pt,color=AccentBlue!60!black] (-6,-0.3) -- (6,-0.3);
 			%\end{tikzpicture}
 		\end{center}
 		\vspace{7.5cm}
@@ -275,7 +234,7 @@
 % ================= Dokumentbeginn =================
 \begin{document}
 	
-		% Titelblatt
+	% Titelblatt
 	\MakeArtTitle{
 		Leistungskurs Praktische Q3 Hessen}
 	{Skript}
@@ -327,7 +286,7 @@
 				\item Beispiel: Der Buchstabe \texttt{A} hat den ASCII-Wert \texttt{0x41} = \texttt{01000001}.  
 				Übertragung (LSB zuerst) mit 1 Startbit und 1 Stopbit:  
 				\[
-				\underbrace{1}_{\text{Idle}} \; 
+				\underbrace{1}_{\text{Idle}} \;
 				\underbrace{0}_{\text{Start}} \;
 				1\,0\,0\,0\,0\,0\,1\,0 \;
 				\underbrace{1}_{\text{Stop}} \;
@@ -366,7 +325,7 @@
 	\newpage
 	
 	\begin{center}
-			\begin{tikzpicture}[yscale=0.8, xscale=0.8]
+		\begin{tikzpicture}[yscale=0.8, xscale=0.8]
 			% Bitfolge: Idle(1), Start(0), Data: 1 0 0 0 0 0 1 0, Stop(1), Idle(1)
 			\foreach [count=\n] \b in {1,0,1,0,0,0,0,0,1,0,1,1} {
 				\draw (\n-1,0) rectangle ++(1,1) node[midway]{\b};
@@ -378,8 +337,8 @@
 			\node[below] at (10.5,-0.2) {Stop};
 		\end{tikzpicture}
 	\end{center}
-		
-		
+	
+	
 	\newpage
 	
 	\lessondate{09.09.2025}\\
@@ -392,70 +351,68 @@
 		\end{enumerate}
 	\end{aufgabe}
 	
-	\begin{loesung}
-		
-	\end{loesung}
-	
-	\newpage
+
 	
 	
-	\begin{aufgabe}{Steuerung eines Mikroprozessors mit der seriellen Schnittstelle}
+	\begin{loesung}{Steuerung eines Mikroprozessors mit der seriellen Schnittstelle}
 		\begin{enumerate}
 			\item Schreibe ein Python-Programm, das einen Sensor bzw. ein Aktor-Device auf einem Raspberry Pi steuert.
 			
 			\begin{lstlisting}[language=Python, caption={Raspberry Pi: LED-Steuerung + serielle Steuerung (pySerial + gpiozero)}]
 				# requirements: gpiozero, pyserial
-				# python3 script that controls an LED via gpiozero and listens on a serial port for commands
+				# Ein Python-Skript, das eine LED steuert und auf Befehle über die serielle Schnittstelle hört.
 				from gpiozero import LED
 				import serial
 				import time
 				
+				# Pin-Nummer der LED und Details zur seriellen Schnittstelle.
 				LED_PIN = 17
-				SERIAL_PORT = '/dev/ttyUSB0'  # auf RPi: USB-Serial oder /dev/ttyAMA0 etc.
+				SERIAL_PORT = '/dev/ttyUSB0'
 				BAUD = 9600
 				
 				led = LED(LED_PIN)
-				ser = serial.Serial(SERIAL_PORT, BAUD, timeout=1)  # pySerial: blocking read behaviour depends on timeout
+				ser = serial.Serial(SERIAL_PORT, BAUD, timeout=1)
 				
+				# Verarbeitet die empfangenen Befehle.
 				def handle_line(line):
-				line = line.strip()
-				if line.upper() == 'LED ON':
+				line = line.strip().upper()
+				if line == 'LED ON':
 				led.on()
 				ser.write(b'OK\n')
-				elif line.upper() == 'LED OFF':
+				elif line == 'LED OFF':
 				led.off()
 				ser.write(b'OK\n')
-				elif line.upper() == 'STATUS':
-				ser.write(('ON\n' if led.is_lit else 'OFF\n').encode())
+				elif line == 'STATUS':
+				ser.write(b'ON\n' if led.is_lit else b'OFF\n')
 				else:
 				ser.write(b'ERR Unknown command\n')
 				
+				# Hauptschleife zum Empfangen von Daten.
 				try:
 				while True:
-				raw = ser.readline()   # read a line terminated by newline; depends on timeout. (pySerial)
+				raw = ser.readline()
 				if raw:
-				handle_line(raw.decode('utf-8', errors='ignore'))
+				handle_line(raw.decode('utf-8'))
 				time.sleep(0.01)
 				finally:
 				ser.close()
 				led.off()
 			\end{lstlisting}
-			
-			Dieses Python-Beispiel verwendet `gpiozero` zur einfachen GPIO-Abstraktion auf dem Raspberry Pi und `pySerial` für die serielle Schnittstelle; `pySerial`'s Lese-/Timeout-Verhalten ist dokumentiert und beeinflusst, wie `readline()` blockiert. :contentReference[oaicite:1]{index=1}
+
 			
 			\item Ein Arduino-Beispiel, das serielle Kommandos entgegennimmt und einen digitalen Pin steuert:
 			\begin{lstlisting}[language=C, caption={Arduino: Serial command handler}]
-				// Arduino sketch: listens on Serial, toggles digital pin, replies with status
+				// Ein Arduino-Sketch, der auf serielle Kommandos reagiert.
 				const int LED_PIN = 13;
 				
 				void setup() {
 					pinMode(LED_PIN, OUTPUT);
-					Serial.begin(9600); // init serial
+					Serial.begin(9600); // Startet die serielle Kommunikation.
 				}
 				
 				void loop() {
-					if (Serial.available() > 0) { // number of bytes available
-						String cmd = Serial.readStringUntil('\n'); // read until newline
+					if (Serial.available() > 0) { // Prüft, ob Daten verfügbar sind.
+						String cmd = Serial.readStringUntil('\n'); // Liest eine Zeile.
 						cmd.trim();
 						if (cmd == "LED ON") {
 							digitalWrite(LED_PIN, HIGH);
@@ -472,44 +429,40 @@
 				}
 			\end{lstlisting}
 			
-			Die Arduino-API stellt `Serial.available()` und `Serial.read()` / `readStringUntil()` bereit; `available()` gibt die Anzahl bereits empfangener Bytes an, `read()` liefert das nächste Byte oder -1, wenn nichts da ist — das ist der übliche Pattern für nicht-blockierende Abfragen auf Arduino. :contentReference[oaicite:2]{index=2}
+			Die Arduino-API stellt `Serial.available()` und `Serial.read()` / `readStringUntil()` bereit; `available()` gibt die Anzahl bereits empfangener Bytes an, `read()` liefert das nächste Byte oder -1, wenn nichts da ist — das ist der übliche Pattern für nicht-blockierende Abfragen auf Arduino.
 			
 			\item Java-Client mit der Klasse \texttt{Serial} (wie in deinem Moodle-Skript beschrieben). Das Beispiel öffnet den Port, schickt einen String, liest eine Antwortzeile und parst eine Zahl mit \texttt{Double.parseDouble(...)}:
 			\begin{lstlisting}[language=Java, caption={Java: Steuerprogramm (Nutzungsbeispiel der in der Aufgabenstellung beschriebenen Serial-Klasse)}]
-				// Beispiel: Java-Client (konform mit der Serial-Klassen-API aus der Aufgabenstellung)
-				public class SerialController {
-					public static void main(String[] args) {
-						Serial s = new Serial("COM5", 9600, 8, 1, 0); // parity 0 = none, falls so erwartet
-						if (!s.open()) {
-							System.err.println("Port konnte nicht geöffnet werden");
-							return;
-						}
-						// Beispiel: sende Kommando, warte auf Antwort als Zeile
-						s.write("STATUS\n");
-						String reply = s.readLine(); // blockiert bis Zeile komplett
-						System.out.println("Reply: " + reply);
-						// parsing numeric reply example
-						try {
-							double val = Double.parseDouble(reply.trim());
-							System.out.println("Parsed value: " + val);
-						} catch (NumberFormatException e) {
-							System.out.println("No numeric reply: " + reply);
-						}
-						s.close();
+			// Ein Java-Client zum Steuern des Mikroprozessors.
+			public class SerialController {
+				
+				public static void main(String[] args) {
+					Serial s = new Serial("COM5", 9600, 8, 1, 0); 
+					
+					if (!s.open()) {
+						System.err.println("Port konnte nicht geöffnet werden");
+						return;
 					}
+					
+					// Sendet einen Befehl und liest die Antwort.
+					s.write("STATUS\n");
+					String reply = s.readLine();
+					System.out.println("Reply: " + reply);
+					
+					// Versucht, die Antwort in eine Zahl umzuwandeln.
+					try {
+						double val = Double.parseDouble(reply.trim());
+						System.out.println("Parsed value: " + val);
+					} catch (NumberFormatException e) {
+						System.out.println("Keine Zahl: " + reply);
+					}
+					
+					s.close();
 				}
+			}
 			\end{lstlisting}
-			
-			In Java wandelt `Double.parseDouble(String)` einen String in einen primitiven `double` um; das ist die standardisierte Methode in der Java-API. Für ereignisgesteuertes Lesen oder Low-Level-Buffers sind Bibliotheken wie jSerialComm nützlich, die sowohl blockierende als auch non-blocking Modi und Event-Listener unterstützen. :contentReference[oaicite:3]{index=3}
-			
-			\item Hinweis zur Pegelwandlung und Verbindung: Wenn du echte RS-232-Signale anschließt (±V-Level) musst du einen Pegelwandler wie den MAX3232 verwenden; TTL-UART-Pins (3.3 V/5 V) dürfen nicht direkt an RS-232-Level angeschlossen werden. Der MAX3232 bietet Treiber/Empfänger und die nötigen Charge-Pump-Kondensatoren. :contentReference[oaicite:4]{index=4}
-			
-			\item Bonus: Protokoll mit Längenpräfix und Erkennung unvollständiger Übertragung.
-			
-			Implementiere auf Senderseite: sende zuerst ASCII-Länge, dann `':'`, dann die Nachricht (z. B. `12:Hello World!`), oder sende ein 2-Byte Binary-Length-Prefix gefolgt von Rohbytes. Auf Empfängerseite: lese zunächst bis `':'`, parse die Länge, dann lies exakt diese Anzahl Bytes; falls weniger Bytes empfangen wurden, warte weiter oder melde „incomplete“ — mit `read(b,len)` kannst du gezielt eine bestimmte Anzahl von Bytes lesen und prüfen, wie viele tatsächlich geliefert wurden. Diese Technik verhindert das Vermischen von Nachrichten bei Stream-Orientierung. :contentReference[oaicite:5]{index=5}
-			
 		\end{enumerate}
-	\end{aufgabe}
+	\end{loesung}
 	
 	
 	\newpage

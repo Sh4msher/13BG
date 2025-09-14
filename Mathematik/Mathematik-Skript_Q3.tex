@@ -1194,6 +1194,220 @@
 	
 	\newpage
 	
+	\lessondate{15.09.2025}\\
+	
+	\begin{aufgabe}{Buch Seite 64 Aufgaben 1 bis 4 }
+		\begin{enumerate}
+			\item \textbf{Würfeln mit zwei Würfeln:} Mit welcher Wahrscheinlichkeit wird beim gleichzeitigen Werfen von zwei Würfeln \dots
+			\begin{itemize}
+				\item die Summe vier 
+				\item eine Primzahlsumme 
+				\item eine Summe kleiner als 10 gewürfelt? 
+			\end{itemize}
+			\item \textbf{Würfeln mit drei Würfeln:} Drei Würfel werden geworfen Beträgt die Augensumme 17 oder 18, so gewinnt man einen Preis
+			\begin{itemize}
+				\item Geben Sie den Ergebnisraum sowie das Gewinnereignis mittels der Elementarereignisse an 
+				\item Wie groß ist die Wahrscheinlichkeit, dass man bei dem Spiel nicht gewinnt? 
+			\end{itemize}
+			\item \textbf{Spiel:} Ein Spieler wirft eine Münze. Bei einem Kopfwurf dreht er anschließend einmal Rad A, bei Zahl wird Rad B einmal gedreht. Der EInsatz pro Spiel beträgt 2 Euro . Die gedrehte Zahl auf dem Rad gibt die Auszahlung an.
+			\begin{itemize}
+				\item Wie groß ist die Wahrscheinlichkeit, 5 Euro als Auszahlung zu erhalten? 
+				\item Mit welchem durchschnittlichen Gewinn/Verlust pro Spiel hat der Spieler zu rechnen? 
+				\item [$\Rightarrow$] \textbf{Rad A:} \{0, 5, 0, 3, 0, 5, 0\}
+				\item [$\Rightarrow$] \textbf{Rad B:} \{0, 5, 0,3\}
+			\end{itemize}
+			\item \textbf{Glücksrad:} Auf einem Glücksrad sind die kleinen Sektoren jeweils halb so groß wie die großen Sektoren. Das Rad wird zweimal gedreht. 
+			\begin{itemize}
+				\item Geben Sie die Wahrscheinlichkeiten der einzelnen Sektoren an
+				\item Wie groß ist die Wahrscheinlichkeit, dass die Augensumme 2 ist? 
+				\item Wie groß ist die Wahrscheinlichkeit für einen großen Gewinn? 
+				\item Mit welcher Wahrscheinlichkeit wird ein Gewinn erzielt? 
+				\item [$\Rightarrow$] \textbf{Rad:} \{4, 7, 2, 1, 8, 3, 6, 5\}
+				\item [\textbf{Augensumme:}] 
+				\begin{itemize}
+					\item 16, 15: großer Gewinn 
+					\item 14, 13: kleiner Gewinn
+				\end{itemize}
+			\end{itemize}
+		\end{enumerate}
+	\end{aufgabe}
+	
+
+	\newpage
+
+
+	\begin{aufgabe}{Buch Seite 64 Aufgabe 5}
+		\begin{itemize}
+			\item [5.] Clever und Smart würfeln jeweils einmal mit einem Würfel. Clever beginnt. Mit welcher Wahrscheinlichkeit übertrifft Smart in einem Wurf Clevers Augenzahl? Simulieren Sie diesen Versuch mittels einer Tabelle mit Zufallsziffern für n = 50.
+		\end{itemize}
+	\end{aufgabe}
+	
+	
+	\begin{loesung}
+		
+		\begin{enumerate}
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\item \textbf{Würfeln mit zwei Würfeln:}  
+			Der Ergebnisraum hat $6 \cdot 6 = 36$ gleichwahrscheinliche Ergebnisse.  
+			
+			\begin{itemize}
+				\item \emph{Summe 4:}  
+				Mögliche Paare: $(1,3),(2,2),(3,1)$.  
+				$\Rightarrow P(\text{Summe}=4) = \tfrac{3}{36} = \tfrac{1}{12} \approx 0{,}0833$.  
+				
+				\item \emph{Primzahlsumme:}  
+				Primzahlen zwischen 2 und 12 sind $\{2,3,5,7,11\}$.  
+				Günstige Ergebnisse:  
+				\begin{align*}
+					\text{Summe } 2 &: (1,1) \quad (1) \\
+					\text{Summe } 3 &: (1,2),(2,1) \quad (2) \\
+					\text{Summe } 5 &: (1,4),(2,3),(3,2),(4,1) \quad (4) \\
+					\text{Summe } 7 &: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) \quad (6) \\
+					\text{Summe } 11&: (5,6),(6,5) \quad (2) 
+				\end{align*}
+				Insgesamt $1+2+4+6+2=15$.  
+				$\Rightarrow P(\text{Primzahlsumme}) = \tfrac{15}{36} = \tfrac{5}{12} \approx 0{,}4167$.  
+				
+				\item \emph{Summe kleiner als 10:}  
+				Komplementär: Summe $\geq 10$ sind $10,11,12$.  
+				\[
+				\#\{10\}=3,\quad \#\{11\}=2,\quad \#\{12\}=1 \quad \Rightarrow 6.
+				\]  
+				$\Rightarrow P(\text{Summe}<10) = \tfrac{36-6}{36} = \tfrac{30}{36} = \tfrac{5}{6} \approx 0{,}8333$.  
+			\end{itemize}
+			
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\item \textbf{Würfeln mit drei Würfeln:}  
+			Ergebnisraum: $6^3 = 216$.
+			
+			\begin{itemize}
+				\item Gewinnereignis: Augensumme $=17$ oder $18$.  
+				
+				- Für $18$: Nur $(6,6,6)$, also 1 Möglichkeit.  
+				- Für $17$: Alle Permutationen von $(6,6,5)$. Anzahl $=3$.  
+				
+				$\Rightarrow \#\text{Gewinn} = 4$.  
+				
+				\item Wahrscheinlichkeit für \emph{kein Gewinn}:  
+				\[
+				P(\text{kein Gewinn}) = 1 - \tfrac{4}{216} = \tfrac{212}{216} = \tfrac{53}{54} \approx 0{,}9815.
+				\]
+			\end{itemize}
+			
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\item \textbf{Spiel mit Münze und Rädern:}  
+			\begin{itemize}
+				\item Wahrscheinlichkeit für 5 Euro Auszahlung:  
+				
+				- Rad A: $\{0,5,0,3,0,5,0\}$ → 7 Felder, davon 2 mal die 5.  
+				$P_A(5) = \tfrac{2}{7}$.  
+				
+				- Rad B: $\{0,5,0,3\}$ → 4 Felder, davon 1 mal die 5.  
+				$P_B(5) = \tfrac{1}{4}$.  
+				
+				Da die Münze fair ist:  
+				\[
+				P(\text{5 Euro}) = \tfrac{1}{2}\cdot\tfrac{2}{7} + \tfrac{1}{2}\cdot\tfrac{1}{4} = \tfrac{1}{7} + \tfrac{1}{8} = \tfrac{15}{56} \approx 0{,}268.
+				\]
+				
+				\item Erwartungswert der Auszahlung:  
+				
+				Rad A: $E_A = \tfrac{0+5+0+3+0+5+0}{7} = \tfrac{13}{7} \approx 1{,}857$.  
+				Rad B: $E_B = \tfrac{0+5+0+3}{4} = 2$.  
+				
+				Erwartungswert des Spiels:  
+				\[
+				E(X) = \tfrac{1}{2}\cdot E_A + \tfrac{1}{2}\cdot E_B = \tfrac{1}{2}\cdot\tfrac{13}{7} + \tfrac{1}{2}\cdot 2 = \tfrac{13}{14} + 1 = \tfrac{27}{14} \approx 1{,}929.
+				\]
+				
+				Da der Einsatz 2 Euro beträgt, ergibt sich der durchschnittliche Gewinn/Verlust:  
+				\[
+				\mu = E(X) - 2 \approx -0{,}071.
+				\]  
+				Also ein kleiner Verlust.
+			\end{itemize}
+			
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\item \textbf{Glücksrad:}  
+			Rad: $\{4,7,2,1,8,3,6,5\}$, wobei wir annehmen, dass die Sektoren abwechselnd groß/klein angeordnet sind:  
+			
+			\[
+			\text{Große Sektoren: } \{4,2,8,6\}, \qquad \text{Kleine Sektoren: } \{7,1,3,5\}.
+			\]
+			
+			Damit gilt: $P(\text{groß}) = \tfrac{1}{6}$, $P(\text{klein})=\tfrac{1}{12}$.  
+			
+			\begin{itemize}
+				\item \emph{Wahrscheinlichkeit für jeden Sektor:}  
+				\[
+				P(4)=P(2)=P(8)=P(6)=\tfrac{1}{6}, \quad
+				P(7)=P(1)=P(3)=P(5)=\tfrac{1}{12}.
+				\]
+				
+				\item \emph{Augensumme = 2:}  
+				Nur möglich durch $(1,1)$. Da $1$ ein kleiner Sektor ist:  
+				\[
+				P((1,1)) = \Bigl(\tfrac{1}{12}\Bigr)^2 = \tfrac{1}{144} \approx 0{,}00694.
+				\]
+				
+				\item \emph{Großer Gewinn: Summen 15 oder 16.}  
+				\begin{align*}
+					\text{Summe } 15: &\quad (7,8),(8,7),(6,9\ \text{nicht möglich}), (4,11\ \text{nicht möglich}) \\
+					&\Rightarrow (7,8),(8,7). \\
+					&P(7,8) = \tfrac{1}{12}\cdot\tfrac{1}{6}=\tfrac{1}{72}, \quad P(8,7)=\tfrac{1}{6}\cdot\tfrac{1}{12}=\tfrac{1}{72}. \\
+					&\Rightarrow P(\text{Summe }15)=\tfrac{1}{36}. \\
+					\\
+					\text{Summe } 16: &\quad (8,8). \\
+					&P(8,8)=\Bigl(\tfrac{1}{6}\Bigr)^2=\tfrac{1}{36}. \\
+					\\
+					\Rightarrow P(\text{großer Gewinn}) &= \tfrac{1}{36}+\tfrac{1}{36}=\tfrac{1}{18}\approx 0{,}0556.
+				\end{align*}
+				
+				\item \emph{Kleiner Gewinn: Summen 13 oder 14.}  
+				\begin{align*}
+					\text{Summe } 13: &\quad (6,7),(7,6),(8,5),(5,8). \\
+					&P(6,7)=\tfrac{1}{6}\cdot\tfrac{1}{12}=\tfrac{1}{72}, \quad P(7,6)=\tfrac{1}{12}\cdot\tfrac{1}{6}=\tfrac{1}{72}, \\
+					&P(8,5)=\tfrac{1}{6}\cdot\tfrac{1}{12}=\tfrac{1}{72}, \quad P(5,8)=\tfrac{1}{12}\cdot\tfrac{1}{6}=\tfrac{1}{72}. \\
+					&\Rightarrow P(\text{Summe }13)=\tfrac{4}{72}=\tfrac{1}{18}. \\
+					\\
+					\text{Summe } 14: &\quad (6,8),(8,6). \\
+					&P(6,8)=\tfrac{1}{6}\cdot\tfrac{1}{6}=\tfrac{1}{36}, \quad P(8,6)=\tfrac{1}{6}\cdot\tfrac{1}{6}=\tfrac{1}{36}. \\
+					&\Rightarrow P(\text{Summe }14)=\tfrac{2}{36}=\tfrac{1}{18}. \\
+					\\
+					\Rightarrow P(\text{kleiner Gewinn}) &= \tfrac{1}{18}+\tfrac{1}{18}=\tfrac{1}{9}\approx 0{,}1111.
+				\end{align*}
+				
+				\item \emph{Wahrscheinlichkeit für irgendeinen Gewinn (klein oder groß):}  
+				\[
+				P(\text{Gewinn}) = P(\text{groß})+P(\text{klein})=\tfrac{1}{18}+\tfrac{1}{9}=\tfrac{1}{6}\approx 0{,}1667.
+				\]
+			\end{itemize}
+			
+		\end{enumerate}
+		
+		\vspace{1cm}
+		
+		\textbf{Aufgabe 5:} Clever und Smart.  
+		
+		Ergebnisraum: $(x,y)$ mit $x,y \in \{1,\dots,6\}$.  
+		Clever: $x$, Smart: $y$.  
+		
+		Smart übertrifft Clever, falls $y>x$.  
+		
+		Anzahl günstige Fälle:  
+		\[
+		\sum_{x=1}^6 (6-x) = 5+4+3+2+1+0 = 15.
+		\]  
+		Gesamt $=36$.  
+		
+		\[
+		P(\text{Smart gewinnt}) = \tfrac{15}{36} = \tfrac{5}{12} \approx 0{,}417.
+		\]
+		
+		Simulation mit $n=50$ Zufallszahlen würde einen ähnlichen Wert liefern.  
+		
+	\end{loesung}
+	
 	
 	\section{Wahrscheinlichkeitsverteilung}
 	
