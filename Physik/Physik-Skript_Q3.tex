@@ -372,8 +372,10 @@
 				\item [N:] Bestimme die potentielle Energie der Elektronen in Abhängigkeit der Elektronenmasse und Elektronenladung, der Quantenzahl und evtl. Naturkonstanten formelmäßig, also $E_{pot} = f(n)$
 				\item [O:] Vergleichen Sie $E_{kin}$ mit $E_{pot}$
 				\item [P:] Bestimmen Sie $E_{ges} = E_{kin} + E_{pot}$ 
-				%\item [Q:]
-				%\item [R:]		
+				\item [Q:] Bestimme die Gesamtenergie $E_n$ der Elektronen auf der n-ten Quantenbahn in Abhängigkeit der
+				Elektronenmasse und -ladung, der Quantenzahl und evtl. Naturkonstanten formelmäßig, also $E_ges = f(n)$. Nutzen Sie hierbei unbedingt die Einheit Elektronenvolt!
+				\item [R:] telle diese Formel in einem Grafen (Energieniveauschema) dar. Y-Achse: Energie $E_n$. Schaue in
+				der Literatur nach.		
 			\end{itemize}
 		\end{itemize}
 	\end{aufgabe}
@@ -639,9 +641,9 @@
 		\[
 		F_{Coulomb} (r) = \frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r^2} 
 		\]
-		und der Bedingung, dass $E_{\text{pot}} = - \int F(r) dr$ folgt: 
+		und der Bedingung, dass $E_{\text{pot}} = \int F(r) dr$ folgt: 
 		\begin{align*}
-			E_{\text{pot}} &= - \int \left(\frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r^2}\right)dr \\\\
+			E_{\text{pot}} &= \int \left(\frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r^2}\right)dr \\\\
 			&= - \frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r} + C 
 		\end{align*}
 		\begin{infobox}
@@ -705,7 +707,61 @@
 		Damit ist die Gesamtenergie im Grundzustand des Wasserstoffatoms negativ, was dem gebundenen Zustand entspricht.
 	\end{loesung}
 	
+	\lessondate{16.09.2025}\\
 	
+	\begin{loesung}{Bohr'sches Atommodell}
+		\subsection*{Aufgabe Q}
+		\subsection*{Aufgabe R}
+		\begin{center}
+			\includegraphics[width=0.75\textwidth]{Energie1.png}
+			\captionof{figure}{Energieniveauschema Wasserstoff}
+		\end{center}
+		
+		\footnote{
+		\begin{align*}
+			h &= 6.626 \cdot 10^{-34} J 
+		\end{align*}
+		}
+	\end{loesung}
+	
+	\begin{align*}
+		E_\text{ges} &= -13{,}6\,\mathrm{eV} \cdot \frac{1}{n^2} \\
+		E_\text{ges}\,(n=1) &= -13{,}6\,\mathrm{eV} \cdot \frac{1}{1^2} = \boxed{13.6 eV}\\
+		E_\text{ges}\, (n = \infty) &= -13.6\, \mathrm{eV} \frac{1}{(\infty)^2} = \boxed{0 eV} \rightarrow \text{Das Atom wird zu einem Ion}
+	\end{align*}
+	
+	\begin{align*}
+		\Delta E_{ges} &= E_{ges}\, (n \rightarrow \infty) - E_{ges}\, (n = 1) \\
+		&= 0 - (-13.6 eV)\\
+		&=  \boxed{13,6 eV}
+	\end{align*}
+	
+	\newpage
+	\begin{aufgabe}{Übung}
+		Berechne die Energiedifferenz beim Übergang des $e^{-}$ von Schale 3 auf 1. 
+	\end{aufgabe}
+	
+	\begin{loesung}{Übung}
+		\begin{align*}
+			\Delta E &= E_{ges} (n = 3) - E_{ges} (n = 1)\\
+			&= \left( -13.6 \mathrm{eV} \cdot \frac{1}{3^2}\right) - \left( -13.6 \mathrm{eV} \cdot \frac{1}{1^2}\right)\\ 
+			&= \left( -13.6 \mathrm{eV} \cdot \frac{1}{9}\right) - \left( -13.6 \mathrm{eV} \cdot \frac{1}{1}\right)\\ 
+			&= \left( - \frac{13.6 \mathrm{eV}}{9}\right) - \left( - 13.6 \mathrm{eV} \right)\\
+			&= 12.08 \mathrm{eV}
+		\end{align*}
+	\end{loesung}
+	
+	\begin{aufgabe}{Lichtblitz}
+		Berechne nun die entsprechende Frequenz und Wellenlänge: 
+	\end{aufgabe}
+	
+	\begin{loesung}{Lichtblitz}
+		\[
+		E = h \cdot f \qquad c = \lambda \cdot f 
+		\]
+		\begin{align*}
+		\end{align*}
+	\end{loesung}
 	
 	\newpage
 	

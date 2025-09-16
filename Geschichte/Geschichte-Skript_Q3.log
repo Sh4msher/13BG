@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.24)  9 SEP 2025 08:49
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.9.9)  16 SEP 2025 08:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -70,29 +70,13 @@ Package fontspec Info:
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Libertinus
-(fontspec)             Serif/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Libertinus
-(fontspec)             Serif/OT:script=latn;language=dflt;+smcp;mapping=tex-tex
-t;"
+(fontspec)             Serif/OT:language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Libertinus
-(fontspec)             Serif/B/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->"Libertinus
-(fontspec)             Serif/B/OT:script=latn;language=dflt;+smcp;mapping=tex-t
-ext;"
+(fontspec)             Serif/B/OT:language=dflt;mapping=tex-text;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Libertinus
-(fontspec)             Serif/I/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->"Libertinus
-(fontspec)             Serif/I/OT:script=latn;language=dflt;+smcp;mapping=tex-t
-ext;"
+(fontspec)             Serif/I/OT:language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Libertinus
-(fontspec)             Serif/BI/OT:script=latn;language=dflt;mapping=tex-text;"
-
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->"Libertinus
-(fontspec)             Serif/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
-text;"
+(fontspec)             Serif/BI/OT:language=dflt;mapping=tex-text;"
 
 
 Package fontspec Info: 
@@ -103,45 +87,13 @@ Package fontspec Info:
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Libertinus
-(fontspec)             Sans/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Libertinus
-(fontspec)             Sans/OT:script=latn;language=dflt;+smcp;mapping=tex-text
-;"
+(fontspec)             Sans/OT:language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Libertinus
-(fontspec)             Sans/B/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->"Libertinus
-(fontspec)             Sans/B/OT:script=latn;language=dflt;+smcp;mapping=tex-te
-xt;"
+(fontspec)             Sans/B/OT:language=dflt;mapping=tex-text;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Libertinus
-(fontspec)             Sans/I/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->"Libertinus
-(fontspec)             Sans/I/OT:script=latn;language=dflt;+smcp;mapping=tex-te
-xt;"
+(fontspec)             Sans/I/OT:language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Libertinus
-(fontspec)             Sans/BI/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->"Libertinus
-(fontspec)             Sans/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-t
-ext;"
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'CourierNew(0)' created for font 'Courier
-(fontspec)             New' with options [].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Courier
-(fontspec)             New/OT:language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Courier
-(fontspec)             New/B/OT:language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Courier
-(fontspec)             New/I/OT:language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Courier
-(fontspec)             New/BI/OT:language=dflt;"
+(fontspec)             Sans/BI/OT:language=dflt;mapping=tex-text;"
 
 
 (/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math.sty
@@ -237,6 +189,13 @@ LaTeX Info: Redefining \] on input line 2954.
 (/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
 
 Package fontspec Info: 
+(fontspec)             Script 'Math' not explicitly supported within font
+(fontspec)             'Libertinus Math'. Check the typeset output, and if it
+(fontspec)             is okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
 (fontspec)             Could not resolve font "Libertinus Math/B" (it probably
 (fontspec)             doesn't exist).
 
@@ -254,6 +213,22 @@ Package fontspec Info:
 (fontspec)             Math/OT:script=math;language=dflt;"
 
 
+
+Package unicode-math Warning: The first font loaded by unicode-math must be an
+(unicode-math)                OpenType Math font (with script=math). If you
+(unicode-math)                simply want ‘the default’ before loading
+(unicode-math)                supplementary fonts over the top for certain
+(unicode-math)                ranges, use: 
+(unicode-math)                  \setmathfont{latinmodern-math.otf}
+
+
+Package fontspec Info: 
+(fontspec)             Script 'Math' not explicitly supported within font
+(fontspec)             'Libertinus Math'. Check the typeset output, and if it
+(fontspec)             is okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
 Package fontspec Info: 
 (fontspec)             Could not resolve font "Libertinus Math/B" (it probably
 (fontspec)             doesn't exist).
@@ -263,18 +238,17 @@ Package fontspec Info:
 (fontspec)             Font family 'LibertinusMath(1)' created for font
 (fontspec)             'Libertinus Math' with options
 (fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,SizeFeatures={{Size=9.855-},{Size=7.665-9.855,Font=Libertinus
-(fontspec)             Math,Style=MathScript},{Size=-7.665,Font=Libertinus
+=Math,SizeFeatures={{Size=0-},{Size=0-0,Font=Libertinus
+(fontspec)             Math,Style=MathScript},{Size=-0,Font=Libertinus
 (fontspec)             Math,Style=MathScriptScript}}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <9.855->"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;"<7.665-9.855>"Liberti
-nus
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-7.665>"Libe
-rtinus
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <0->"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;"<0-0>"Libertinus
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-0>"Libertin
+us
 (fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
@@ -287,127 +261,6 @@ LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LibertinusMath(1)/b/n on input line
  19.
-
-Package fontspec Info: 
-(fontspec)             Libertinus Math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Libertinus Math/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Libertinus Math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             Libertinus Math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             Libertinus Math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'LibertinusMath(2)' created for font
-(fontspec)             'Libertinus Math' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,SizeFeatures={{Size=9.855-},{Size=7.665-9.855,Font=Libertinus
-(fontspec)             Math,Style=MathScript},{Size=-7.665,Font=Libertinus
-(fontspec)             Math,Style=MathScriptScript}},ScaleAgain=1.0001,FontAdju
-stment={\fontdimen
-(fontspec)             8\font =6.351pt\relax \fontdimen 9\font =5.256pt\relax
-(fontspec)             \fontdimen 10\font =5.1465pt\relax \fontdimen 11\font
-(fontspec)             =7.665pt\relax \fontdimen 12\font =5.256pt\relax
-(fontspec)             \fontdimen 13\font =4.10625pt\relax \fontdimen 14\font
-(fontspec)             =4.10625pt\relax \fontdimen 15\font =3.3945pt\relax
-(fontspec)             \fontdimen 16\font =2.2995pt\relax \fontdimen 17\font
-(fontspec)             =2.2995pt\relax \fontdimen 18\font =2.5185pt\relax
-(fontspec)             \fontdimen 19\font =0.49275pt\relax \fontdimen 22\font
-(fontspec)             =2.847pt\relax \fontdimen 20\font =0pt\relax \fontdimen
-(fontspec)             21\font =0pt\relax }].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.855->s*[1.0001]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;"<7.665-9.855>s*[1.000
-1]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-7.665>s*[1.
-0001]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
-
-LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 19.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/LibertinusMath(2)/m/n on input line
- 19.
-LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 19.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/LibertinusMath(2)/b/n on input line
- 19.
-
-Package fontspec Info: 
-(fontspec)             Libertinus Math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Libertinus Math/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Libertinus Math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             Libertinus Math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             Libertinus Math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'LibertinusMath(3)' created for font
-(fontspec)             'Libertinus Math' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,SizeFeatures={{Size=9.855-},{Size=7.665-9.855,Font=Libertinus
-(fontspec)             Math,Style=MathScript},{Size=-7.665,Font=Libertinus
-(fontspec)             Math,Style=MathScriptScript}},ScaleAgain=0.9999,FontAdju
-stment={\fontdimen
-(fontspec)             8\font =0.71175pt\relax \fontdimen 9\font
-(fontspec)             =1.6425pt\relax \fontdimen 10\font =1.6425pt\relax
-(fontspec)             \fontdimen 11\font =2.7375pt\relax \fontdimen 12\font
-(fontspec)             =6.789pt\relax \fontdimen 13\font =0pt\relax }].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.855->s*[0.9999]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;"<7.665-9.855>s*[0.999
-9]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-7.665>s*[0.
-9999]"Libertinus
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
-
-LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1
-9.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/LibertinusMath(3)/m/n on input line
- 19.
-LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 19.
-
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/LibertinusMath(3)/b/n on input line
- 19.
-
 (/usr/share/texmf-dist/tex/latex/acro/acro.sty
 Package: acro 2022/04/01 v3.8 typeset acronyms and other abbreviations (CN)
 \l__acro_tmpa_int=\count295
@@ -469,7 +322,7 @@ Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
 eX and XeLaTeX
 \babel@savecnt=\count306
 \U@D=\dimen154
-\l@unhyphenated=\language37
+\l@unhyphenated=\language90
 
 (/usr/share/texmf-dist/tex/generic/babel/xebabel.def)
 \bbl@readstream=\read2
@@ -1100,6 +953,167 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 238.
 
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;
+"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;
+"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,
+Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}
+},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->"[latinmodern-math.otf]/OT:script=math;language
+=dflt;"<6.57-9.3075>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=
+0;"<-6.57>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;
+"
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/LibertinusMath(1)/m/n --> TU/latinmodern-math.otf(1)
+/m/n on input line 238.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/LibertinusMath(1)/b/n --> TU/latinmodern-math.otf(1)
+/b/n on input line 238.
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,
+Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}
+},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
+(fontspec)             8\font =7.41315pt\relax \fontdimen 9\font
+(fontspec)             =4.3143pt\relax \fontdimen 10\font =4.8618pt\relax
+(fontspec)             \fontdimen 11\font =7.5117pt\relax \fontdimen 12\font
+(fontspec)             =3.77776pt\relax \fontdimen 13\font =3.97485pt\relax
+(fontspec)             \fontdimen 14\font =3.97485pt\relax \fontdimen 15\font
+(fontspec)             =3.16455pt\relax \fontdimen 16\font =2.70465pt\relax
+(fontspec)             \fontdimen 17\font =2.70465pt\relax \fontdimen 18\font
+(fontspec)             =2.7375pt\relax \fontdimen 19\font =2.19pt\relax
+(fontspec)             \fontdimen 22\font =2.7375pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->s*[1.0001]"[latinmodern-math.otf]/OT:script=mat
+h;language=dflt;"<6.57-9.3075>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;
+language=dflt;+ssty=0;"<-6.57>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;
+language=dflt;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.0001]"[latinmodern-math.otf]/OT:script=math;lang
+uage=dflt;"
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 238.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 238.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 238.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
+t line 238.
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,
+Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}
+},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.438pt\relax \fontdimen 9\font =2.19pt\relax
+(fontspec)             \fontdimen 10\font =1.82864pt\relax \fontdimen 11\font
+(fontspec)             =1.21545pt\relax \fontdimen 12\font =6.56999pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->s*[0.9999]"[latinmodern-math.otf]/OT:script=mat
+h;language=dflt;"<6.57-9.3075>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;
+language=dflt;+ssty=0;"<-6.57>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;
+language=dflt;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999]"[latinmodern-math.otf]/OT:script=math;lang
+uage=dflt;"
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 2
+38.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 238.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 238
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
+t line 238.
+
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-ger
 man.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `trans
@@ -1161,33 +1175,79 @@ Package microtype Info: Loading generic protrusion settings for font family
 \c@lstlisting=\count358
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `CourierNew' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+! Undefined control sequence.
+\\MakeArtTitle ...pace *{24mm} {\huge \typewriter 
+                                                  \color {DarkSepia} #2 \par...
+l.241 ...Schule \\ Kursleiterin: Frau Dr. Braun}{}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Font shape `TU/LibertinusSerif(0)/m/sc' undefined
+(Font)              using `TU/LibertinusSerif(0)/m/n' instead on input line 241
+.
+
+! Undefined control sequence.
+\\MakeArtTitle ...2pt,inner sep=6pt] {\typewriter 
+                                                  \small #1}; \end {tikzpict...
+l.241 ...Schule \\ Kursleiterin: Frau Dr. Braun}{}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\tikz@textfont ->\typewriter 
+                             \small \color {StampRed!75}
+l.241 ...Schule \\ Kursleiterin: Frau Dr. Braun}{}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 File: image.png Graphic file (type bmp)
 <image.png>
 
 
 [1
 
-] (./Geschichte-Skript_Q3.toc
+]
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.242 ^^I\tableofcontents
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./Geschichte-Skript_Q3.toc
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LibertinusMath' (encoding: TU).
+(microtype)             `latinmodern-math.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 10.95116pt on input line 4.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 8.76093pt on input line 4.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 6.5707pt on input line 4.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.6658pt on input line 4.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.47559pt on input line 4.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 10.94882pt on input line 4.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 8.75905pt on input line 4.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 6.5693pt on input line 4.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.66417pt on input line 4.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.47441pt on input line 4.
 )
 \tf@toc=\write4
 \openout4 = `Geschichte-Skript_Q3.toc'.
@@ -1195,23 +1255,146 @@ LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
 
 
 [1]
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.248 ^^I\section{Einleitung}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.253 ^^I\subsection{Organisatorisches}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.257 ...ion*{Schriftliches und Mündliches Abitur}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.265 ^^I\subsection{Beispiel Übung}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.267 ^^I\begin{histaufgabe}{Textüberarbeitung}
+                                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
 
 [2
 
 ]
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.275 ^^I\section{Wiederholung aus der Q2}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.280 ...eproduzieren der Inhalte von einem Video}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.287 ^^I\begin{histloesung}{Lösungsskizze}
+                                           {Aufgabe 1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.288 ^^I^^I\subsection*{Kommunismus}
+                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.291 ^^I^^I\subsection*{Sozialismus}
+                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.294 ^^I^^I\subsection*{Bolschewismus}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 295--296
@@ -1221,26 +1404,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
 
 [3]
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.301 ^^I\begin{histloesung}{Aufgabe 2}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
 
 [4]
 Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.318 ^^I\subsection*{Kommunismus}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.327 ^^I\subsection*{Sozialismus}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.332 ^^I\subsection*{Bolchewismus}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 
 [5]
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.339 ^^I\section{Stalin's Aufstieg}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.341 ^^I\begin{histaufgabe}{l}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.348 ^^I\begin{histloesung}{Aufgabe 1}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 9.00096pt on input line 350.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 6.00064pt on input line 350.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 5.00053pt on input line 350.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 8.99904pt on input line 350.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 350.
-LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 350.
 
 
@@ -1249,47 +1510,362 @@ Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.362 ...jetische Expansion in Europa 1940 - 1947}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.367 ^^I\begin{histloesung}{Buch Seite 335}
+                                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.368 ...\subsection*{Machausdehnung in Osteuropa}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.378 ...egin{histloesung}{Buch Seite 383 und 384}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.379 ^^I^^I\subsection*{Kontroverse}
+                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.384 ^^I^^I\subsection*{Ziele der Alliierten}
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.385 ...I\subsection*{Alliierte Kriegkonferenzen}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 
 [7]
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.391 ^^I\begin{histloesung}{Tafel}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.392 ...n 1944/45: Schwächung durch 2. Weltkrieg}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.404 ^^I\begin{histloesung}{Tafel}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 
 [8]
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.434 ^^I^^I^^I\subsection*{Harry S. Truman}
+                                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\bfseries \color {Sepia}\typewriter 
+                                                  
+l.443 ^^I^^I^^I\subsection*{Andrei A. Schdanow}
+                                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 445--446
-\TU/LibertinusSerif(0)/m/n/10.95 das imperialistisch-kapitalistische
+\TU/LibertinusSerif(0)/m/sc/10.95 das imperialistisch-kapitalistische
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 445--446
-\TU/LibertinusSerif(0)/m/n/10.95 unter Führung der USA und das
+\TU/LibertinusSerif(0)/m/sc/10.95 unter Führung der USA und das
  []
 
 
 Underfull \hbox (badness 3557) in paragraph at lines 448--449
-[]\TU/LibertinusSerif(0)/m/n/10.95 Alle progressiven und friedliebenden
+[]\TU/LibertinusSerif(0)/m/sc/10.95 Alle progressiven und friedliebenden
  []
+
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.458 ...Krieg - stabile oder labile Weltordnung?}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 
 [9]
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.461 ^^I\section{Korea Krieg}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-[10] (./Geschichte-Skript_Q3.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+
+
+[10]
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.469 ...Deutschlands - eine Nation, zwei Staaten}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.470 ...{Deutschland von der Teilung zur Einheit}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.471 ... zwischen Bipolarität und Multipolarität}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.472 ...tkonflickt als weltpoltischer Krisenherd}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.473 ...ngenheit - "Vergangenheitsbewältigung" ?}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+
+[11]
+! Undefined control sequence.
+<argument> ...eries \color {DarkSepia}\typewriter 
+                                                  
+l.477 ^^I\section{Beispielboxen}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.480 ^^I^^ID
+             ies ist ein kontextgebender Hinweis – z. B. ein kurzer historio...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.484 ...{primarysource}{Friedrich Schlegel, 1798}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fontupper ->\typewriter 
+                               \small 
+l.484 ...{primarysource}{Friedrich Schlegel, 1798}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.489 ...timeline}{1789 — Französische Revolution}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.498 ^^I\begin{histaufgabe}{Quellenanalyse}
+                                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fonttitle ->\typewriter 
+                               \small 
+l.502 ^^I\begin{histloesung}{Lösungsskizze}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kvtcb@fontupper ->\typewriter 
+                               \small 
+l.507 ^^I^^I„
+             War die Revolution notwendig? — Diese Frage bleibt bis heute Ge...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+
+[12] (./Geschichte-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 35494 strings out of 475235
- 797213 string characters out of 5760660
- 1379329 words of memory out of 5000000
- 57955 multiletter control sequences out of 15000+600000
- 562795 words of font info for 119 fonts, out of 8000000 for 9000
- 350 hyphenation exceptions out of 8191
+ 35437 strings out of 473832
+ 795372 string characters out of 5735459
+ 1383658 words of memory out of 5000000
+ 58002 multiletter control sequences out of 15000+600000
+ 562629 words of font info for 105 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
  102i,12n,107p,1017b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Geschichte-Skript_Q3.pdf (11 pages).
+Output written on Geschichte-Skript_Q3.pdf (13 pages).

@@ -1409,6 +1409,91 @@
 	\end{loesung}
 	
 	
+	\newpage
+	
+	\begin{aufgabe}{Buch Seite 73}
+		\begin{itemize}[left = 20mm]
+			\item [\textbf{Aufgabe 10:}] In einer Halle gibt es acht Leuchten, die einzeln ein- und ausgeschaltet werden können. Wie viele unterschiedliche Belichtungsmöglichkeiten gibt es? 
+			\item [\textbf{Aufgabe 12:}] Ein Passwort soll mit zwei Buchstaben beginnen, gefolgt von einer Zahl mit drei oder vier Ziffern. Wie viele verschiedene Passwörter dieser Art gibt es? 
+			\item [\textbf{Aufgabe 14:}] Trapper Fuzzi ist auf dem Weg nach Alaska. Er muss drei Flüsse überqueren. Am ersten Fluss gibt es sieben Furten, wovon sechs passierbar sind. Am zweiten Fluss sind zwei der drei Furten passierbar. Fuzzi entscheidet sich zufällug für eine der Furten. Sollte man darauf wetten, dass er durchkommt? 
+			\item [\textbf{Aufgabe 15:}] Ein Comouter soll alle untschiedlichen Anordnungen der 26 Buchstaben des Alphabets in einer Liste abspeichern. Wie lange würde dieser Vorgang dauern, wenn die Maschine in einer Millisekunde eine Million Anordnungen erzeugen könnte.  
+			\item [\textbf{Aufgabe 17:}] An einem Fußballtrainer nehmen 12 Mannschaften teil. Wie viele Endspielpaarungen sind theoretisch möglich und wie viele Handlungspaarungen sind theoretisch möglich? 
+			\item [\textbf{Aufgabe 19}:] Eine Klasse besucht aus 24 Schülern, 16 Mädchen und 8 Jungen. Es soll eine Abordnung von 5 Schülern gebildet werden. WIe viele Möglichkeiten gibt es, wenn die Abbildung 
+			\begin{itemize}
+				\item aus 3 Mädchen und 2 Jungen bestehen soll, 
+				\item nicht nur aus Mädchen besuchen soll? 
+			\end{itemize}
+			\item [\textbf{Aufgabe 20:}]
+			Am Ende eines Fußballspiels kommt es zum Elfmeterschießen. Dazu werden vom Trainer fünf der elf Spieler ausgewählt.
+			\begin{itemize}
+				\item Wie viele Auswahlmöglichkeiten hat der Trainer? 
+				\item Wie viele Anwendungsmölichkeiten gibt es, wenn der Trainer auch noch festlegt, in welcher Reihenfolge die fünf Spieler schießen sollen? 
+			\end{itemize}
+		\end{itemize}
+	\end{aufgabe}
+	
+	\newpage
+	
+	\begin{loesung}{Buch Seite 73}
+		\begin{itemize}[left=20mm]
+			\item[\textbf{Lösung 10:}] Jede Leuchte kann \emph{an} oder \emph{aus} sein. Es gibt also 
+			\[ 2^8 = 256 \]
+			Möglichkeiten.
+			
+			\item[\textbf{Lösung 12:}] 
+			Zwei Buchstaben: \(26 \cdot 26 = 676\). \\
+			Zahlen mit drei Ziffern: \(10^3 = 1000\). \\
+			Zahlen mit vier Ziffern: \(10^4 = 10000\). \\
+			Insgesamt also 
+			\[ 676 \cdot (1000 + 10000) = 676 \cdot 11000 = 7{,}436{,}000. \]
+			
+			\item[\textbf{Lösung 14:}] 
+			Am ersten Fluss: Wahrscheinlichkeit \( \tfrac{6}{7} \). \\
+			Am zweiten Fluss: Wahrscheinlichkeit \( \tfrac{2}{3} \). \\
+			Am dritten Fluss wird nichts erwähnt, wir nehmen also an, dass alle Furten passierbar sind. \\
+			Damit ist die Gesamterfolgswahrscheinlichkeit 
+			\[ P = \frac{6}{7} \cdot \frac{2}{3} = \frac{12}{21} = \frac{4}{7} \approx 0{,}571. \]
+			Da \( P > \tfrac{1}{2} \), sollte man eher darauf wetten, dass er durchkommt.
+			
+			\item[\textbf{Lösung 15:}] 
+			Die Zahl der Permutationen beträgt 
+			\[ 26! \approx 4{,}0329 \times 10^{26}. \]
+			Die Maschine erzeugt \(10^6\) Anordnungen pro Millisekunde, also \(10^9\) pro Sekunde. \\
+			Benötigte Zeit: 
+			\[ \frac{26!}{10^9} \ \text{Sekunden} \approx 4{,}0329 \times 10^{17} \ \text{Sekunden}. \]
+			In Jahren (geteilt durch \(60 \cdot 60 \cdot 24 \cdot 365 \approx 3{,}15 \times 10^7\)): 
+			\[ \approx 1{,}28 \times 10^{10} \ \text{Jahre}. \]
+			
+			\newpage
+			
+			\item[\textbf{Lösung 17:}] 
+			Endspielpaarungen: zwei von 12 Teams auswählen: 
+			\[ \binom{12}{2} = 66. \]
+			Halbfinale: 4 Teams müssen ausgewählt werden (\(\binom{12}{4}=495\)) und dann in zwei Paarungen aufgeteilt werden. Die Anzahl der Möglichkeiten, 4 Teams in 2 Spiele zu zerlegen, ist 
+			\[ \frac{1}{2} \cdot \binom{4}{2} = 3. \]
+			Also insgesamt 
+			\[ 495 \cdot 3 = 1485. \]
+			
+			\item[\textbf{Lösung 19:}] 
+			(a) 3 Mädchen und 2 Jungen: 
+			\[ \binom{16}{3} \cdot \binom{8}{2} = 560 \cdot 28 = 15680. \]
+			(b) „Nicht nur aus Mädchen“ heißt: alle Möglichkeiten minus die Auswahl aus nur Mädchen. \\
+			Alle Möglichkeiten: \( \binom{24}{5} = 42504 \). \\
+			Nur Mädchen: \( \binom{16}{5} = 4368 \). \\
+			Also 
+			\[ 42504 - 4368 = 38136. \]
+			
+			\item[\textbf{Lösung 20:}] 
+			(a) Nur Auswahl von 5 Spielern: 
+			\[ \binom{11}{5} = 462. \]
+			(b) Wenn auch die Reihenfolge festgelegt wird, dann Permutationen: 
+			\[ P(11,5) = \frac{11!}{6!} = 55440. \]
+		\end{itemize}
+	\end{loesung}
+	
+	\newpage
+	
+	
 	\section{Wahrscheinlichkeitsverteilung}
 	
 	\section{Hypothesentest (für binominalverteilte Zufallsgrößen)}

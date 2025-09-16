@@ -25,6 +25,6 @@
 \contentsline {paragraph}{Antwort:}{24}{}%
 \contentsline {paragraph}{a) Ergebnismenge und Baumdiagramm}{25}{}%
 \contentsline {paragraph}{b) Ereignisse}{25}{}%
-\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{32}{}%
-\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{32}{}%
-\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{32}{}%
+\contentsline {section}{\numberline {4}Wahrscheinlichkeitsverteilung}{36}{}%
+\contentsline {section}{\numberline {5}Hypothesentest (für binominalverteilte Zufallsgrößen)}{36}{}%
+\contentsline {section}{\numberline {6}Prognose- und Konfidenzintervalle (für binomialverteilte Zufallsgrößen)}{36}{}%
