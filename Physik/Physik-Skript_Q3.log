@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.9.9)  10 SEP 2025 22:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.9.9)  16 SEP 2025 05:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1252,65 +1252,86 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 382--387
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 388--393
 
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 474--478
+Underfull \hbox (badness 6792) in paragraph at lines 480--484
 []\TU/lmr/bx/n/10.95 Zentrifugalkraft: $[][] []
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 478--479
+Underfull \hbox (badness 1270) in paragraph at lines 484--485
 []\TU/lmr/bx/n/10.95 Gegenkraft: \TU/lmr/m/n/10.95 Coulomb-Kraft zwi-
  []
 
 
-Overfull \hbox (2.43091pt too wide) in paragraph at lines 439--488
+Overfull \hbox (2.43091pt too wide) in paragraph at lines 445--494
 []  [] 
  []
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 496.
+(Font)              scaled to size 9.00096pt on input line 502.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 496.
+(Font)              scaled to size 6.00064pt on input line 502.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 496.
+(Font)              scaled to size 8.99904pt on input line 502.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 496.
+(Font)              scaled to size 5.99936pt on input line 502.
 
-
-[5]
 
 [6]
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 595--597
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 601--603
 
  []
 
 
 
-[8]
-
 [9]
 
 [10]
+Underfull \hbox (badness 10000) in paragraph at lines 632--633
 
-[11] (./Physik-Skript_Q3.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--654
+
+ []
+
+
+
+[11]
+
+[12]
+
+[13]
+
+[14] (./Physik-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 36223 strings out of 473832
- 814880 string characters out of 5735459
- 1422144 words of memory out of 5000000
- 58746 multiletter control sequences out of 15000+600000
- 562938 words of font info for 101 fonts, out of 8000000 for 9000
+ 36253 strings out of 473832
+ 815537 string characters out of 5735459
+ 1422159 words of memory out of 5000000
+ 58772 multiletter control sequences out of 15000+600000
+ 562957 words of font info for 103 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,14n,121p,1013b,1940s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,14n,121p,1013b,1948s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Physik-Skript_Q3.pdf (12 pages).
+Output written on Physik-Skript_Q3.pdf (15 pages).

@@ -364,15 +364,21 @@
 			    \item [K:] Auf welcher Bahn hat das Elektron die größtmögliche Geschwindigkeit? Gebe diese Geschwindigkeit als Faktor der Lichtgeschwindigkeit an!
 				\item [L:] Bestimme die kinetische Energie der Elektronen in Abhängigkeit der Elektronenmasse und -
 				ladung, der Quantenzahl und evtl. Naturkonstanten formelmäßig, also $E_{kin} = f(n)$
-				%\item [M:]
-				%\item [N:]
-				%\item [O:]
-				%\item [P:]
+				
+				\newpage
+				
+				\item [M:] Was ist die potentielle Energie, wenn es um Ladungen in einem elektrischen Feld geht? Hinweis:
+				siehe BG12.1. Siehe auch Aufgabenteil b).
+				\item [N:] Bestimme die potentielle Energie der Elektronen in Abhängigkeit der Elektronenmasse und Elektronenladung, der Quantenzahl und evtl. Naturkonstanten formelmäßig, also $E_{pot} = f(n)$
+				\item [O:] Vergleichen Sie $E_{kin}$ mit $E_{pot}$
+				\item [P:] Bestimmen Sie $E_{ges} = E_{kin} + E_{pot}$ 
 				%\item [Q:]
 				%\item [R:]		
 			\end{itemize}
 		\end{itemize}
 	\end{aufgabe}
+	
+	
 	
 	\newpage
 	
@@ -620,6 +626,89 @@
 	\end{loesung}
 	\newpage
 	
+	\lessondate{16.09.2026}\\
+	\begin{loesung}{Bohr'esches Atommodell}
+		\subsection*{Aufgabe M}
+		Der Begriff des Potentials (stammend aus dem lateinischen \textit{Potentia} und heißt übersetzt so viel wie \textit{Macht, Fähigkeit, Vermögen}) in der Physik gibt die Fähigkeit eines Körpers an, welches Arbeit verrichten kann. Potentielle Energie ist die Form der Energie, die einem Körper oder einem Feld innewohnt, weil dessen Lage oder Konfiguration später in tatsächliche Arbeit umgewandelt werden kann. \\
+		\hrule 
+		\vspace{5mm}
+		Im Kontext elektrischer Felder bedeutet das: Bringt man eine positive Ladung in ein elektrisches Feld, so erfährt sie eine Kraft in Richtung des Feldes. Dabei nimmt ihre potentielle Energie ab, während ihre kinetische Energie entsprechend zunimmt. Der Übergang von Ruhe zur Bewegung lässt sich somit als Umwandlung von elektrischer potentieller Energie in kinetische Energie verstehen.\\
+		
+		\subsection*{Aufgabe N}
+		Mit der Gegebenheit:
+		\[
+		F_{Coulomb} (r) = \frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r^2} 
+		\]
+		und der Bedingung, dass $E_{\text{pot}} = - \int F(r) dr$ folgt: 
+		\begin{align*}
+			E_{\text{pot}} &= - \int \left(\frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r^2}\right)dr \\\\
+			&= - \frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r} + C 
+		\end{align*}
+		\begin{infobox}
+ 			Aus mir noch nicht ganz erklärbaren Gründen entfällt das C in der Gleichung. In meinem Referenz Buch \textit{Tipler} habe ich nur Gleichungen der Form von:
+ 			\[
+ 			\boxed{E_{pot} = - \frac{1}{4 \cdot \pi \cdot \varepsilon_0} \cdot \frac{Ze^2}{r}}
+ 			\]
+ 			gefunden.
+		\end{infobox}
+	\end{loesung}
+	
+	\newpage
+	
+	\begin{loesung}{Bohr'sches Atommodell}
+		\subsection*{Aufgabe N}
+		Setzt man nun für Wasserstoff ($Z=1$) und den Bohr-Radius $r = 5.29 \times 10^{-11}\,\text{m}$ ein, erhält man:
+		\begin{align*}
+			E_{\text{pot}}(r) &= \boxed{ - \frac{1}{4 \pi \varepsilon_0} \cdot \frac{e^2}{r}} \\
+			&= - \frac{8.99 \times 10^9 \,\text{N}\,\text{m}^2\text{/C}^2 \cdot (1.60 \times 10^{-19}\,\text{C})^2}{5.29 \times 10^{-11}\,\text{m}} \\
+			&\approx -4.35 \times 10^{-18}\,\text{J}.
+		\end{align*}
+		Umgerechnet in Elektronenvolt:
+		\[
+		E_{\text{pot}}(r) \approx -27.2 \,\text{eV}. \footnote{$1eV = 1.602 \cdot 10^{-9}$}
+		\]
+		
+		\subsection*{Aufgabe O}
+		Nach der Bedingung des Gleichgewichts
+		\[
+		F_{\text{Coulomb}} = F_{\text{Zentripetal}}
+		\]
+		gilt:
+		\[
+		\frac{1}{4 \pi \varepsilon_0} \cdot \frac{Ze^2}{r^2} 
+		= \frac{m_e v^2}{r}.
+		\]
+		Mit multiplizieren von $r$ folgt die kinetische Energie:
+		\begin{align*}
+			E_{\text{kin}} &= \frac{1}{2} m_e v^2 \\
+			&=  \boxed{\frac{1}{2} \cdot \frac{1}{4 \pi \varepsilon_0} \cdot \frac{Ze^2}{r}}
+		\end{align*}
+		Man erkennt:
+		\[
+		E_{\text{kin}} = - \tfrac{1}{2} E_{\text{pot}}.
+		\]
+		
+		Für $Z=1$ und $r= 5.29 \cdot 10^{-11}m$:
+		\[
+		E_{\text{kin}}(r) = +13.6 \,\text{eV},
+		\qquad
+		E_{\text{pot}}(r) = -27.2 \,\text{eV}.
+		\]
+		
+		\subsection*{Aufgabe P}
+		Die Gesamtenergie ist:
+		\begin{align*}
+			E_{\text{ges}} &= E_{\text{kin}} + E_{\text{pot}} \\
+			&= 13.6 \,\text{eV} + (-27.2 \,\text{eV}) \\
+			&= -13.6 \,\text{eV}.
+		\end{align*}
+		Damit ist die Gesamtenergie im Grundzustand des Wasserstoffatoms negativ, was dem gebundenen Zustand entspricht.
+	\end{loesung}
+	
+	
+	
+	\newpage
+	
 	\section{Elektromagnetische Wellen}
 
 	\section{Welle-Teilchen-Dualismus}
@@ -642,6 +731,8 @@
 	%\section{Thermodynamik}
 	
 	\newpage
+	
+	
 	
 	
 	
