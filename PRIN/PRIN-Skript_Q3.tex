@@ -13,10 +13,6 @@
 \setmathfont{Libertinus Math}
 
 % --- Monospace / Terminal ---
-% VT323 für Retro-Terminal-Look
-%\setmonofont{VT323}[Scale=1.1]
-%\setmonofont{Fira Code}[Scale=1.1]
-%\setmonofont{JetBrains Mono}[Scale=1.1]
 %\setmonofont{Source Code Pro}[Scale=1.1]
 
 
@@ -31,7 +27,6 @@
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{listings}
-\usepackage{courier}
 \usepackage[ngerman]{babel}
 
 % ---------- Layout ----------
@@ -75,12 +70,12 @@
 \color{TermText}
 
 % --- NEUE, FESTE FARBEN FÜR JEDE UMGEBUNG ---
-\definecolor{aufgabeColor}{RGB}{57,255,20}       % Green
-\definecolor{loesungColor}{RGB}{230,120,35}       % Orange
-\definecolor{theoremColor}{RGB}{76,104,150}       % Blue
-\definecolor{beispielColor}{RGB}{105,77,145}      % Violet
-\definecolor{infoboxColor}{RGB}{170,40,60}       % Red-magenta
-\definecolor{terminalColor}{RGB}{120,10,25}       % Deep red
+\definecolor{aufgabeColor}{RGB}{57,255,20}
+\definecolor{loesungColor}{RGB}{230,120,35}
+\definecolor{theoremColor}{RGB}{76,104,150}
+\definecolor{beispielColor}{RGB}{105,77,145}
+\definecolor{infoboxColor}{RGB}{170,40,60}
+\definecolor{terminalColor}{RGB}{120,10,25}
 
 % ================= tcolorbox Basis-Stil (Terminal-Look) =================
 \tcbset{
@@ -199,14 +194,7 @@
 	\begin{titlepage}
 		\vspace*{18mm}
 		\begin{center}
-			%\begin{tikzpicture}
-			%    \fill[AccentViolet!85!black] (0,0) circle (1.2cm);
-			%    \fill[PageBG] (0.15,0.15) circle (0.95cm);
-			%    \draw[line width=1pt,color=AccentBlue] (0,0) circle (1.35cm);
-			%    \node[white] at (0,0) {\sffamily\bfseries\Large M};
-			%\end{tikzpicture}
 			\vspace{12mm}
-			%{\Huge\bfseries\sffamily\color{TextCream} #1 \par}
 			{\huge\color{TextCream} #1 \par}
 			\vspace{6mm}
 			{\Large\itshape\color{AccentBlue!50} #2 \par}
@@ -214,18 +202,9 @@
 			{\Large\scshape\color{TextCream} #3 \par}
 			\vspace{6mm}
 			{\small\color{MarginalGray} #4 \par}
-			%\vfill
-			\vspace{5mm}
+			\vfill
 			{\small\color{MarginalGray} \today \par}
-			%\vspace{12mm}
-			%\begin{tikzpicture}
-			%    \draw[line width=1.2pt,color=AccentViolet!80!black] (-6,0) -- (6,0);
-			%    \draw[line width=0.45pt,color=AccentBlue!60!black] (-6,-0.3) -- (6,-0.3);
-			%\end{tikzpicture}
 		\end{center}
-		\vspace{7.5cm}
-		\centering
-		%\includegraphics[width=0.75\textwidth]{2.png} % Logo einfügen (Pfad anpassen)
 	\end{titlepage}
 }
 
@@ -235,11 +214,7 @@
 \begin{document}
 	
 	% Titelblatt
-	\MakeArtTitle{
-		Leistungskurs Praktische Q3 Hessen}
-	{Skript}
-	{Shamsher Singh Kalsi}
-	{Berufliches Gymnasium — Ferdinand-Braun Schule \\ Kursleiter: Herr Sebastian Stolz}
+	\MakeArtTitle{Leistungskurs Praktische Q3 Hessen}{Skript}{Shamsher Singh Kalsi}{Berufliches Gymnasium — Ferdinand-Braun Schule \\ Kursleiter: Herr Sebastian Stolz}
 	
 	\tableofcontents
 	\bigskip
@@ -249,18 +224,14 @@
 	\section{Einführung}
 	\lessondate{05.09.2025}
 	
-	
-	
 	\begin{aufgabe}{Serielle Kommunikation}
 		\begin{enumerate}
 			\item Beantworte folgende Fragen schriftlich:
 			\begin{itemize}
 				\item An welcher Stelle spielt die serielle Kommunikation heutzutage eine Rolle?
 				\item Erkläre die Begriffe: Startbit, Datenbit, Stoppbit.
-				\item Ein PC sendet den Buchstaben 'A' mit 1 Startbit, 8 Datenbits, 1 Stoppbit.
-				Skizziere das resultierende Bitmuster
-				\item Welche Parameter müssen Sender und Empfänger bei RS232 vorab
-				gemeinsam einstellen?
+				\item Ein PC sendet den Buchstaben 'A' mit 1 Startbit, 8 Datenbits, 1 Stoppbit. Skizziere das resultierende Bitmuster
+				\item Welche Parameter müssen Sender und Empfänger bei RS232 vorab gemeinsam einstellen?
 				\item Warum reicht ein einziger Draht für die Übertragung?
 			\end{itemize}
 			\item Aufgabe 2 – Serielle Kommunikation (RS232) in Java mit Hilfe eines Emulators
@@ -277,23 +248,23 @@
 		\begin{enumerate}
 			\item Beantworte folgende Fragen schriftlich:
 			\begin{itemize}
-				\item Serielle Kommunikation wird heute noch in eingebetteten Systemen, Industrieanlagen, Messgeräten und auch beim Serverzugriff (Konsolenport) genutzt, da sie einfach, robust und für kurze Distanzen ausreichend ist.
+				\item Serielle Kommunikation wird heute noch in **eingebetteten Systemen**, **Industrieanlagen**, **Messgeräten** und auch beim **Serverzugriff** (Konsolenport) genutzt, da sie einfach, robust und für kurze Distanzen ausreichend ist.
 				
-				\item \textbf{Startbit:} signalisiert Beginn eines Zeichens (logisch 0) und dient zur Synchronisation.  
-				\textbf{Datenbits:} eigentliche Nutzinformation, meist 8 Bit, LSB zuerst.  
-				\textbf{Stoppbit:} beendet die Übertragung (logisch 1), Leitung geht in Idle-Zustand.
+				\item \textbf{Startbit:} signalisiert den Beginn eines Zeichens (logisch 0) und dient zur Synchronisation. 
+				\textbf{Datenbits:} eigentliche Nutzinformation, meist 8 Bit, LSB zuerst.
+				\textbf{Stoppbit:} beendet die Übertragung (logisch 1), die Leitung geht in den Idle-Zustand.
 				
-				\item Beispiel: Der Buchstabe \texttt{A} hat den ASCII-Wert \texttt{0x41} = \texttt{01000001}.  
-				Übertragung (LSB zuerst) mit 1 Startbit und 1 Stopbit:  
+				\item Beispiel: Der Buchstabe \texttt{A} hat den ASCII-Wert \texttt{0x41} = \texttt{01000001}. 
+				Übertragung (LSB zuerst) mit 1 Startbit und 1 Stopbit: 
 				\[
 				\underbrace{1}_{\text{Idle}} \;
 				\underbrace{0}_{\text{Start}} \;
-				1\,0\,0\,0\,0\,0\,1\,0 \;
+				\underbrace{1\,0\,0\,0\,0\,0\,1\,0}_{\text{Datenbits (LSB zuerst)}} \;
 				\underbrace{1}_{\text{Stop}} \;
-				1
+				\underbrace{1}_{\text{Idle}}
 				\]
 				
-				\item Sender und Empfänger müssen sich bei RS232 vorab einigen auf: Baudrate, Datenbits, Parität, Stoppbits, sowie ggf. Art der Flusskontrolle.
+				\item Sender und Empfänger müssen sich bei RS232 vorab einigen auf: **Baudrate**, **Datenbits**, **Parität**, **Stoppbits**, sowie ggf. Art der **Flusskontrolle**.
 				
 				\item Ein einzelner Draht genügt pro Richtung, weil Bits nacheinander mit fester Baudrate gesendet werden; Start- und Stoppbits übernehmen die Synchronisation. Für echte Vollduplex-Kommunikation sind jedoch zwei Leitungen (Tx/Rx) plus Masse üblich.
 			\end{itemize}
@@ -302,11 +273,27 @@
 			\begin{itemize}
 				\item Beide Seiten brauchen dieselbe Baudrate, da es kein separates Taktsignal gibt. Unterschiedliche Baudraten führen zu falscher Bitinterpretation.
 				
-				\item Wenn der Sender schneller schreibt als der Empfänger liest, läuft dessen Puffer über und Daten gehen verloren.  
-				Lösungen: Hardware-Flowcontrol (RTS/CTS), Software-Flowcontrol (XON/XOFF), größere FIFO-Puffer oder Protokolle mit Bestätigung (ACK/NACK).
+				\item Wenn der Sender schneller schreibt als der Empfänger liest, läuft dessen Puffer über und Daten gehen verloren. 
+				Lösungen: **Hardware-Flowcontrol** (RTS/CTS), **Software-Flowcontrol** (XON/XOFF), größere **FIFO-Puffer** oder Protokolle mit Bestätigung (ACK/NACK).
 			\end{itemize}
 		\end{enumerate}
 	\end{loesung}
+	
+	\begin{center}
+		\begin{tikzpicture}[yscale=0.8, xscale=0.8]
+			% Bitfolge: Idle(1), Start(0), Data: 1 0 0 0 0 0 1 0, Stop(1), Idle(1)
+			\foreach [count=\n] \b in {1,0,1,0,0,0,0,0,1,0,1,1} {
+				\draw (\n-1,0) rectangle ++(1,1) node[midway]{\b};
+			}
+			% Beschriftung
+			\node[below] at (0.5,-0.2) {Idle};
+			\node[below] at (1.5,-0.2) {Start};
+			\node[below] at (5.5,-0.2) {Datenbits};
+			\node[below] at (10.5,-0.2) {Stop};
+		\end{tikzpicture}
+	\end{center}
+	
+	\vspace{1cm} % Added vertical space for better readability
 	
 	\lstset{language=Java, basicstyle=\ttfamily\small, numbers=left, frame=single}
 	\begin{lstlisting}
@@ -324,25 +311,7 @@
 	
 	\newpage
 	
-	\begin{center}
-		\begin{tikzpicture}[yscale=0.8, xscale=0.8]
-			% Bitfolge: Idle(1), Start(0), Data: 1 0 0 0 0 0 1 0, Stop(1), Idle(1)
-			\foreach [count=\n] \b in {1,0,1,0,0,0,0,0,1,0,1,1} {
-				\draw (\n-1,0) rectangle ++(1,1) node[midway]{\b};
-			}
-			% Beschriftung
-			\node[below] at (0.5,-0.2) {Idle};
-			\node[below] at (1.5,-0.2) {Start};
-			\node[below] at (5.5,-0.2) {Datenbits};
-			\node[below] at (10.5,-0.2) {Stop};
-		\end{tikzpicture}
-	\end{center}
-	
-	
-	\newpage
-	
-	\lessondate{09.09.2025}\\
-	
+	\lessondate{09.09.2025}
 	\begin{aufgabe}{Steuerung eines Mikroprozessors mit der seriellen Schnittstelle}
 		\begin{enumerate}
 			\item Schreibe ein (Python-)Programm, welches einen selbst gewählten Sensor auf einem Raspberry-PI oder einem Arduino steuert.
@@ -350,8 +319,6 @@
 			\item Nutze die Klasse "Serial" aus dem Moodle-Kurs, um von einem Laptop oder PC mit einem Java-Programm über die serielle Schnittstelle den Sensor zu steuern.
 		\end{enumerate}
 	\end{aufgabe}
-	
-
 	
 	
 	\begin{loesung}{Steuerung eines Mikroprozessors mit der seriellen Schnittstelle}
@@ -398,7 +365,7 @@
 				ser.close()
 				led.off()
 			\end{lstlisting}
-
+			
 			
 			\item Ein Arduino-Beispiel, das serielle Kommandos entgegennimmt und einen digitalen Pin steuert:
 			\begin{lstlisting}[language=C, caption={Arduino: Serial command handler}]
@@ -433,38 +400,68 @@
 			
 			\item Java-Client mit der Klasse \texttt{Serial} (wie in deinem Moodle-Skript beschrieben). Das Beispiel öffnet den Port, schickt einen String, liest eine Antwortzeile und parst eine Zahl mit \texttt{Double.parseDouble(...)}:
 			\begin{lstlisting}[language=Java, caption={Java: Steuerprogramm (Nutzungsbeispiel der in der Aufgabenstellung beschriebenen Serial-Klasse)}]
-			// Ein Java-Client zum Steuern des Mikroprozessors.
-			public class SerialController {
-				
-				public static void main(String[] args) {
-					Serial s = new Serial("COM5", 9600, 8, 1, 0); 
+				// Ein Java-Client zum Steuern des Mikroprozessors.
+				public class SerialController {
 					
-					if (!s.open()) {
-						System.err.println("Port konnte nicht geöffnet werden");
-						return;
+					public static void main(String[] args) {
+						Serial s = new Serial("COM5", 9600, 8, 1, 0); 
+						
+						if (!s.open()) {
+							System.err.println("Port konnte nicht geöffnet werden");
+							return;
+						}
+						
+						// Sendet einen Befehl und liest die Antwort.
+						s.write("STATUS\n");
+						String reply = s.readLine();
+						System.out.println("Reply: " + reply);
+						
+						// Versucht, die Antwort in eine Zahl umzuwandeln.
+						try {
+							double val = Double.parseDouble(reply.trim());
+							System.out.println("Parsed value: " + val);
+						} catch (NumberFormatException e) {
+							System.out.println("Keine Zahl: " + reply);
+						}
+						
+						s.close();
 					}
-					
-					// Sendet einen Befehl und liest die Antwort.
-					s.write("STATUS\n");
-					String reply = s.readLine();
-					System.out.println("Reply: " + reply);
-					
-					// Versucht, die Antwort in eine Zahl umzuwandeln.
-					try {
-						double val = Double.parseDouble(reply.trim());
-						System.out.println("Parsed value: " + val);
-					} catch (NumberFormatException e) {
-						System.out.println("Keine Zahl: " + reply);
-					}
-					
-					s.close();
 				}
-			}
 			\end{lstlisting}
 		\end{enumerate}
 	\end{loesung}
 	
+	\newpage
+
+	\lessondate{17.09.2025}\\
+
+	\begin{aufgabe}{Prüfverfahren}
+		\begin{enumerate}
+			\item Berechne die Ergebnisse der Prüfverfahren Paritätsbit, Prüfsumme (mod4, mod8) und XOR-Prüfsumme (mit zwei Bitfolgen):
+			\begin{itemize}
+				\item 1010101111010010
+				\item 1111111111111111
+				\item 0010110001010000
+			\end{itemize}
+			\item Bei der Übertragung von Bitfolgen können folgende Fehler auftreten:
+			\begin{itemize}
+				\item ein Bit wird negiert
+				\item zwei benachbarte Bits werden ausgetauscht,
+				\item zwei Bits werden negiert
+			\end{itemize}
+			Bewerte die Möglichkeiten der Fehlererkennung durch die einzelnen
+			Prüfverfahren
+			\item Bücher sind eindeutig durch eine ISBN identifiziert. Die Prüfnummer ist ein Zeichen zwischen 0 und X, für 10, das am Ende angehängt wird. Die Prüfnummer wird als gewichtete Prüfsumme berechnet: Die Tribute von Panem 1 hat die ISBN-Nummer 384150134. Die einzelnen Stellen werden von links nach rechts addiert, mit dem Gewicht der eigenen
+			Stelle in der ISBN-Nummer. Die Prüfnummer muss so gewählt werden, dass die gewichtete Prüfsumme mod11 gerechnet 0 ergibt. \(()3 \cdot 10 + 8 \cdot 9 + 4 \cdot 8 + 1 \cdot 7 + 5 \cdot 6 + 0 \cdot 5 + 1 \cdot 4 + 3 \cdot 3 + 4 \cdot 2 + ?) \mod{11} = 192\mod{11} = 5\) Rechnet man mit ? = 6 ergibt sich \(198 \mod{11} = 0\)
+			\begin{itemize}
+				\item Berechne die Prüfnummer für Die Tribute von Panem 2 mit der ISBN 378913219? 
+			\end{itemize}
+		\end{enumerate}
+		
+	\end{aufgabe}
 	
+	
+
 	\newpage
 	
 	

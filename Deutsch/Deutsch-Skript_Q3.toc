@@ -5,8 +5,8 @@
 \contentsline {subsubsection}{\numberline {1.1.1}lel}{2}{subsubsection.1.1.1}%
 \contentsline {section}{\numberline {2}Sprache und Identität – Sprachkrise als Identitätskrise}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Übung Literatur der Jahrhundertwende - Verschränkung der Epochen}{6}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Subjektivität und Verantwortung - anthropologische Grundfragen}{8}{section.3}%
-\contentsline {section}{\numberline {4}Epochenumbruch 19./20. Jahrhundert – literarische Moderne im frühen 20. Jahrhundert}{8}{section.4}%
-\contentsline {section}{\numberline {5}Neuanfänge nach historischen Zäsuren 1945/1990}{8}{section.5}%
-\contentsline {section}{\numberline {6}Film und Literatur}{8}{section.6}%
-\contentsline {section}{\numberline {7}Beispieltexte und Analyse}{9}{section.7}%
+\contentsline {section}{\numberline {3}Subjektivität und Verantwortung - anthropologische Grundfragen}{13}{section.3}%
+\contentsline {section}{\numberline {4}Epochenumbruch 19./20. Jahrhundert – literarische Moderne im frühen 20. Jahrhundert}{13}{section.4}%
+\contentsline {section}{\numberline {5}Neuanfänge nach historischen Zäsuren 1945/1990}{13}{section.5}%
+\contentsline {section}{\numberline {6}Film und Literatur}{13}{section.6}%
+\contentsline {section}{\numberline {7}Beispieltexte und Analyse}{14}{section.7}%
