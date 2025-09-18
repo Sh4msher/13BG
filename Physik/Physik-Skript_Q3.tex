@@ -224,6 +224,7 @@
 	Dieses Skript ist als leicht lesbare Sammlung von Vorlesungsnotizen, Experimentbeschreibungen und Übungsaufgaben für den Physik-Grundkurs gedacht. Es wurde die alte Duden Paetek Formel abgelöst und von dem IQB eine Einheitliche veröffentlicht. Auf moodle steht die neue Formelsammlung. Thomsoneschwingungsgleichung. 
 	
 	\subsection{Nachschlaginhalte}
+	
 	\subsubsection{SI-Vorsätze}
 	\lessondate{02.09.2025}\\
 	\begin{table}[ht]
@@ -267,6 +268,29 @@
 	
 	\newpage
 	
+	\lessondate{17.09.2025}\\
+	\subsection*{Regularieren für die Arbeit}
+	\begin{itemize}
+		\item Ergebnisse haben immer eine EInheit - sonst keine Bewertung 
+		\item Die Struktur der Aufgabenstellung muss eingehalten werden 
+		\item Endergebnisse doppelt unterstreichen oder Antwortsatz 
+		\item Ergebnisse werden immer auf zwei nachkommastellen gerundet 
+		\item Alle Formeln in der Formelsammlung als gegeben anzusehen 
+		\item Lösungsweg ordentlich dokumentieren 
+		\item SI-Vorsätze wenn nötig bei den Ergebnissen nennen
+		\subsection*{Wie rechne ich eine Aufgabe}
+		\begin{itemize}
+			\item Formel aus der Formelsammlung suchen 
+			\item Formel nach der gesuchten Größe umstellen 
+			\item Zahlenwerte einsetzen - keine Naturkonstanten - lieber vom Taschenrechner nehmen (Shift + 7)
+			\item Mit dem Taschenrechner ausrechnen 
+			\item Ergebnis präsentieren 
+		\end{itemize}
+	\end{itemize}
+	
+	
+	
+	\newpage
 	
 	\section{Wiederholung}
 	%\lessondate{19.08.2025}\\
@@ -479,7 +503,7 @@
 		\begin{minipage}[t]{0.5\textwidth}
 			\vspace{-40mm}
 			\begin{itemize}
-				\item[B:] \textbf{Zentrifugalkraft:} 
+				\item[B:] \textbf{Zentrifugalkraft:}\\
 				$
 				F_\text{zentrifugal} = \frac{m v^2}{r}
 				$
@@ -775,6 +799,75 @@
 		= 1.03 \cdot 10^{-7}\,\text{m} = 103\,\text{nm}.
 		\]
 	\end{loesung}
+	
+	\newpage
+	
+	\lessondate{17.09.2025}\\
+	\vspace{-10mm}
+	\begin{aufgabe}{Energien beim Übergang auf eine niedrigere Schale}
+		Berechne die ersten acht Energien $(n=2\dots 8)$ beim Übergang $n \to 1$. 
+		Ergänze dazu auch die Frequenzen und Wellenlängen des ausgesandten Lichts.
+	\end{aufgabe}
+	
+	\begin{loesung}{}
+		Formel für die Energiedifferenz:
+		\[
+		\Delta E = 13.6\left(1 - \tfrac{1}{n^2}\right)\,\text{eV}
+		\]
+		Umrechnung in Joule:
+		\[
+		E(J) = \Delta E \cdot 1.602 \cdot 10^{-19}
+		\]
+		Frequenz:
+		\[
+		f = \tfrac{E}{h}, \quad h = 6.626 \cdot 10^{-34}
+		\]
+		Wellenlänge:
+		\[
+		\lambda = \tfrac{c}{f}, \quad c = 3.00 \cdot 10^{8}\,\text{m/s}
+		\]
+		
+		\noindent Casio fx-991DEX: \\
+		1) \texttt{$13.6*(1-1/{n}^2)$} für $n=2..8$ eingeben. \\
+		2) Ergebnis mit \texttt{Ans*1.602E-19} nach Joule umrechnen. \\
+		3) Frequenz: \texttt{Ans/6.626E-34}. \\
+		4) Wellenlänge: \texttt{3E8/Ans}. \\
+		
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				$n$ & $\Delta E$ [eV] & $f$ [$10^{15}$ Hz] & $\lambda$ [nm] \\
+				\hline
+				2 & 10.20 & 2.47 & 122 \\
+				3 & 12.09 & 2.92 & 103 \\
+				4 & 12.75 & 3.08 & 97 \\
+				5 & 13.06 & 3.16 & 95 \\
+				6 & 13.22 & 3.20 & 94 \\
+				7 & 13.31 & 3.22 & 93 \\
+				8 & 13.35 & 3.23 & 92.8 \\
+				\hline
+			\end{tabular}
+		\end{center}
+		
+		Alle Werte liegen im Ultraviolett (Lyman-Serie).
+	\end{loesung}
+	
+	
+	\begin{aufgabe}{Rydberg-Formel, Serienformel, Balmer-Formel}
+		Recherchiere folgende Begriffe und wende diese auf die letzte Aufgabe an:
+		\begin{itemize}
+			\item dIe Rydberg-Formel
+			\item die Serienformel des Wasserstoffs
+			\item Balmer-Formel 
+		\end{itemize}
+	\end{aufgabe}
+	
+	\newpage
+	
+	\begin{loesung}{Rydberg-Formel, Serienformel, Balmer-Formel}
+
+	\end{loesung}
+	
 	
 	\newpage
 	

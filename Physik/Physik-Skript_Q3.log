@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.9.9)  18 SEP 2025 09:36
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.9.9)  18 SEP 2025 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1228,122 +1228,138 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 [2
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
+
+[3]
 File: Doppelspalt_Einstiegsaufgaben_Bild.png Graphic file (type bmp)
 <Doppelspalt_Einstiegsaufgaben_Bild.png>
 
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 339.
+(Font)              scaled to size 10.00107pt on input line 363.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 339.
+(Font)              scaled to size 7.00075pt on input line 363.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 339.
+(Font)              scaled to size 5.00053pt on input line 363.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 339.
+(Font)              scaled to size 9.99893pt on input line 363.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 339.
+(Font)              scaled to size 6.99925pt on input line 363.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 339.
+(Font)              scaled to size 4.99947pt on input line 363.
 
-
-[4]
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 390--395
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 414--419
 
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 482--486
-[]\TU/lmr/bx/n/10.95 Zentrifugalkraft: $[][] []
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 486--487
+Underfull \hbox (badness 1270) in paragraph at lines 510--511
 []\TU/lmr/bx/n/10.95 Gegenkraft: \TU/lmr/m/n/10.95 Coulomb-Kraft zwi-
  []
 
 
-Overfull \hbox (2.43091pt too wide) in paragraph at lines 447--496
+Overfull \hbox (2.43091pt too wide) in paragraph at lines 471--520
 []  [] 
  []
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 504.
+(Font)              scaled to size 9.00096pt on input line 528.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 504.
+(Font)              scaled to size 6.00064pt on input line 528.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 504.
+(Font)              scaled to size 8.99904pt on input line 528.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 504.
+(Font)              scaled to size 5.99936pt on input line 528.
 
-
-[6]
 
 [7]
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 603--605
-
- []
-
-
 
 [9]
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
+
+ []
+
+
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 637--638
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 631--656
-
- []
-
-
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 710--711
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--680
 
  []
 
 
 
 [12]
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
+
+ []
+
+
+
+[13]
 File: Energie1.png Graphic file (type bmp)
 <Energie1.png>
 
 
-[13]
-
 [14]
 
 [15]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
-[16] (./Physik-Skript_Q3.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 830--835
+
+ []
+
+
+
+[16]
+
+[17]
+
+[18]
+
+[19] (./Physik-Skript_Q3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 36280 strings out of 473832
- 816025 string characters out of 5735459
- 1422348 words of memory out of 5000000
- 58798 multiletter control sequences out of 15000+600000
- 562959 words of font info for 103 fonts, out of 8000000 for 9000
+ 36308 strings out of 473832
+ 816559 string characters out of 5735459
+ 1422632 words of memory out of 5000000
+ 58824 multiletter control sequences out of 15000+600000
+ 562970 words of font info for 104 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,14n,121p,1013b,1948s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Physik-Skript_Q3.pdf (17 pages).
+Output written on Physik-Skript_Q3.pdf (20 pages).
